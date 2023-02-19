@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: signed-pipeline-bundle
+displayName: Require Signed Tekton Pipeline
+createdAt: "2023-02-19T19:27:48Z"
+description: A signed bundle is required
+homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/verify-tekton-pipeline-bundle-signatures
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/tekton/verify-tekton-pipeline-bundle-signatures/verify-tekton-pipeline-bundle-signatures.yaml
+readme: |-
+    # Require Signed Tekton Pipeline
+    A signed bundle is required
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/tekton/verify-tekton-pipeline-bundle-signatures/verify-tekton-pipeline-bundle-signatures.yaml
+    ```
+provider:
+    name: Ashwin901

@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-imagepullsecrets
+displayName: Add imagePullSecrets
+createdAt: "2023-02-19T19:27:48Z"
+description: Images coming from certain registries require authentication in order to pull them, and the kubelet uses this information in the form of an imagePullSecret to pull those images on behalf of your Pod. This policy searches for images coming from a registry called `corp.reg.com` and, if found, will mutate the Pod to add an imagePullSecret called `my-secret`.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/add-imagepullsecrets
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/add-imagepullsecrets/add-imagepullsecrets.yaml
+readme: |-
+    # Add imagePullSecrets
+    Images coming from certain registries require authentication in order to pull them, and the kubelet uses this information in the form of an imagePullSecret to pull those images on behalf of your Pod. This policy searches for images coming from a registry called `corp.reg.com` and, if found, will mutate the Pod to add an imagePullSecret called `my-secret`.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add-imagepullsecrets/add-imagepullsecrets.yaml
+    ```
+provider:
+    name: Ashwin901

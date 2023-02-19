@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: disallow-jenkins-pipeline-strategy
+displayName: Disallow OpenShift Jenkins Pipeline Build Strategy
+createdAt: "2023-02-19T19:27:48Z"
+description: The Jenkins Pipeline Build Strategy has been deprecated. This policy prevents its use. Use OpenShift Pipelines instead.
+homeURL: https://github.com/Ashwin901/policies/tree/master/openshift/disallow-jenkins-pipeline-strategy
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/openshift/disallow-jenkins-pipeline-strategy/disallow-jenkins-pipeline-strategy.yaml
+readme: |-
+    # Disallow OpenShift Jenkins Pipeline Build Strategy
+    The Jenkins Pipeline Build Strategy has been deprecated. This policy prevents its use. Use OpenShift Pipelines instead.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/openshift/disallow-jenkins-pipeline-strategy/disallow-jenkins-pipeline-strategy.yaml
+    ```
+provider:
+    name: Ashwin901

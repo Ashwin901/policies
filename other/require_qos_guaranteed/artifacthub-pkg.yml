@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-qos-guaranteed
+displayName: Require QoS Guaranteed
+createdAt: "2023-02-19T19:27:48Z"
+description: Pod Quality of Service (QoS) is a mechanism to ensure Pods receive certain priority guarantees based upon the resources they define. When Pods define both requests and limits for both memory and CPU, and the requests and limits are equal to each other, Kubernetes grants the QoS class as guaranteed which allows them to run at a higher priority than others. This policy requires that all containers within a Pod run with this definition resulting in a guaranteed QoS. This policy is provided with the intention that users will need to control its scope by using exclusions, preconditions, and other policy language mechanisms.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_qos_guaranteed
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/require_qos_guaranteed/require_qos_guaranteed.yaml
+readme: |-
+    # Require QoS Guaranteed
+    Pod Quality of Service (QoS) is a mechanism to ensure Pods receive certain priority guarantees based upon the resources they define. When Pods define both requests and limits for both memory and CPU, and the requests and limits are equal to each other, Kubernetes grants the QoS class as guaranteed which allows them to run at a higher priority than others. This policy requires that all containers within a Pod run with this definition resulting in a guaranteed QoS. This policy is provided with the intention that users will need to control its scope by using exclusions, preconditions, and other policy language mechanisms.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_qos_guaranteed/require_qos_guaranteed.yaml
+    ```
+provider:
+    name: Ashwin901

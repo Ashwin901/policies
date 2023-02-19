@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: ingress-host-match-tls
+displayName: Ingress Host Match TLS
+createdAt: "2023-02-19T19:27:48Z"
+description: Ingress resources which name a host name that is not present in the TLS section can produce ingress routing failures as a TLS certificate may not correspond to the destination host. This policy ensures that the host name in an Ingress rule is also found in the list of TLS hosts.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/ingress_host_match_tls
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/ingress_host_match_tls/ingress-host-match-tls.yaml
+readme: |-
+    # Ingress Host Match TLS
+    Ingress resources which name a host name that is not present in the TLS section can produce ingress routing failures as a TLS certificate may not correspond to the destination host. This policy ensures that the host name in an Ingress rule is also found in the list of TLS hosts.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/ingress_host_match_tls/ingress_host_match_tls.yaml
+    ```
+provider:
+    name: Ashwin901

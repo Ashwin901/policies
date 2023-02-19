@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: restrict-binding-clusteradmin
+displayName: Restrict Binding to Cluster-Admin
+createdAt: "2023-02-19T19:27:48Z"
+description: The cluster-admin ClusterRole allows any action to be performed on any resource in the cluster and its granting should be heavily restricted. This policy prevents binding to the cluster-admin ClusterRole in RoleBinding or ClusterRoleBinding resources.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-binding-clusteradmin
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/restrict-binding-clusteradmin/restrict-binding-clusteradmin.yaml
+readme: |-
+    # Restrict Binding to Cluster-Admin
+    The cluster-admin ClusterRole allows any action to be performed on any resource in the cluster and its granting should be heavily restricted. This policy prevents binding to the cluster-admin ClusterRole in RoleBinding or ClusterRoleBinding resources.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict-binding-clusteradmin/restrict-binding-clusteradmin.yaml
+    ```
+provider:
+    name: Ashwin901

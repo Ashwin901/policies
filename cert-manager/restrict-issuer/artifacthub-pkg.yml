@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: cert-manager-restrict-issuer
+displayName: Restrict issuer
+createdAt: "2023-02-19T19:27:48Z"
+description: Certificates for trusted domains should always be steered to a controlled issuer to ensure the chain of trust is appropriate for that application. Users may otherwise be able to create their own issuers and sign certificates for other domains. This policy ensures that a certificate request for a specific domain uses a designated ClusterIssuer.
+homeURL: https://github.com/Ashwin901/policies/tree/master/cert-manager/restrict-issuer
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/cert-manager/restrict-issuer/restrict-issuer.yaml
+readme: |-
+    # Restrict issuer
+    Certificates for trusted domains should always be steered to a controlled issuer to ensure the chain of trust is appropriate for that application. Users may otherwise be able to create their own issuers and sign certificates for other domains. This policy ensures that a certificate request for a specific domain uses a designated ClusterIssuer.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/cert-manager/restrict-issuer/restrict-issuer.yaml
+    ```
+provider:
+    name: Ashwin901

@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: insert-pod-antiaffinity
+displayName: Add Pod Anti-Affinity
+createdAt: "2023-02-19T19:27:48Z"
+description: Applications may involve multiple replicas of the same Pod for availability as well as scale purposes, yet Kubernetes does not by default provide a solution for availability. This policy sets a Pod anti-affinity configuration on Deployments which contain an `app` label if it is not already present.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/create_pod_antiaffinity
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/create_pod_antiaffinity/create_pod_antiaffinity.yaml
+readme: |-
+    # Add Pod Anti-Affinity
+    Applications may involve multiple replicas of the same Pod for availability as well as scale purposes, yet Kubernetes does not by default provide a solution for availability. This policy sets a Pod anti-affinity configuration on Deployments which contain an `app` label if it is not already present.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/create_pod_antiaffinity/create_pod_antiaffinity.yaml
+    ```
+provider:
+    name: Ashwin901

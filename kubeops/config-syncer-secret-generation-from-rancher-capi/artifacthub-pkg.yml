@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: config-syncer-secret-generation-from-rancher-capi
+displayName: Kubeops Config Syncer Secret Generation From Rancher CAPI Secret
+createdAt: "2023-02-19T19:27:48Z"
+description: This policy generates and synchronizes a Kubeops Config Syncer merged kubeconfig Secret from Rancher managed cluster CAPI secrets. This kubeconfig Secret is required by the Kubeops Config Syncer for it to sync ConfigMaps/Secrets from the Rancher management cluster to downstream clusters.
+homeURL: https://github.com/Ashwin901/policies/tree/master/kubeops/config-syncer-secret-generation-from-rancher-capi
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/kubeops/config-syncer-secret-generation-from-rancher-capi/config-syncer-secret-generation-from-rancher-capi.yaml
+readme: |-
+    # Kubeops Config Syncer Secret Generation From Rancher CAPI Secret
+    This policy generates and synchronizes a Kubeops Config Syncer merged kubeconfig Secret from Rancher managed cluster CAPI secrets. This kubeconfig Secret is required by the Kubeops Config Syncer for it to sync ConfigMaps/Secrets from the Rancher management cluster to downstream clusters.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/kubeops/config-syncer-secret-generation-from-rancher-capi/config-syncer-secret-generation-from-rancher-capi.yaml
+    ```
+provider:
+    name: Ashwin901

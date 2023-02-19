@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: limit-containers-per-pod
+displayName: Limit Containers per Pod
+createdAt: "2023-02-19T19:27:48Z"
+description: Pods can have many different containers which are tightly coupled. It may be desirable to limit the amount of containers that can be in a single Pod to control best practice application or so policy can be applied consistently. This policy checks all Pods to ensure they have no more than four containers.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/limit_containers_per_pod
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/limit_containers_per_pod/limit_containers_per_pod.yaml
+readme: |-
+    # Limit Containers per Pod
+    Pods can have many different containers which are tightly coupled. It may be desirable to limit the amount of containers that can be in a single Pod to control best practice application or so policy can be applied consistently. This policy checks all Pods to ensure they have no more than four containers.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/limit_containers_per_pod/limit_containers_per_pod.yaml
+    ```
+provider:
+    name: Ashwin901

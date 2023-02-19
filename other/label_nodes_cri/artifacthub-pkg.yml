@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: label-nodes-cri
+displayName: Label Nodes with CRI Runtime
+createdAt: "2023-02-19T19:27:48Z"
+description: CRI engines log in different formats. Loggers deployed as DaemonSets don't know which format to apply because they can't see this information. By Kyverno writing a label to each node with its runtime, loggers can use node label selectors to know which parsing logic to use. This policy detects the CRI engine in use and writes a label to the Node called `runtime` with it. The Node resource filter should be removed and users may need to grant the Kyverno ServiceAccount permission to update Nodes.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/label_nodes_cri
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/label_nodes_cri/label-nodes-cri.yaml
+readme: |-
+    # Label Nodes with CRI Runtime
+    CRI engines log in different formats. Loggers deployed as DaemonSets don't know which format to apply because they can't see this information. By Kyverno writing a label to each node with its runtime, loggers can use node label selectors to know which parsing logic to use. This policy detects the CRI engine in use and writes a label to the Node called `runtime` with it. The Node resource filter should be removed and users may need to grant the Kyverno ServiceAccount permission to update Nodes.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/label_nodes_cri/label_nodes_cri.yaml
+    ```
+provider:
+    name: Ashwin901

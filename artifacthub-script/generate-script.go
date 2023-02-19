@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"gopkg.in/yaml.v3"
@@ -67,7 +68,7 @@ type ArtifactHubMetadata struct {
 }
 
 const (
-	sourceURL = "https://raw.githubusercontent.com/Ashwin901/policy-hub-automation/master/"
+	sourceURL = "https://raw.githubusercontent.com/kyverno/policies/master/"
 )
 
 func main() {
@@ -78,8 +79,10 @@ func main() {
 	}
 
 	fmt.Println(pwd)
-	rootDir := pwd
-	policiesPath := filepath.Join(rootDir, "policies")
+	rootDir := filepath.Join(pwd, "..")
+	// policiesPath := filepath.Join(rootDir, "policies")
+	policiesPath := rootDir
+	fmt.Println(policiesPath)
 	dirEntry, err := os.ReadDir(policiesPath)
 	if err != nil {
 		fmt.Println("error while listing directories under policies")
@@ -88,28 +91,56 @@ func main() {
 
 	for _, entry := range dirEntry {
 		if entry.Type().IsDir() {
-			fmt.Println(entry.Name())
-			constraintTemplateContent, err := os.ReadFile(filepath.Join(policiesPath, entry.Name(), entry.Name()+".yaml"))
+			if entry.Name() == ".git" || entry.Name() == ".github" {
+				continue
+			}
+			policies, err := os.ReadDir(filepath.Join(policiesPath, entry.Name()))
 
 			if err != nil {
-				fmt.Println("error while reading", entry.Name()+".yaml")
+				fmt.Println("error while listing directories under ", entry.Name())
 				panic(err)
 			}
 
-			constraintTemplate := make(map[string]interface{})
-			err = yaml.Unmarshal(constraintTemplateContent, &constraintTemplate)
-			if err != nil {
-				fmt.Println("error while unmarshaling", entry.Name()+".yaml")
-				panic(err)
-			}
+			for _, policy := range policies {
+				if policy.Type().IsDir() {
+					fmt.Println(policy.Name())
+					policyName := strings.ReplaceAll(policy.Name(), ".yaml", "")
+					constraintTemplateContent, err := os.ReadFile(filepath.Join(policiesPath, entry.Name(), policy.Name(), policyName+".yaml"))
 
-			destination := filepath.Join(policiesPath, entry.Name())
-			addArtifactHubMetadata(entry.Name(), destination, entry.Name(), constraintTemplate)
+					if err != nil {
+						fmt.Println("error while reading", policy.Name()+".yaml")
+						if strings.Contains(policy.Name(), "_") {
+							policyName = strings.ReplaceAll(policyName, "_", "-")
+						} else {
+							policyName = strings.ReplaceAll(policyName, "-", "_")
+						}
+
+						constraintTemplateContent, err = os.ReadFile(filepath.Join(policiesPath, entry.Name(), policy.Name(), policyName+".yaml"))
+
+						if err != nil {
+							fmt.Println("Could not read file ", policy.Name())
+							// panic(err)
+							continue
+						}
+					}
+
+					constraintTemplate := make(map[string]interface{})
+					err = yaml.Unmarshal(constraintTemplateContent, &constraintTemplate)
+					if err != nil {
+						fmt.Println("error while unmarshaling", policy.Name()+".yaml")
+						panic(err)
+					}
+
+					destination := filepath.Join(policiesPath, entry.Name(), policy.Name())
+					source := entry.Name() + "/" + policy.Name()
+					addArtifactHubMetadata(source, destination, entry.Name(), policy.Name(), policyName, constraintTemplate)
+				}
+			}
 		}
 	}
 }
 
-func addArtifactHubMetadata(sourceDirectory, destinationPath, ahBasePath string, constraintTemplate map[string]interface{}) {
+func addArtifactHubMetadata(sourceDirectory, destinationPath, ahBasePath, ahPolicyPath, ahPolicyName string, constraintTemplate map[string]interface{}) {
 	format := "2006-01-02 15:04:05Z"
 	currentDateTime, err := time.Parse(format, time.Now().UTC().Format(format))
 	if err != nil {
@@ -123,7 +154,7 @@ func addArtifactHubMetadata(sourceDirectory, destinationPath, ahBasePath string,
 		DisplayName: fmt.Sprintf("%s", constraintTemplate["metadata"].(map[string]interface{})["annotations"].(map[string]interface{})["policies.kyverno.io/title"]),
 		CreatedAt:   currentDateTime.Format(time.RFC3339),
 		Description: fmt.Sprintf("%s", constraintTemplate["metadata"].(map[string]interface{})["annotations"].(map[string]interface{})["policies.kyverno.io/description"]),
-		HomeURL:     "https://github.com/Ashwin901/policy-hub-automation/tree/master/" + sourceDirectory,
+		HomeURL:     "https://github.com/kyverno/policies/tree/master/" + sourceDirectory,
 		Keywords: []string{
 			"kyverno",
 			"policy",
@@ -134,7 +165,7 @@ func addArtifactHubMetadata(sourceDirectory, destinationPath, ahBasePath string,
 		}{
 			{
 				Name: "Source",
-				URL:  "https://github.com/Ashwin901/policy-hub-automation/blob/master/" + ahBasePath + "/" + ahBasePath + ".yaml",
+				URL:  "https://github.com/kyverno/policies/blob/master/" + ahBasePath + "/" + ahPolicyPath + "/" + ahPolicyName + ".yaml",
 			},
 		},
 		Provider: struct {
@@ -142,7 +173,7 @@ func addArtifactHubMetadata(sourceDirectory, destinationPath, ahBasePath string,
 		}{
 			Name: "Ashwin901",
 		},
-		Install: fmt.Sprintf("### Usage\n```shell\nkubectl apply -f %s\n```", sourceURL+filepath.Join(ahBasePath, ahBasePath+".yaml")),
+		Install: fmt.Sprintf("### Usage\n```shell\nkubectl apply -f %s\n```", sourceURL+filepath.Join(ahBasePath, ahPolicyPath, ahPolicyPath+".yaml")),
 		Readme: fmt.Sprintf(`# %s
 %s`, constraintTemplate["metadata"].(map[string]interface{})["annotations"].(map[string]interface{})["policies.kyverno.io/title"], constraintTemplate["metadata"].(map[string]interface{})["annotations"].(map[string]interface{})["policies.kyverno.io/description"]),
 	}

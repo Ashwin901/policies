@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: disallow-self-provisioner-binding
+displayName: Disallow binding to self-provisioner cluster role in OpenShift
+createdAt: "2023-02-19T19:27:48Z"
+description: This policy prevents binding to the self-provisioners role for strict control of OpenShift project creation.
+homeURL: https://github.com/Ashwin901/policies/tree/master/openshift/disallow-self-provisioner-binding
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/openshift/disallow-self-provisioner-binding/disallow-self-provisioner-binding.yaml
+readme: |-
+    # Disallow binding to self-provisioner cluster role in OpenShift
+    This policy prevents binding to the self-provisioners role for strict control of OpenShift project creation.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/openshift/disallow-self-provisioner-binding/disallow-self-provisioner-binding.yaml
+    ```
+provider:
+    name: Ashwin901

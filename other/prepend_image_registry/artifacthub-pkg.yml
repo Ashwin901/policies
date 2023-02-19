@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: prepend-registry
+displayName: Prepend Image Registry
+createdAt: "2023-02-19T19:27:48Z"
+description: Pulling images from outside registries may be undesirable due to untrustworthiness or simply because the traffic results in an excess of bandwidth usage. Instead of blocking them, they can be mutated to divert to an internal registry which may already contain them or function as a pull-through proxy. This policy prepends all images in both containers and initContainers to come from `registry.io`.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/prepend_image_registry
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/prepend_image_registry/prepend_image_registry.yaml
+readme: |-
+    # Prepend Image Registry
+    Pulling images from outside registries may be undesirable due to untrustworthiness or simply because the traffic results in an excess of bandwidth usage. Instead of blocking them, they can be mutated to divert to an internal registry which may already contain them or function as a pull-through proxy. This policy prepends all images in both containers and initContainers to come from `registry.io`.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/prepend_image_registry/prepend_image_registry.yaml
+    ```
+provider:
+    name: Ashwin901

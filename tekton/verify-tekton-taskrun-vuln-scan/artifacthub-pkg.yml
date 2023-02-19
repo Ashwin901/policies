@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: verify-tekton-taskrun-vuln-scan
+displayName: Check Tekton TaskRun Vulnerability Scan
+createdAt: "2023-02-19T19:27:48Z"
+description: A signed bundle is required and a vulnerability scan made by Grype must return no vulnerabilities greater than 8.0.
+homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/verify-tekton-taskrun-vuln-scan
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/tekton/verify-tekton-taskrun-vuln-scan/verify-tekton-taskrun-vuln-scan.yaml
+readme: |-
+    # Check Tekton TaskRun Vulnerability Scan
+    A signed bundle is required and a vulnerability scan made by Grype must return no vulnerabilities greater than 8.0.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/tekton/verify-tekton-taskrun-vuln-scan/verify-tekton-taskrun-vuln-scan.yaml
+    ```
+provider:
+    name: Ashwin901

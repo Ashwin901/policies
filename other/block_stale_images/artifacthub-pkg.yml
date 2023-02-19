@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: block-stale-images
+displayName: Block Stale Images
+createdAt: "2023-02-19T19:27:48Z"
+description: Images that are old usually have some open security vulnerabilities which are not patched. This policy checks the contents of every container image and inspects them for the create time. If it finds any image which was built more than 6 months ago this policy blocks the deployment.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/block_stale_images
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/block_stale_images/block-stale-images.yaml
+readme: |-
+    # Block Stale Images
+    Images that are old usually have some open security vulnerabilities which are not patched. This policy checks the contents of every container image and inspects them for the create time. If it finds any image which was built more than 6 months ago this policy blocks the deployment.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/block_stale_images/block_stale_images.yaml
+    ```
+provider:
+    name: Ashwin901

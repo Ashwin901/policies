@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-unique-service-selector
+displayName: Require Unique Service Selector
+createdAt: "2023-02-19T19:27:48Z"
+description: Services select eligible Pods by way of label matches. Having multiple Service apply based on same labels can cause conflicts and have unintended consequences. This policy ensures that within the same Namespace a Service has a unique set of labels as a selector.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/require-unique-service-selector
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/require-unique-service-selector/require-unique-service-selector.yaml
+readme: |-
+    # Require Unique Service Selector
+    Services select eligible Pods by way of label matches. Having multiple Service apply based on same labels can cause conflicts and have unintended consequences. This policy ensures that within the same Namespace a Service has a unique set of labels as a selector.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require-unique-service-selector/require-unique-service-selector.yaml
+    ```
+provider:
+    name: Ashwin901

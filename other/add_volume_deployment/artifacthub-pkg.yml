@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-volume
+displayName: Add Volume to Deployment
+createdAt: "2023-02-19T19:27:48Z"
+description: Some Kubernetes applications like HashiCorp Vault must perform some modifications to resources in order to invoke their specific functionality. Often times, that functionality is controlled by the presence of a label or specific annotation. This policy, based on HashiCorp Vault, adds a volume and volumeMount to a Deployment if there is an annotation called "vault.k8s.corp.net/inject=enabled" present.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_volume_deployment
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/add_volume_deployment/add_volume_deployment.yaml
+readme: |-
+    # Add Volume to Deployment
+    Some Kubernetes applications like HashiCorp Vault must perform some modifications to resources in order to invoke their specific functionality. Often times, that functionality is controlled by the presence of a label or specific annotation. This policy, based on HashiCorp Vault, adds a volume and volumeMount to a Deployment if there is an annotation called "vault.k8s.corp.net/inject=enabled" present.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_volume_deployment/add_volume_deployment.yaml
+    ```
+provider:
+    name: Ashwin901

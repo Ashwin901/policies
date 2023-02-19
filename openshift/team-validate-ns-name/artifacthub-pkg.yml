@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: team-validate-ns-name
+displayName: Validate Team Namespace Schema
+createdAt: "2023-02-19T19:27:48Z"
+description: Naming patterns are commonplace in clusters where creation activities are granted to other users. In order to maintain organization, it is often such that patterns should be established for organizational consistency. This policy denies the creation of a Namespace if the name of the Namespace does not follow a specific naming defined by the cluster admins.
+homeURL: https://github.com/Ashwin901/policies/tree/master/openshift/team-validate-ns-name
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/openshift/team-validate-ns-name/team-validate-ns-name.yaml
+readme: |-
+    # Validate Team Namespace Schema
+    Naming patterns are commonplace in clusters where creation activities are granted to other users. In order to maintain organization, it is often such that patterns should be established for organizational consistency. This policy denies the creation of a Namespace if the name of the Namespace does not follow a specific naming defined by the cluster admins.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/openshift/team-validate-ns-name/team-validate-ns-name.yaml
+    ```
+provider:
+    name: Ashwin901

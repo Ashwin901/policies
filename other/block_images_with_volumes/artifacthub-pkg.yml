@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: block-images-with-volumes
+displayName: Block Images with Volumes
+createdAt: "2023-02-19T19:27:48Z"
+description: OCI images may optionally be built with VOLUME statements which, if run in read-only mode, would still result in write access to the specified location. This may be unexpected and undesirable. This policy checks the contents of every container image and inspects them for such VOLUME statements, then blocks if found.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/block_images_with_volumes
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/block_images_with_volumes/block-images-with-volumes.yaml
+readme: |-
+    # Block Images with Volumes
+    OCI images may optionally be built with VOLUME statements which, if run in read-only mode, would still result in write access to the specified location. This may be unexpected and undesirable. This policy checks the contents of every container image and inspects them for such VOLUME statements, then blocks if found.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/block_images_with_volumes/block_images_with_volumes.yaml
+    ```
+provider:
+    name: Ashwin901

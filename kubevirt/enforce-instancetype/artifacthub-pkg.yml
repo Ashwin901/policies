@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: k6t-enforce-instancetype
+displayName: Enforce instanceTypes
+createdAt: "2023-02-19T19:27:48Z"
+description: Check VirtualMachines and validate that they are not using a domain template (`.spec.template.domain`) but instead are based on instaceTypes and preferences only.
+homeURL: https://github.com/Ashwin901/policies/tree/master/kubevirt/enforce-instancetype
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/kubevirt/enforce-instancetype/enforce-instancetype.yaml
+readme: |-
+    # Enforce instanceTypes
+    Check VirtualMachines and validate that they are not using a domain template (`.spec.template.domain`) but instead are based on instaceTypes and preferences only.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/kubevirt/enforce-instancetype/enforce-instancetype.yaml
+    ```
+provider:
+    name: Ashwin901

@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: restrict-pod-controller-serviceaccount-updates
+displayName: Restrict Pod Controller ServiceAccount Updates
+createdAt: "2023-02-19T19:27:48Z"
+description: ServiceAccounts which have the ability to edit/patch workloads which they created may potentially use that privilege to update to a different ServiceAccount with higher privileges. This policy, intended to be run in `enforce` mode, blocks updates to Pod controllers if those updates modify the serviceAccountName field. Updates to Pods directly for this field are not possible as it is immutable once set.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-pod-controller-serviceaccount-updates
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/restrict-pod-controller-serviceaccount-updates/restrict-pod-controller-serviceaccount-updates.yaml
+readme: |-
+    # Restrict Pod Controller ServiceAccount Updates
+    ServiceAccounts which have the ability to edit/patch workloads which they created may potentially use that privilege to update to a different ServiceAccount with higher privileges. This policy, intended to be run in `enforce` mode, blocks updates to Pod controllers if those updates modify the serviceAccountName field. Updates to Pods directly for this field are not possible as it is immutable once set.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict-pod-controller-serviceaccount-updates/restrict-pod-controller-serviceaccount-updates.yaml
+    ```
+provider:
+    name: Ashwin901

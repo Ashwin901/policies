@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: allowed-image-repos
+displayName: Allowed Image Repositories
+createdAt: "2023-02-19T19:27:48Z"
+description: In addition to restricting the image registry from which images are pulled, in some cases and environments it may be required to also restrict which image repositories are used,  for example in some restricted Namespaces. This policy ensures that the only allowed image repositories present in a given Pod, across any container type, come from the designated list.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/allowed-image-repos
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/allowed-image-repos/allowed-image-repos.yaml
+readme: |-
+    # Allowed Image Repositories
+    In addition to restricting the image registry from which images are pulled, in some cases and environments it may be required to also restrict which image repositories are used,  for example in some restricted Namespaces. This policy ensures that the only allowed image repositories present in a given Pod, across any container type, come from the designated list.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/allowed-image-repos/allowed-image-repos.yaml
+    ```
+provider:
+    name: Ashwin901

@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-tekton-securitycontext
+displayName: Require securityContext for Tekton TaskRun
+createdAt: "2023-02-19T19:27:48Z"
+description: A securityContext is required for each TaskRun step.
+homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/require-tekton-securitycontext
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/tekton/require-tekton-securitycontext/require-tekton-securitycontext.yaml
+readme: |-
+    # Require securityContext for Tekton TaskRun
+    A securityContext is required for each TaskRun step.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/tekton/require-tekton-securitycontext/require-tekton-securitycontext.yaml
+    ```
+provider:
+    name: Ashwin901

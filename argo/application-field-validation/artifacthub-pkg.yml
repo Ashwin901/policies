@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: application-field-validation
+displayName: Application Field Validation
+createdAt: "2023-02-19T19:27:48Z"
+description: This policy performs some best practices validation on Application fields. Path or chart must be specified but never both. And destination.name or destination.server must be specified but never both.
+homeURL: https://github.com/Ashwin901/policies/tree/master/argo/application-field-validation
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/argo/application-field-validation/application-field-validation.yaml
+readme: |-
+    # Application Field Validation
+    This policy performs some best practices validation on Application fields. Path or chart must be specified but never both. And destination.name or destination.server must be specified but never both.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/argo/application-field-validation/application-field-validation.yaml
+    ```
+provider:
+    name: Ashwin901

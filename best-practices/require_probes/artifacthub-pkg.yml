@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-pod-probes
+displayName: Require Pod Probes
+createdAt: "2023-02-19T19:27:48Z"
+description: Liveness and readiness probes need to be configured to correctly manage a Pod's lifecycle during deployments, restarts, and upgrades. For each Pod, a periodic `livenessProbe` is performed by the kubelet to determine if the Pod's containers are running or need to be restarted. A `readinessProbe` is used by Services and Deployments to determine if the Pod is ready to receive network traffic. This policy validates that all containers have one of livenessProbe, readinessProbe, or startupProbe defined.
+homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/require_probes
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/best-practices/require_probes/require_probes.yaml
+readme: |-
+    # Require Pod Probes
+    Liveness and readiness probes need to be configured to correctly manage a Pod's lifecycle during deployments, restarts, and upgrades. For each Pod, a periodic `livenessProbe` is performed by the kubelet to determine if the Pod's containers are running or need to be restarted. A `readinessProbe` is used by Services and Deployments to determine if the Pod is ready to receive network traffic. This policy validates that all containers have one of livenessProbe, readinessProbe, or startupProbe defined.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/require_probes/require_probes.yaml
+    ```
+provider:
+    name: Ashwin901

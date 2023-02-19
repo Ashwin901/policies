@@ -1,0 +1,20 @@
+version: '%!s(<nil>)'
+name: add-safe-to-evict
+displayName: '%!s(<nil>)'
+createdAt: "2023-02-19T19:27:48Z"
+description: 'The Kubernetes cluster autoscaler does not evict pods that  use hostPath or emptyDir volumes. To allow eviction of these pods, the annotation  cluster-autoscaler.kubernetes.io/safe-to-evict=true must be added to the pods. '
+homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/add_safe_to_evict
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/best-practices/add_safe_to_evict/add_safe_to_evict.yaml
+readme: "# %!s(<nil>)\nThe Kubernetes cluster autoscaler does not evict pods that  use hostPath or emptyDir volumes. To allow eviction of these pods, the annotation  cluster-autoscaler.kubernetes.io/safe-to-evict=true must be added to the pods. "
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/add_safe_to_evict/add_safe_to_evict.yaml
+    ```
+provider:
+    name: Ashwin901

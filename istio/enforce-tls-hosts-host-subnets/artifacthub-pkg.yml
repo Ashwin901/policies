@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: enforce-tls-hosts-host-subnets
+displayName: Enforce Istio TLS on Hosts and Host Subnets
+createdAt: "2023-02-19T19:27:48Z"
+description: Once a routing decision has been made, a DestinationRule can be used to define how traffic should be sent to another service. The trafficPolicy object can control how TLS is handled to the destination host. This policy enforces that the TLS mode cannot be set to a value of `DISABLE`.
+homeURL: https://github.com/Ashwin901/policies/tree/master/istio/enforce-tls-hosts-host-subnets
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/istio/enforce-tls-hosts-host-subnets/enforce-tls-hosts-host-subnets.yaml
+readme: |-
+    # Enforce Istio TLS on Hosts and Host Subnets
+    Once a routing decision has been made, a DestinationRule can be used to define how traffic should be sent to another service. The trafficPolicy object can control how TLS is handled to the destination host. This policy enforces that the TLS mode cannot be set to a value of `DISABLE`.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/istio/enforce-tls-hosts-host-subnets/enforce-tls-hosts-host-subnets.yaml
+    ```
+provider:
+    name: Ashwin901

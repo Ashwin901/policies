@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: ensure-production-matches-staging
+displayName: Ensure Production Matches staging
+createdAt: "2023-02-19T19:27:48Z"
+description: It is common to have two separate Namespaces such as staging and production in order to test and promote app deployments in a controlled manner. In order to ensure that level of control, certain guardrails must be present so as to minimize regressions or unintended behavior. This policy has a set of three rules to try and provide some sane defaults for app promotion across these two environments (Namespaces) called staging and production. First, it makes sure that every Deployment in production has a corresponding Deployment in staging. Second, that a production Deployment uses same image name as its staging counterpart. Third, that a production Deployment uses an older or equal image version as its staging counterpart.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/ensure-production-matches-staging
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/ensure-production-matches-staging/ensure-production-matches-staging.yaml
+readme: |-
+    # Ensure Production Matches staging
+    It is common to have two separate Namespaces such as staging and production in order to test and promote app deployments in a controlled manner. In order to ensure that level of control, certain guardrails must be present so as to minimize regressions or unintended behavior. This policy has a set of three rules to try and provide some sane defaults for app promotion across these two environments (Namespaces) called staging and production. First, it makes sure that every Deployment in production has a corresponding Deployment in staging. Second, that a production Deployment uses same image name as its staging counterpart. Third, that a production Deployment uses an older or equal image version as its staging counterpart.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/ensure-production-matches-staging/ensure-production-matches-staging.yaml
+    ```
+provider:
+    name: Ashwin901

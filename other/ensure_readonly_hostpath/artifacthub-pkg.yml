@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: ensure-readonly-hostpath
+displayName: Ensure Read Only hostPath
+createdAt: "2023-02-19T19:27:48Z"
+description: Pods which are allowed to mount hostPath volumes in read/write mode pose a security risk even if confined to a "safe" file system on the host and may escape those confines (see https://blog.aquasec.com/kubernetes-security-pod-escape-log-mounts). The only true way to ensure safety is to enforce that all Pods mounting hostPath volumes do so in read only mode. This policy checks all containers for any hostPath volumes and ensures they are explicitly mounted in readOnly mode.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/ensure_readonly_hostpath
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/ensure_readonly_hostpath/ensure_readonly_hostpath.yaml
+readme: |-
+    # Ensure Read Only hostPath
+    Pods which are allowed to mount hostPath volumes in read/write mode pose a security risk even if confined to a "safe" file system on the host and may escape those confines (see https://blog.aquasec.com/kubernetes-security-pod-escape-log-mounts). The only true way to ensure safety is to enforce that all Pods mounting hostPath volumes do so in read only mode. This policy checks all containers for any hostPath volumes and ensures they are explicitly mounted in readOnly mode.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/ensure_readonly_hostpath/ensure_readonly_hostpath.yaml
+    ```
+provider:
+    name: Ashwin901

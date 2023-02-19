@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: drop-all-capabilities
+displayName: Drop All Capabilities
+createdAt: "2023-02-19T19:27:48Z"
+description: 'Capabilities permit privileged actions without giving full root access. All capabilities should be dropped from a Pod, with only those required added back. This policy ensures that all containers explicitly specify the `drop: ["ALL"]` ability. Note that this policy also illustrates how to cover drop entries in any case although this may not strictly conform to the Pod Security Standards.'
+homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/require_drop_all
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/best-practices/require_drop_all/require_drop_all.yaml
+readme: |-
+    # Drop All Capabilities
+    Capabilities permit privileged actions without giving full root access. All capabilities should be dropped from a Pod, with only those required added back. This policy ensures that all containers explicitly specify the `drop: ["ALL"]` ability. Note that this policy also illustrates how to cover drop entries in any case although this may not strictly conform to the Pod Security Standards.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/require_drop_all/require_drop_all.yaml
+    ```
+provider:
+    name: Ashwin901

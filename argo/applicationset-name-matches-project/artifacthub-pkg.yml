@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: applicationset-name-matches-project
+displayName: Ensure ApplicationSet Name Matches Project
+createdAt: "2023-02-19T19:27:48Z"
+description: This policy ensures that the name of the ApplicationSet is the same value provided in the project.
+homeURL: https://github.com/Ashwin901/policies/tree/master/argo/applicationset-name-matches-project
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/argo/applicationset-name-matches-project/applicationset-name-matches-project.yaml
+readme: |-
+    # Ensure ApplicationSet Name Matches Project
+    This policy ensures that the name of the ApplicationSet is the same value provided in the project.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/argo/applicationset-name-matches-project/applicationset-name-matches-project.yaml
+    ```
+provider:
+    name: Ashwin901

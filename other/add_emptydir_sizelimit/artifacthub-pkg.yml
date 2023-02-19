@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-emptydir-sizelimit
+displayName: Add emptyDir sizeLimit
+createdAt: "2023-02-19T19:27:48Z"
+description: When a Pod requests an emptyDir, by default it does not have a size limit which may allow it to consume excess or all of the space in the medium backing the volume. This can quickly overrun a Node and may result in a denial of service for other workloads. This policy adds a sizeLimit field to all Pods mounting emptyDir volumes, if not present, and sets it to 100Mi.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_emptydir_sizelimit
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/add_emptydir_sizelimit/add-emptydir-sizelimit.yaml
+readme: |-
+    # Add emptyDir sizeLimit
+    When a Pod requests an emptyDir, by default it does not have a size limit which may allow it to consume excess or all of the space in the medium backing the volume. This can quickly overrun a Node and may result in a denial of service for other workloads. This policy adds a sizeLimit field to all Pods mounting emptyDir volumes, if not present, and sets it to 100Mi.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_emptydir_sizelimit/add_emptydir_sizelimit.yaml
+    ```
+provider:
+    name: Ashwin901

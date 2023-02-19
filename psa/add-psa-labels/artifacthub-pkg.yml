@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-psa-labels
+displayName: Add PSA Labels
+createdAt: "2023-02-19T19:27:48Z"
+description: Pod Security Admission (PSA) can be controlled via the assignment of labels at the Namespace level which define the Pod Security Standard (PSS) profile in use and the action to take. If not using a cluster-wide configuration via an AdmissionConfiguration file, Namespaces must be explicitly labeled. This policy assigns the labels `pod-security.kubernetes.io/enforce=baseline` and `pod-security.kubernetes.io/warn=restricted` to all new Namespaces if those labels are not included.
+homeURL: https://github.com/Ashwin901/policies/tree/master/psa/add-psa-labels
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/psa/add-psa-labels/add-psa-labels.yaml
+readme: |-
+    # Add PSA Labels
+    Pod Security Admission (PSA) can be controlled via the assignment of labels at the Namespace level which define the Pod Security Standard (PSS) profile in use and the action to take. If not using a cluster-wide configuration via an AdmissionConfiguration file, Namespaces must be explicitly labeled. This policy assigns the labels `pod-security.kubernetes.io/enforce=baseline` and `pod-security.kubernetes.io/warn=restricted` to all new Namespaces if those labels are not included.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/psa/add-psa-labels/add-psa-labels.yaml
+    ```
+provider:
+    name: Ashwin901

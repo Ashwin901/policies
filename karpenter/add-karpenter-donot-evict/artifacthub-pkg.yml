@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-karpenter-donot-evict
+displayName: Add Karpenter Do Not Evict
+createdAt: "2023-02-19T19:27:48Z"
+description: 'If a Pod exists with the annotation `karpenter.sh/do-not-evict: true` on a Node, and a request is made to delete the Node, Karpenter will not drain any Pods from that Node or otherwise try to delete the Node. This is useful for Pods that should run interrupted to completion. This policy mutates Jobs and CronJobs so that Pods spawned by them will contain the `karpenter.sh/do-not-evict: true` annotation.'
+homeURL: https://github.com/Ashwin901/policies/tree/master/karpenter/add-karpenter-donot-evict
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/karpenter/add-karpenter-donot-evict/add-karpenter-donot-evict.yaml
+readme: |-
+    # Add Karpenter Do Not Evict
+    If a Pod exists with the annotation `karpenter.sh/do-not-evict: true` on a Node, and a request is made to delete the Node, Karpenter will not drain any Pods from that Node or otherwise try to delete the Node. This is useful for Pods that should run interrupted to completion. This policy mutates Jobs and CronJobs so that Pods spawned by them will contain the `karpenter.sh/do-not-evict: true` annotation.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/karpenter/add-karpenter-donot-evict/add-karpenter-donot-evict.yaml
+    ```
+provider:
+    name: Ashwin901

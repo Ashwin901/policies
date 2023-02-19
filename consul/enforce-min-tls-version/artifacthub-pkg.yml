@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: enforce-min-tls-version
+displayName: Enforce Consul min TLS version
+createdAt: "2023-02-19T19:27:48Z"
+description: This policy will check the TLS Min version to ensure that whenever the mesh is set, there is a minimum version of TLS set for all the service mesh proxies and this enforces that service mesh mTLS traffic uses TLS v1.2 or newer.
+homeURL: https://github.com/Ashwin901/policies/tree/master/consul/enforce-min-tls-version
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/consul/enforce-min-tls-version/enforce-min-tls-version.yaml
+readme: |-
+    # Enforce Consul min TLS version
+    This policy will check the TLS Min version to ensure that whenever the mesh is set, there is a minimum version of TLS set for all the service mesh proxies and this enforces that service mesh mTLS traffic uses TLS v1.2 or newer.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/consul/enforce-min-tls-version/enforce-min-tls-version.yaml
+    ```
+provider:
+    name: Ashwin901

@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: spread-pods
+displayName: Spread Pods Across Nodes
+createdAt: "2023-02-19T19:27:48Z"
+description: Deployments to a Kubernetes cluster with multiple availability zones often need to distribute those replicas to align with those zones to ensure site-level failures do not impact availability. This policy matches Deployments with the label `distributed=required` and mutates them to spread Pods across zones.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/spread_pods_across_topology
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/spread_pods_across_topology/spread_pods_across_topology.yaml
+readme: |-
+    # Spread Pods Across Nodes
+    Deployments to a Kubernetes cluster with multiple availability zones often need to distribute those replicas to align with those zones to ensure site-level failures do not impact availability. This policy matches Deployments with the label `distributed=required` and mutates them to spread Pods across zones.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/spread_pods_across_topology/spread_pods_across_topology.yaml
+    ```
+provider:
+    name: Ashwin901

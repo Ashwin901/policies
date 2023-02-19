@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-pdb
+displayName: Require PodDisruptionBudget
+createdAt: "2023-02-19T19:27:48Z"
+description: 'PodDisruptionBudget resources are useful to ensuring minimum availability is maintained at all times. This policy checks all incoming Deployments and StatefulSets to ensure they have a matching, preexisting PodDisruptionBudget. Note: This policy must be run in `enforce` mode to ensure accuracy.'
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_pdb
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/require_pdb/require_pdb.yaml
+readme: |-
+    # Require PodDisruptionBudget
+    PodDisruptionBudget resources are useful to ensuring minimum availability is maintained at all times. This policy checks all incoming Deployments and StatefulSets to ensure they have a matching, preexisting PodDisruptionBudget. Note: This policy must be run in `enforce` mode to ensure accuracy.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_pdb/require_pdb.yaml
+    ```
+provider:
+    name: Ashwin901

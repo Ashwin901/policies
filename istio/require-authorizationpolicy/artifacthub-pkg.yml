@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-authorizationpolicies
+displayName: Require Istio AuthorizationPolicies
+createdAt: "2023-02-19T19:27:48Z"
+description: An AuthorizationPolicy is used to provide access controls for traffic in the mesh and can be defined at multiple levels. For the Namespace level, all Namespaces should have at least one AuthorizationPolicy. This policy, designed to run in background mode for reporting purposes, ensures every Namespace has at least one AuthorizationPolicy.
+homeURL: https://github.com/Ashwin901/policies/tree/master/istio/require-authorizationpolicy
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/istio/require-authorizationpolicy/require-authorizationpolicy.yaml
+readme: |-
+    # Require Istio AuthorizationPolicies
+    An AuthorizationPolicy is used to provide access controls for traffic in the mesh and can be defined at multiple levels. For the Namespace level, all Namespaces should have at least one AuthorizationPolicy. This policy, designed to run in background mode for reporting purposes, ensures every Namespace has at least one AuthorizationPolicy.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/istio/require-authorizationpolicy/require-authorizationpolicy.yaml
+    ```
+provider:
+    name: Ashwin901

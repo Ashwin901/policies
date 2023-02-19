@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-imagepullsecrets
+displayName: Require imagePullSecrets
+createdAt: "2023-02-19T19:27:48Z"
+description: Some registries, both public and private, require credentials in order to pull images from them. This policy checks those images and if they come from a registry other than ghcr.io or quay.io an `imagePullSecret` is required.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_imagepullsecrets
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/require_imagepullsecrets/require_imagepullsecrets.yaml
+readme: |-
+    # Require imagePullSecrets
+    Some registries, both public and private, require credentials in order to pull images from them. This policy checks those images and if they come from a registry other than ghcr.io or quay.io an `imagePullSecret` is required.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_imagepullsecrets/require_imagepullsecrets.yaml
+    ```
+provider:
+    name: Ashwin901

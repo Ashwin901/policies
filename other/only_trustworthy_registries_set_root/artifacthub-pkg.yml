@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: only-trustworthy-registries-set-root
+displayName: Only Trustworthy Registries Set Root
+createdAt: "2023-02-19T19:27:48Z"
+description: Some containers must be built to run as root in order to function properly, but use of those images should be carefully restricted to prevent unneeded privileges. This policy blocks any image that runs as root if it does not come from a trustworthy registry, `ghcr.io` in this case.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/only_trustworthy_registries_set_root
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/only_trustworthy_registries_set_root/only-trustworthy-registries-set-root.yaml
+readme: |-
+    # Only Trustworthy Registries Set Root
+    Some containers must be built to run as root in order to function properly, but use of those images should be carefully restricted to prevent unneeded privileges. This policy blocks any image that runs as root if it does not come from a trustworthy registry, `ghcr.io` in this case.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/only_trustworthy_registries_set_root/only_trustworthy_registries_set_root.yaml
+    ```
+provider:
+    name: Ashwin901

@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: verify-flux-sources
+displayName: Verify Flux Sources
+createdAt: "2023-02-19T19:27:48Z"
+description: Flux source APIs include a number of different sources such as GitRepository, Bucket, HelmRepository, and ImageRepository resources. Each of these by default can be pointed to any location. In a production environment, it may be desired to restrict these to only known sources to prevent accessing outside sources. This policy verifies that each of the Flux sources comes from a trusted location.
+homeURL: https://github.com/Ashwin901/policies/tree/master/flux/verify-flux-sources
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/flux/verify-flux-sources/verify-flux-sources.yaml
+readme: |-
+    # Verify Flux Sources
+    Flux source APIs include a number of different sources such as GitRepository, Bucket, HelmRepository, and ImageRepository resources. Each of these by default can be pointed to any location. In a production environment, it may be desired to restrict these to only known sources to prevent accessing outside sources. This policy verifies that each of the Flux sources comes from a trusted location.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/flux/verify-flux-sources/verify-flux-sources.yaml
+    ```
+provider:
+    name: Ashwin901

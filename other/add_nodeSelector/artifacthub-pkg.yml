@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-nodeselector
+displayName: Add nodeSelector
+createdAt: "2023-02-19T19:27:48Z"
+description: The nodeSelector field uses labels to select the node on which a Pod can be scheduled. This can be useful when Pods have specific needs that only certain nodes in a cluster can provide. This policy adds the nodeSelector field to a Pod spec and configures it with labels `foo` and `color`.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_nodeSelector
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/add_nodeSelector/add_nodeSelector.yaml
+readme: |-
+    # Add nodeSelector
+    The nodeSelector field uses labels to select the node on which a Pod can be scheduled. This can be useful when Pods have specific needs that only certain nodes in a cluster can provide. This policy adds the nodeSelector field to a Pod spec and configures it with labels `foo` and `color`.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_nodeSelector/add_nodeSelector.yaml
+    ```
+provider:
+    name: Ashwin901

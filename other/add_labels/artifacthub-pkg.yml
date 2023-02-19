@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-labels
+displayName: Add Labels
+createdAt: "2023-02-19T19:27:48Z"
+description: Labels are used as an important source of metadata describing objects in various ways or triggering other functionality. Labels are also a very basic concept and should be used throughout Kubernetes. This policy performs a simple mutation which adds a label `foo=bar` to Pods, Services, ConfigMaps, and Secrets.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_labels
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/add_labels/add_labels.yaml
+readme: |-
+    # Add Labels
+    Labels are used as an important source of metadata describing objects in various ways or triggering other functionality. Labels are also a very basic concept and should be used throughout Kubernetes. This policy performs a simple mutation which adds a label `foo=bar` to Pods, Services, ConfigMaps, and Secrets.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_labels/add_labels.yaml
+    ```
+provider:
+    name: Ashwin901

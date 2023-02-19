@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-labels
+displayName: Require Labels
+createdAt: "2023-02-19T19:27:48Z"
+description: Define and use labels that identify semantic attributes of your application or Deployment. A common set of labels allows tools to work collaboratively, describing objects in a common manner that all tools can understand. The recommended labels describe applications in a way that can be queried. This policy validates that the label `app.kubernetes.io/name` is specified with some value.
+homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/require_labels
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/best-practices/require_labels/require_labels.yaml
+readme: |-
+    # Require Labels
+    Define and use labels that identify semantic attributes of your application or Deployment. A common set of labels allows tools to work collaboratively, describing objects in a common manner that all tools can understand. The recommended labels describe applications in a way that can be queried. This policy validates that the label `app.kubernetes.io/name` is specified with some value.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/require_labels/require_labels.yaml
+    ```
+provider:
+    name: Ashwin901

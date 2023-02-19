@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: restrict-node-selection
+displayName: Restrict node selection
+createdAt: "2023-02-19T19:27:48Z"
+description: The Kubernetes scheduler uses complex logic to determine the optimal placement for new Pods. Users who have access to set certain fields in a Pod spec may sidestep this logic which in many cases is undesirable. This policy prevents users from targeting specific Nodes for scheduling of Pods by prohibiting the use of the `nodeSelector` and `nodeName` fields.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_node_selection
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/restrict_node_selection/restrict_node_selection.yaml
+readme: |-
+    # Restrict node selection
+    The Kubernetes scheduler uses complex logic to determine the optimal placement for new Pods. Users who have access to set certain fields in a Pod spec may sidestep this logic which in many cases is undesirable. This policy prevents users from targeting specific Nodes for scheduling of Pods by prohibiting the use of the `nodeSelector` and `nodeName` fields.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict_node_selection/restrict_node_selection.yaml
+    ```
+provider:
+    name: Ashwin901

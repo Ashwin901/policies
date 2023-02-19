@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: disable-automountserviceaccounttoken
+displayName: Disable automountServiceAccountToken
+createdAt: "2023-02-19T19:27:48Z"
+description: A new ServiceAccount called `default` is created whenever a new Namespace is created. Pods spawned in that Namespace, unless otherwise set, will be assigned this ServiceAccount. This policy mutates any new `default` ServiceAccounts to disable auto-mounting of the token into Pods obviating the need to do so individually.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/disable_automountserviceaccounttoken
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/disable_automountserviceaccounttoken/disable-automountserviceaccounttoken.yaml
+readme: |-
+    # Disable automountServiceAccountToken
+    A new ServiceAccount called `default` is created whenever a new Namespace is created. Pods spawned in that Namespace, unless otherwise set, will be assigned this ServiceAccount. This policy mutates any new `default` ServiceAccounts to disable auto-mounting of the token into Pods obviating the need to do so individually.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/disable_automountserviceaccounttoken/disable_automountserviceaccounttoken.yaml
+    ```
+provider:
+    name: Ashwin901

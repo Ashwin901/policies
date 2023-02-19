@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: restrict-secret-role-verbs
+displayName: Restrict Secret Verbs in Roles
+createdAt: "2023-02-19T19:27:48Z"
+description: The verbs `get`, `list`, and `watch` in a Role or ClusterRole, when paired with the Secrets resource, effectively allows Secrets to be read which may expose sensitive information. This policy prevents a Role or ClusterRole from using these verbs in tandem with Secret resources. In order to fully implement this control, it is recommended to pair this policy with another which also prevents use of the wildcard ('*') in the verbs list either when explicitly naming Secrets or when also using a wildcard in the base API group.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-secret-role-verbs
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/restrict-secret-role-verbs/restrict-secret-role-verbs.yaml
+readme: |-
+    # Restrict Secret Verbs in Roles
+    The verbs `get`, `list`, and `watch` in a Role or ClusterRole, when paired with the Secrets resource, effectively allows Secrets to be read which may expose sensitive information. This policy prevents a Role or ClusterRole from using these verbs in tandem with Secret resources. In order to fully implement this control, it is recommended to pair this policy with another which also prevents use of the wildcard ('*') in the verbs list either when explicitly naming Secrets or when also using a wildcard in the base API group.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict-secret-role-verbs/restrict-secret-role-verbs.yaml
+    ```
+provider:
+    name: Ashwin901

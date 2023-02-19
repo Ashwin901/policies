@@ -1,0 +1,20 @@
+version: '%!s(<nil>)'
+name: sync-secrets
+displayName: Sync Secrets
+createdAt: "2023-02-19T19:27:48Z"
+description: 'Secrets like registry credentials often need to exist in multiple Namespaces so Pods there have access. Manually duplicating those Secrets is time consuming and error prone. This policy will copy a Secret called `regcred` which exists in the `default` Namespace to new Namespaces when they are created. It will also push updates to the copied Secrets should the source Secret be changed.      '
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/sync_secrets
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/sync_secrets/sync_secrets.yaml
+readme: "# Sync Secrets\nSecrets like registry credentials often need to exist in multiple Namespaces so Pods there have access. Manually duplicating those Secrets is time consuming and error prone. This policy will copy a Secret called `regcred` which exists in the `default` Namespace to new Namespaces when they are created. It will also push updates to the copied Secrets should the source Secret be changed.      "
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/sync_secrets/sync_secrets.yaml
+    ```
+provider:
+    name: Ashwin901

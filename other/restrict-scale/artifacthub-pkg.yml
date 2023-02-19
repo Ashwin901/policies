@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: restrict-scale
+displayName: Restrict Scale
+createdAt: "2023-02-19T19:27:48Z"
+description: Pod controllers such as Deployments which implement replicas and permit the scale action use a `/scale` subresource to control this behavior. In addition to checks for creations of such controllers that their replica is in a certain shape, the scale operation and subresource needs to be accounted for as well. This policy, operable beginning in Kyverno 1.9, is a collection of rules which can be used to limit the replica count both upon creation of a Deployment and when a scale operation is performed.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-scale
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/restrict-scale/restrict-scale.yaml
+readme: |-
+    # Restrict Scale
+    Pod controllers such as Deployments which implement replicas and permit the scale action use a `/scale` subresource to control this behavior. In addition to checks for creations of such controllers that their replica is in a certain shape, the scale operation and subresource needs to be accounted for as well. This policy, operable beginning in Kyverno 1.9, is a collection of rules which can be used to limit the replica count both upon creation of a Deployment and when a scale operation is performed.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict-scale/restrict-scale.yaml
+    ```
+provider:
+    name: Ashwin901

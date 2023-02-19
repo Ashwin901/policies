@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: create-authorizationpolicy
+displayName: Create Istio Deny AuthorizationPolicy
+createdAt: "2023-02-19T19:27:48Z"
+description: An AuthorizationPolicy enables access controls on workloads in the mesh. It supports per-Namespace controls which can be a union of different behaviors. This policy creates a default deny AuthorizationPolicy for all new Namespaces. Further AuthorizationPolicies should be created to more granularly allow traffic as permitted. Use of this policy will likely require granting the Kyverno ServiceAccount additional privileges required to generate AuthorizationPolicy resources.
+homeURL: https://github.com/Ashwin901/policies/tree/master/istio/create-authorizationpolicy.yaml
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/istio/create-authorizationpolicy.yaml/create-authorizationpolicy.yaml
+readme: |-
+    # Create Istio Deny AuthorizationPolicy
+    An AuthorizationPolicy enables access controls on workloads in the mesh. It supports per-Namespace controls which can be a union of different behaviors. This policy creates a default deny AuthorizationPolicy for all new Namespaces. Further AuthorizationPolicies should be created to more granularly allow traffic as permitted. Use of this policy will likely require granting the Kyverno ServiceAccount additional privileges required to generate AuthorizationPolicy resources.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/istio/create-authorizationpolicy.yaml/create-authorizationpolicy.yaml.yaml
+    ```
+provider:
+    name: Ashwin901

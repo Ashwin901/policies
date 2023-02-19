@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: restart-deployment-on-secret-change
+displayName: Restart Deployment On Secret Change
+createdAt: "2023-02-19T19:27:48Z"
+description: If Secrets are mounted in ways which do not naturally allow updates to be live refreshed it may be necessary to modify a Deployment. This policy watches a Secret and if it changes will write an annotation to one or more target Deployments thus triggering a new rollout and thereby refreshing the referred Secret. It may be necessary to grant additional privileges to the Kyverno ServiceAccount, via one of the existing ClusterRoleBindings or a new one, so it can modify Deployments.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/restart_deployment_on_secret_change
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/restart_deployment_on_secret_change/restart_deployment_on_secret_change.yaml
+readme: |-
+    # Restart Deployment On Secret Change
+    If Secrets are mounted in ways which do not naturally allow updates to be live refreshed it may be necessary to modify a Deployment. This policy watches a Secret and if it changes will write an annotation to one or more target Deployments thus triggering a new rollout and thereby refreshing the referred Secret. It may be necessary to grant additional privileges to the Kyverno ServiceAccount, via one of the existing ClusterRoleBindings or a new one, so it can modify Deployments.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restart_deployment_on_secret_change/restart_deployment_on_secret_change.yaml
+    ```
+provider:
+    name: Ashwin901

@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: restrict-controlplane-scheduling
+displayName: Restrict control plane scheduling
+createdAt: "2023-02-19T19:27:48Z"
+description: Scheduling non-system Pods to control plane nodes (which run kubelet) is often undesirable because it takes away resources from the control plane components and can represent a possible security threat vector. This policy prevents users from setting a toleration in a Pod spec which allows running on control plane nodes with the taint key `node-role.kubernetes.io/master`.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_controlplane_scheduling
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/restrict_controlplane_scheduling/restrict_controlplane_scheduling.yaml
+readme: |-
+    # Restrict control plane scheduling
+    Scheduling non-system Pods to control plane nodes (which run kubelet) is often undesirable because it takes away resources from the control plane components and can represent a possible security threat vector. This policy prevents users from setting a toleration in a Pod spec which allows running on control plane nodes with the taint key `node-role.kubernetes.io/master`.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict_controlplane_scheduling/restrict_controlplane_scheduling.yaml
+    ```
+provider:
+    name: Ashwin901

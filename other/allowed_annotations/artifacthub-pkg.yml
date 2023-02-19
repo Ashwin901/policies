@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: allowed-annotations
+displayName: Allowed Annotations
+createdAt: "2023-02-19T19:27:48Z"
+description: Rather than creating a deny list of annotations, it may be more useful to invert that list and create an allow list which then denies any others. This policy demonstrates how to allow two annotations with a specific key name of fluxcd.io/ while denying others that do not meet the pattern.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/allowed_annotations
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/allowed_annotations/allowed-annotations.yaml
+readme: |-
+    # Allowed Annotations
+    Rather than creating a deny list of annotations, it may be more useful to invert that list and create an allow list which then denies any others. This policy demonstrates how to allow two annotations with a specific key name of fluxcd.io/ while denying others that do not meet the pattern.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/allowed_annotations/allowed_annotations.yaml
+    ```
+provider:
+    name: Ashwin901

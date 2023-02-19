@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: advanced-restrict-image-registries
+displayName: Advanced Restrict Image Registries
+createdAt: "2023-02-19T19:27:48Z"
+description: In instances where a ClusterPolicy defines all the approved image registries is insufficient, more granular control may be needed to set permitted registries, especially in multi-tenant use cases where some registries may be based on the Namespace. This policy shows an advanced version of the Restrict Image Registries policy which gets a global approved registry from a ConfigMap and, based upon an annotation at the Namespace level, gets the registry approved for that Namespace.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/advanced_restrict_image_registries
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/advanced_restrict_image_registries/advanced-restrict-image-registries.yaml
+readme: |-
+    # Advanced Restrict Image Registries
+    In instances where a ClusterPolicy defines all the approved image registries is insufficient, more granular control may be needed to set permitted registries, especially in multi-tenant use cases where some registries may be based on the Namespace. This policy shows an advanced version of the Restrict Image Registries policy which gets a global approved registry from a ConfigMap and, based upon an annotation at the Namespace level, gets the registry approved for that Namespace.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/advanced_restrict_image_registries/advanced_restrict_image_registries.yaml
+    ```
+provider:
+    name: Ashwin901

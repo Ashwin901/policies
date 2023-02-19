@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: expiration-for-policyexceptions
+displayName: Expiration for PolicyExceptions
+createdAt: "2023-02-19T19:27:48Z"
+description: In situations where Ops/Platform teams want to allow exceptions on a temporary basis, there must be a way to remove the PolicyException once the expiration time has been reached. After the exception is removed, the rule(s) for which the exception is granted go back into full effect. This policy generates a ClusterCleanupPolicy with a four hour expiration time after which the PolicyException is deleted. It may be necessary to grant both the Kyverno as well as cleanup controller ServiceAccounts additional permissions to operate this policy.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/expiration-for-policyexceptions
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/expiration-for-policyexceptions/expiration-for-policyexceptions.yaml
+readme: |-
+    # Expiration for PolicyExceptions
+    In situations where Ops/Platform teams want to allow exceptions on a temporary basis, there must be a way to remove the PolicyException once the expiration time has been reached. After the exception is removed, the rule(s) for which the exception is granted go back into full effect. This policy generates a ClusterCleanupPolicy with a four hour expiration time after which the PolicyException is deleted. It may be necessary to grant both the Kyverno as well as cleanup controller ServiceAccounts additional permissions to operate this policy.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/expiration-for-policyexceptions/expiration-for-policyexceptions.yaml
+    ```
+provider:
+    name: Ashwin901

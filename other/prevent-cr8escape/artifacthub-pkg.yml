@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: prevent-cr8escape
+displayName: Prevent cr8escape (CVE-2022-0811)
+createdAt: "2023-02-19T19:27:48Z"
+description: A vulnerability "cr8escape" (CVE-2022-0811) in CRI-O the container runtime engine underpinning Kubernetes allows attackers to escape from a Kubernetes container and gain root access to the host. The recommended remediation is to disallow sysctl settings with + or = in their value.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/prevent-cr8escape
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/prevent-cr8escape/prevent-cr8escape.yaml
+readme: |-
+    # Prevent cr8escape (CVE-2022-0811)
+    A vulnerability "cr8escape" (CVE-2022-0811) in CRI-O the container runtime engine underpinning Kubernetes allows attackers to escape from a Kubernetes container and gain root access to the host. The recommended remediation is to disallow sysctl settings with + or = in their value.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/prevent-cr8escape/prevent-cr8escape.yaml
+    ```
+provider:
+    name: Ashwin901

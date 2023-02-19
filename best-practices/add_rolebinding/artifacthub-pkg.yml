@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-rolebinding
+displayName: Add RoleBinding
+createdAt: "2023-02-19T19:27:48Z"
+description: Typically in multi-tenancy and other use cases, when a new Namespace is created, users and other principals must be given some permissions to create and interact with resources in the Namespace. Very commonly, Roles and RoleBindings are used to grant permissions at the Namespace level. This policy generates a RoleBinding called `<userName>-admin-binding` in the new Namespace which binds to the ClusterRole `admin` as long as a `cluster-admin` did not create the Namespace. Additionally, an annotation named `kyverno.io/user` is added to the RoleBinding recording the name of the user responsible for the Namespace's creation.
+homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/add_rolebinding
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/best-practices/add_rolebinding/add_rolebinding.yaml
+readme: |-
+    # Add RoleBinding
+    Typically in multi-tenancy and other use cases, when a new Namespace is created, users and other principals must be given some permissions to create and interact with resources in the Namespace. Very commonly, Roles and RoleBindings are used to grant permissions at the Namespace level. This policy generates a RoleBinding called `<userName>-admin-binding` in the new Namespace which binds to the ClusterRole `admin` as long as a `cluster-admin` did not create the Namespace. Additionally, an annotation named `kyverno.io/user` is added to the RoleBinding recording the name of the user responsible for the Namespace's creation.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/add_rolebinding/add_rolebinding.yaml
+    ```
+provider:
+    name: Ashwin901

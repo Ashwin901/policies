@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: application-prevent-updates-project
+displayName: Prevent Updates to Project
+createdAt: "2023-02-19T19:27:48Z"
+description: This policy prevents updates to the project field after an Application is created.
+homeURL: https://github.com/Ashwin901/policies/tree/master/argo/application-prevent-updates-project
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/argo/application-prevent-updates-project/application-prevent-updates-project.yaml
+readme: |-
+    # Prevent Updates to Project
+    This policy prevents updates to the project field after an Application is created.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/argo/application-prevent-updates-project/application-prevent-updates-project.yaml
+    ```
+provider:
+    name: Ashwin901

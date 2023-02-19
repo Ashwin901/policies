@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: require-tekton-namespace-pipelinerun
+displayName: Require Namespace for Tekton PipelineRun
+createdAt: "2023-02-19T19:27:48Z"
+description: A Namespace is required for a PipelineRun and may not be set to `default`.
+homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/require-tekton-namespace-pipelinerun
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/tekton/require-tekton-namespace-pipelinerun/require-tekton-namespace-pipelinerun.yaml
+readme: |-
+    # Require Namespace for Tekton PipelineRun
+    A Namespace is required for a PipelineRun and may not be set to `default`.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/tekton/require-tekton-namespace-pipelinerun/require-tekton-namespace-pipelinerun.yaml
+    ```
+provider:
+    name: Ashwin901

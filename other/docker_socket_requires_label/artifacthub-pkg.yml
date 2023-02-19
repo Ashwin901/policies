@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: docker-socket-check
+displayName: Docker Socket Requires Label
+createdAt: "2023-02-19T19:27:48Z"
+description: Accessing a container engine's socket is for highly specialized use cases and should generally be disabled. If access must be granted, it should be done on an explicit basis. This policy requires that, for any Pod mounting the Docker socket, it must have the label `allow-docker` set to `true`.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/docker_socket_requires_label
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/docker_socket_requires_label/docker-socket-requires-label.yaml
+readme: |-
+    # Docker Socket Requires Label
+    Accessing a container engine's socket is for highly specialized use cases and should generally be disabled. If access must be granted, it should be done on an explicit basis. This policy requires that, for any Pod mounting the Docker socket, it must have the label `allow-docker` set to `true`.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/docker_socket_requires_label/docker_socket_requires_label.yaml
+    ```
+provider:
+    name: Ashwin901

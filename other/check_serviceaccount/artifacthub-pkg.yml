@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: check-sa
+displayName: Check ServiceAccount
+createdAt: "2023-02-19T19:27:48Z"
+description: ServiceAccounts with privileges to create Pods may be able to do so and name a ServiceAccount other than the one used to create it. This policy checks the Pod, if created by a ServiceAccount, and ensures the `serviceAccountName` field matches the actual ServiceAccount.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/check_serviceaccount
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/check_serviceaccount/check_serviceaccount.yaml
+readme: |-
+    # Check ServiceAccount
+    ServiceAccounts with privileges to create Pods may be able to do so and name a ServiceAccount other than the one used to create it. This policy checks the Pod, if created by a ServiceAccount, and ensures the `serviceAccountName` field matches the actual ServiceAccount.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/check_serviceaccount/check_serviceaccount.yaml
+    ```
+provider:
+    name: Ashwin901

@@ -1,0 +1,20 @@
+version: '%!s(<nil>)'
+name: add-env-vars-from-cm
+displayName: Add Environment Variables from ConfigMap
+createdAt: "2023-02-19T19:27:48Z"
+description: 'Instead of defining a common set of environment variables multiple times either in manifests or separate policies, Pods can reference entire collections stored in a ConfigMap. This policy mutates all initContainers (if present) and containers in a Pod with environment variables defined in a ConfigMap named `nsenvvars` that must exist in the destination Namespace.     '
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_env_vars_from_cm
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/add_env_vars_from_cm/add-env-vars-from-cm.yaml
+readme: "# Add Environment Variables from ConfigMap\nInstead of defining a common set of environment variables multiple times either in manifests or separate policies, Pods can reference entire collections stored in a ConfigMap. This policy mutates all initContainers (if present) and containers in a Pod with environment variables defined in a ConfigMap named `nsenvvars` that must exist in the destination Namespace.     "
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_env_vars_from_cm/add_env_vars_from_cm.yaml
+    ```
+provider:
+    name: Ashwin901

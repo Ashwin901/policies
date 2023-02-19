@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: restrict-virtual-service-wildcard
+displayName: Restrict Virtual Service Host with Wildcards
+createdAt: "2023-02-19T19:27:48Z"
+description: Virtual Services optionally accept a wildcard as an alternative to precise matching. In some cases, this may be too permissive as it would direct unintended traffic to the given resource. This policy enforces that any Virtual Service host does not contain a wildcard character and allows for more governance when a single mesh deployment  model is used.
+homeURL: https://github.com/Ashwin901/policies/tree/master/istio/restrict-virtual-service-wildcard
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/istio/restrict-virtual-service-wildcard/restrict-virtual-service-wildcard.yaml
+readme: |-
+    # Restrict Virtual Service Host with Wildcards
+    Virtual Services optionally accept a wildcard as an alternative to precise matching. In some cases, this may be too permissive as it would direct unintended traffic to the given resource. This policy enforces that any Virtual Service host does not contain a wildcard character and allows for more governance when a single mesh deployment  model is used.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/istio/restrict-virtual-service-wildcard/restrict-virtual-service-wildcard.yaml
+    ```
+provider:
+    name: Ashwin901

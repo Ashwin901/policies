@@ -1,0 +1,22 @@
+version: '%!s(<nil>)'
+name: add-ndots
+displayName: Add ndots
+createdAt: "2023-02-19T19:27:48Z"
+description: The ndots value controls where DNS lookups are first performed in a cluster and needs to be set to a lower value than the default of 5 in some cases. This policy mutates all Pods to add the ndots option with a value of 1.
+homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_ndots
+keywords:
+    - kyverno
+    - policy
+links:
+    - name: Source
+      url: https://github.com/Ashwin901/policies/blob/master/other/add_ndots/add_ndots.yaml
+readme: |-
+    # Add ndots
+    The ndots value controls where DNS lookups are first performed in a cluster and needs to be set to a lower value than the default of 5 in some cases. This policy mutates all Pods to add the ndots option with a value of 1.
+install: |-
+    ### Usage
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_ndots/add_ndots.yaml
+    ```
+provider:
+    name: Ashwin901

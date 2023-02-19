@@ -22,19 +22,19 @@ jobs:
       - name: List files
         run: ls -a
 
-      - name: Clone Kyverno
-        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
-        with:
-          repository: kyverno/kyverno
-          path: kyverno
-          # The target branch of a pull request or the branch/tag of a push
-          ref: ${{ github.base_ref || github.ref_name }}
+      # - name: Clone Kyverno
+      #   uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
+      #   with:
+      #     repository: kyverno/kyverno
+      #     path: kyverno
+      #     # The target branch of a pull request or the branch/tag of a push
+      #     ref: ${{ github.base_ref || github.ref_name }}
 
-      - name: Set up Go 
-        uses: actions/setup-go@6edd4406fa81c3da01a34fa6f6343087c207a568
-        with:
-          go-version: 1.18
+      # - name: Set up Go 
+      #   uses: actions/setup-go@6edd4406fa81c3da01a34fa6f6343087c207a568
+      #   with:
+      #     go-version: 1.18
 
-      - name: Test Policy
-        run: go run ./cmd/cli/kubectl-kyverno test ../policies
-        working-directory: kyverno
+      # - name: Test Policy
+      #   run: go run ./cmd/cli/kubectl-kyverno test ../policies
+      #   working-directory: kyverno

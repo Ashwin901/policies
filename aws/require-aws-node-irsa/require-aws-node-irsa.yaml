@@ -32,7 +32,6 @@ spec:
           - aws-node
           namespaces:
           - kube-system
-          - kyverno
     validate:
       message: "Update the aws-node daemonset to use IRSA."
       pattern:

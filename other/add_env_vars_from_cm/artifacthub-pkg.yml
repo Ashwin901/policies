@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-env-vars-from-cm
 displayName: Add Environment Variables from ConfigMap
 createdAt: "2023-02-19T19:27:48Z"
 description: 'Instead of defining a common set of environment variables multiple times either in manifests or separate policies, Pods can reference entire collections stored in a ConfigMap. This policy mutates all initContainers (if present) and containers in a Pod with environment variables defined in a ConfigMap named `nsenvvars` that must exist in the destination Namespace.     '
+digest: 887b09ba1547cb0dea21f5eaf8486455be9df95d6c53e5a07bbe3b3b44e2ed85
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_env_vars_from_cm
 keywords:
     - kyverno

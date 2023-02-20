@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: no-localhost-service
 displayName: Disallow Localhost ExternalName Services
 createdAt: "2023-02-19T19:27:48Z"
 description: A Service of type ExternalName which points back to localhost can potentially be used to exploit vulnerabilities in some Ingress controllers. This policy audits Services of type ExternalName if the externalName field refers to localhost.
+digest: 2cb6a0507d63fbed4524c18cfe99fab99ef1fc7040562a4942eda1de2fa48bfc
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/disallow_localhost_services
 keywords:
     - kyverno

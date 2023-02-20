@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: allowed-annotations
 displayName: Allowed Annotations
 createdAt: "2023-02-19T19:27:48Z"
 description: Rather than creating a deny list of annotations, it may be more useful to invert that list and create an allow list which then denies any others. This policy demonstrates how to allow two annotations with a specific key name of fluxcd.io/ while denying others that do not meet the pattern.
+digest: efdad0631bf46bf8b0153c597d0dfdaffb80f97d0bcadd6bb7a921ead0fa9523
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/allowed_annotations
 keywords:
     - kyverno

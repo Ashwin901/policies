@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: label-existing-namespaces
 displayName: Label Existing Namespaces
 createdAt: "2023-02-19T19:27:48Z"
 description: Namespaces which preexist may need to be labeled after the fact and it is time consuming to identify which ones should be labeled and either doing so manually or with a scripted approach. This policy, which triggers on any AdmissionReview request to any Namespace, will result in applying the label `mykey=myvalue` to all existing Namespaces. If this policy is updated to change the desired label key or value, it will cause another mutation which updates all Namespaces.
+digest: 82e3ce29008cd767c6759fa1675f4ee9b19275023173dfb0ba7431e553f94b8d
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/label_existing_namespaces
 keywords:
     - kyverno

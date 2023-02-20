@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: limit-hostpath-type-pv
 displayName: Limit hostPath PersistentVolumes to Specific Directories
 createdAt: "2023-02-19T19:27:48Z"
 description: hostPath persistentvolumes consume the underlying node's file system. If hostPath volumes are not to be universally disabled, they should be restricted to only certain host paths so as not to allow access to sensitive information. This policy ensures the only directory that can be mounted as a hostPath volume is /data.
+digest: 4f1234f8bb1a6ed63b118f13ff3baa8962e37f7787b4cb774b6b22105b23cc74
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/limit-hostpath-type-pv
 keywords:
     - kyverno

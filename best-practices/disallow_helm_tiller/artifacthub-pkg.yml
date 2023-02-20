@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: disallow-helm-tiller
 displayName: Disallow Helm Tiller
 createdAt: "2023-02-19T19:27:48Z"
 description: Tiller, found in Helm v2, has known security challenges. It requires administrative privileges and acts as a shared resource accessible to any authenticated user. Tiller can lead to privilege escalation as restricted users can impact other users. It is recommend to use Helm v3+ which does not contain Tiller for these reasons. This policy validates that there is not an image containing the name `tiller`.
+digest: fcbc022adcf92146376ba44d8b8ce6fee4912c546f0c8eb98b128c70d35011e0
 homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/disallow_helm_tiller
 keywords:
     - kyverno

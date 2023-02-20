@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-nodeselector
 displayName: Add nodeSelector
 createdAt: "2023-02-19T19:27:48Z"
 description: The nodeSelector field uses labels to select the node on which a Pod can be scheduled. This can be useful when Pods have specific needs that only certain nodes in a cluster can provide. This policy adds the nodeSelector field to a Pod spec and configures it with labels `foo` and `color`.
+digest: a4fe2b225708076a922e3aa7aadf46c260ac8301da9b96e620f464e82b09008d
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_nodeSelector
 keywords:
     - kyverno

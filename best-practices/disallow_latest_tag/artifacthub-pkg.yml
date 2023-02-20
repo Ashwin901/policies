@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: disallow-latest-tag
 displayName: Disallow Latest Tag
 createdAt: "2023-02-19T19:27:48Z"
 description: The ':latest' tag is mutable and can lead to unexpected errors if the image changes. A best practice is to use an immutable tag that maps to a specific version of an application Pod. This policy validates that the image specifies a tag and that it is not called `latest`.
+digest: 18f1cfe9f2530d0bdd9d15087d4200651fce39b78c985e8f7099944501e112ac
 homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/disallow_latest_tag
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: enforce-tls-hosts-host-subnets
 displayName: Enforce Istio TLS on Hosts and Host Subnets
 createdAt: "2023-02-19T19:27:48Z"
 description: Once a routing decision has been made, a DestinationRule can be used to define how traffic should be sent to another service. The trafficPolicy object can control how TLS is handled to the destination host. This policy enforces that the TLS mode cannot be set to a value of `DISABLE`.
+digest: d77d8817d70c53f493920210941b06573cb71e3b24e6a920154e4b40c77a9ba9
 homeURL: https://github.com/Ashwin901/policies/tree/master/istio/enforce-tls-hosts-host-subnets
 keywords:
     - kyverno

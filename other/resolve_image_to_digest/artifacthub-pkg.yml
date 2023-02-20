@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: resolve-image-to-digest
 displayName: Resolve Image to Digest
 createdAt: "2023-02-19T19:27:48Z"
 description: Image tags are mutable and the change of an image can result in the same tag. This policy resolves the image digest of each image in a container and replaces the image with the fully resolved reference which includes the digest rather than tag.
+digest: c3132ddc214c3f9adee7bf9e2d659071c8ba683b54b558413938825b56b4b71b
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/resolve_image_to_digest
 keywords:
     - kyverno

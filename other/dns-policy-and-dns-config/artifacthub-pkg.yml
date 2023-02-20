@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: change-dns-config-policy
 displayName: Change DNS Config and Policy
 createdAt: "2023-02-19T19:27:48Z"
 description: The Default DNS policy in Kubernetes gives the flexibility of service  access; however, it costs some latency on a high scale, and it needs to  be optimized. This policy helps us to optimize the performance of DNS  queries by setting DNS Options, nodelocalDNS IP, and search Domains. This policy can be applied for the clusters provisioned by kubeadm.
+digest: 5de021d5d859ac1805d070f701373458b0bc2beb5846c24c9a56339b187ca435
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/dns-policy-and-dns-config
 keywords:
     - kyverno

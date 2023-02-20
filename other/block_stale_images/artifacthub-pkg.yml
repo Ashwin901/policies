@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: block-stale-images
 displayName: Block Stale Images
 createdAt: "2023-02-19T19:27:48Z"
 description: Images that are old usually have some open security vulnerabilities which are not patched. This policy checks the contents of every container image and inspects them for the create time. If it finds any image which was built more than 6 months ago this policy blocks the deployment.
+digest: 74964fb19fcaff292d10c4caff4bd6494d32ba67478f4fa5f713b5b9c2c74eb2
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/block_stale_images
 keywords:
     - kyverno

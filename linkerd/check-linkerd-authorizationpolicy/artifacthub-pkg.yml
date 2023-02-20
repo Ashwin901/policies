@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: check-linkerd-authorizationpolicy
 displayName: Check Linkerd AuthorizationPolicy
 createdAt: "2023-02-19T19:27:48Z"
 description: As of Linkerd 2.12, an AuthorizationPolicy is a resource used to selectively allow traffic to either a Server or HTTPRoute resource. Creating AuthorizationPolicies is needed when a Server exists in order to control what traffic is permitted within the mesh to the Pods selected by the Server or HTTPRoute. This policy, requiring Linkerd 2.12+, checks incoming AuthorizationPolicy resources to ensure that either a matching Server or HTTPRoute exists first.
+digest: 00301cfff748cacec3b980f910da84850ae023b8f474e85abdcf35cfeddf8b83
 homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/check-linkerd-authorizationpolicy
 keywords:
     - kyverno

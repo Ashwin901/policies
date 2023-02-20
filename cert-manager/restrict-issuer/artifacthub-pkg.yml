@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: cert-manager-restrict-issuer
 displayName: Restrict issuer
 createdAt: "2023-02-19T19:27:48Z"
 description: Certificates for trusted domains should always be steered to a controlled issuer to ensure the chain of trust is appropriate for that application. Users may otherwise be able to create their own issuers and sign certificates for other domains. This policy ensures that a certificate request for a specific domain uses a designated ClusterIssuer.
+digest: 797f50ea019c921ac416c1e0b6446e3f174addb94856a53e5ddf1818f6d4e6e8
 homeURL: https://github.com/Ashwin901/policies/tree/master/cert-manager/restrict-issuer
 keywords:
     - kyverno

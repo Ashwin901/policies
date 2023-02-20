@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: apply-pss-restricted-profile
 displayName: Apply PSS Restricted Profile
 createdAt: "2023-02-19T19:27:48Z"
 description: Pod Security Standards define the fields and their options which are allowable for Pods to achieve certain security best practices. While these are typically validation policies, workloads will either be accepted or rejected based upon what has already been defined. It is also possible to mutate incoming Pods to achieve the desired PSS level rather than reject. This policy sets all the fields necessary to pass the PSS Restricted profile.
+digest: 4ef3c59c6fdf8c81b1c3c2ac964630790984d3c5f8cfdfffee439653354b0a3f
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/apply-pss-restricted-profile
 keywords:
     - kyverno

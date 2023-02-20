@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: application-prevent-updates-project
 displayName: Prevent Updates to Project
 createdAt: "2023-02-19T19:27:48Z"
 description: This policy prevents updates to the project field after an Application is created.
+digest: ff2ec5e89451034cfd7dfe1defcfd4acbc4c7666f9919e5df7e27f99cfdfdac5
 homeURL: https://github.com/Ashwin901/policies/tree/master/argo/application-prevent-updates-project
 keywords:
     - kyverno

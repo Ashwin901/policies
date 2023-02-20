@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: disallow-empty-ingress-host
 displayName: Disallow empty Ingress host
 createdAt: "2023-02-19T19:27:48Z"
 description: An ingress resource needs to define an actual host name in order to be valid. This policy ensures that there is a hostname for each rule defined.
+digest: d7d9d2a0b77ffa647968689d18687e77b3ba4e291e281743e0bd8c2bc1411017
 homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/disallow-empty-ingress-host
 keywords:
     - kyverno

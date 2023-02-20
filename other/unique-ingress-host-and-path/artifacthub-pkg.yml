@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: unique-ingress-host-and-path
 displayName: Unique Ingress Host and Path
 createdAt: "2023-02-19T19:27:48Z"
 description: Similar to the ability to check the uniqueness of hosts and paths independently, it is possible to check for uniqueness of them both together across a cluster. This policy ensures that no Ingress can be created or updated unless it is globally unique with respect to host plus path combination.
+digest: a042f747bf8e8c374824406c2fc9c57b40c79cf4c31f04c77a273d6b79529fde
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/unique-ingress-host-and-path
 keywords:
     - kyverno

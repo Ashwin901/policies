@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: verify-tekton-taskrun-vuln-scan
 displayName: Check Tekton TaskRun Vulnerability Scan
 createdAt: "2023-02-19T19:27:48Z"
 description: A signed bundle is required and a vulnerability scan made by Grype must return no vulnerabilities greater than 8.0.
+digest: 524542f8ee96b0bedebc352d219db9b55c36842601ea806452c46a8f14fa42cf
 homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/verify-tekton-taskrun-vuln-scan
 keywords:
     - kyverno

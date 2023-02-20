@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: block-updates-deletes
 displayName: Block Updates and Deletes
 createdAt: "2023-02-19T19:27:48Z"
 description: Kubernetes RBAC allows for controls on kinds of resources or those with specific names. But it does not have the type of granularity often required in more complex environments. This policy restricts updates and deletes to any Service resource that contains the label `protected=true` unless by a cluster-admin.
+digest: 4b8823dae4f2b4907a089c68192149a68079cabb521d6613ac73bd8e8fc49216
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/block_updates_deletes
 keywords:
     - kyverno

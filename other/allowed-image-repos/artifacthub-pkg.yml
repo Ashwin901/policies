@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: allowed-image-repos
 displayName: Allowed Image Repositories
 createdAt: "2023-02-19T19:27:48Z"
 description: In addition to restricting the image registry from which images are pulled, in some cases and environments it may be required to also restrict which image repositories are used,  for example in some restricted Namespaces. This policy ensures that the only allowed image repositories present in a given Pod, across any container type, come from the designated list.
+digest: 1513b7943660a06512d95a8c0d0b30b982985e9e15a6398cf51c9b4b7b72a03c
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/allowed-image-repos
 keywords:
     - kyverno

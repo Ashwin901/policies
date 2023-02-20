@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: inject-sidecar
 displayName: Inject Sidecar Container
 createdAt: "2023-02-19T19:27:48Z"
 description: 'The sidecar pattern is very common in Kubernetes whereby other applications can insert components via tacit modification of a submitted resource. This is, for example, often how service meshes and secrets applications are able to function transparently. This policy injects a sidecar container, initContainer, and volume into Pods that match an annotation called `vault.hashicorp.com/agent-inject: true`.'
+digest: c24a41a8f33872adb57d3c3e096864bc2d3ed9ebd4123fd3712a9b20f545d834
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/inject_sidecar_deployment
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: memory-requests-equal-limits
 displayName: Memory Requests Equal Limits
 createdAt: "2023-02-19T19:27:48Z"
 description: Pods which have memory limits equal to requests are given a QoS class of Guaranteed which is the highest schedulable class. This policy checks that all containers in a given Pod have memory requests equal to limits.
+digest: a4bd2da7689514071a4295695996e6e9e4074a6a27e10d28f4c075c5791c8db0
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/memory-requests-equal-limits
 keywords:
     - kyverno

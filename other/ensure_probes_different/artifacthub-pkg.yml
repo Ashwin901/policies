@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: validate-probes
 displayName: Validate Probes
 createdAt: "2023-02-19T19:27:48Z"
 description: Liveness and readiness probes accomplish different goals, and setting both to the same is an anti-pattern and often results in app problems in the future. This policy checks that liveness and readiness probes are not equal.
+digest: f4a858873491401f7242ba879a0719d5daccb77364e90e9159d5af0b02eeaee5
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/ensure_probes_different
 keywords:
     - kyverno

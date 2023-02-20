@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: always-pull-images
 displayName: Always Pull Images
 createdAt: "2023-02-19T19:27:48Z"
 description: By default, images that have already been pulled can be accessed by other Pods without re-pulling them if the name and tag are known. In multi-tenant scenarios, this may be undesirable. This policy mutates all incoming Pods to set their imagePullPolicy to Always. An alternative to the Kubernetes admission controller AlwaysPullImages.
+digest: fb22c943c4156c917cb6e70df303999af5a2a6321efe73490b0505bed6e1a77c
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/always-pull-images
 keywords:
     - kyverno

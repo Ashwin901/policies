@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: application-prevent-default-project
 displayName: Prevent Use of Default Project
 createdAt: "2023-02-19T19:27:48Z"
 description: This policy prevents the use of the default project in an Application.
+digest: 15f899a4cb443ee0a5d76ef072c4710dba5dfb38ce0b8afbf3a28c00dd394a13
 homeURL: https://github.com/Ashwin901/policies/tree/master/argo/application-prevent-default-project
 keywords:
     - kyverno

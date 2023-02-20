@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-container-port-names
 displayName: Require Container Port Names
 createdAt: "2023-02-19T19:27:48Z"
 description: 'Containers may define ports on which they listen. In addition to a port number, a name field may optionally be used. Including a name makes it easier when defining Service resource definitions and others since the name may be referenced allowing the port number to change. This policy requires that for every containerPort defined there is also a name specified.      '
+digest: c6666dfd99eebba6044e6bf363486dfbd1820181b70d64c32832d7a8a45770cf
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/require-container-port-names
 keywords:
     - kyverno

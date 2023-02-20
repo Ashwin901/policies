@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-emptydir-requests-and-limits
 displayName: Require Requests and Limits for emptyDir
 createdAt: "2023-02-19T19:27:48Z"
 description: Pods which mount emptyDir volumes may be allowed to potentially overrun the medium backing the emptyDir volume. This sample ensures that any initContainers or containers mounting an emptyDir volume have ephemeral-storage requests and limits set. Policy will be skipped if the volume has already a sizeLimit set.
+digest: d1b8b382c8240d3577152d91babc2228f419dd95fdedda465b86dcc469474036
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_emptydir_requests_limits
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-escalation-verbs-roles
 displayName: Restrict Escalation Verbs in Roles
 createdAt: "2023-02-19T19:27:48Z"
 description: The verbs `impersonate`, `bind`, and `escalate` may all potentially lead to privilege escalation and should be tightly controlled. This policy prevents use of these verbs in Role or ClusterRole resources.
+digest: 7ea39ef43c0f0219fcb4ee20f29ed421a22805ca8d7fa1f99042f9efd46268ea
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-escalation-verbs-roles
 keywords:
     - kyverno

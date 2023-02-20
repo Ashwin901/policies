@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: allowed-label-changes
 displayName: Allowed Label Changes
 createdAt: "2023-02-19T19:27:48Z"
 description: In some cases, operations teams need a type of limited access to change resources during troubleshooting or outage mitigation. This policy demonstrates how to prevent modification to labels except one with the key `breakglass`. Changing, adding, or deleting any other labels is denied.
+digest: 8a896b83dc7fe30cc6bf598bf8d9e18d9b05d60824aa65058beb6e9dada0fd16
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/allowed_label_changes
 keywords:
     - kyverno

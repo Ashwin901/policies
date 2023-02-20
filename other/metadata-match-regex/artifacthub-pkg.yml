@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: metadata-match-regex
 displayName: Metadata Matches Regex
 createdAt: "2023-02-19T19:27:48Z"
 description: Rather than a simple check to see if given metadata such as labels and annotations are present, in some cases they need to be present and the values match a specified regular expression. This policy illustrates how to ensure a label with key `corp.org/version` is both present and matches a given regex, in this case ensuring semver is met.
+digest: 09cd40b97a9ebd784cebfc03f62ae96b4e25a8388bed348356ec28f074e5f3b6
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/metadata-match-regex
 keywords:
     - kyverno

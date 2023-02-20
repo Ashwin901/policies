@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: disallow-default-namespace
 displayName: Disallow Default Namespace
 createdAt: "2023-02-19T19:27:48Z"
 description: Kubernetes Namespaces are an optional feature that provide a way to segment and isolate cluster resources across multiple applications and users. As a best practice, workloads should be isolated with Namespaces. Namespaces should be required and the default (empty) Namespace should not be used. This policy validates that Pods specify a Namespace name other than `default`. Rule auto-generation is disabled here due to Pod controllers need to specify the `namespace` field under the top-level `metadata` object and not at the Pod template level.
+digest: 629bbea5aca3fe01fab206054f279a821653a10362fe0ba1a54794890a63c703
 homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/disallow_default_namespace
 keywords:
     - kyverno

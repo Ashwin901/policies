@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: log4shell-mitigation
 displayName: Log4Shell Mitigation
 createdAt: "2023-02-19T19:27:48Z"
 description: In response to CVE-2021-44228 referred to as Log4Shell, a RCE vulnerability in the Log4j library, a partial yet incomplete workaround for versions 2.10 to 2.14.1 of the library is to set the environment variable LOG4J_FORMAT_MSG_NO_LOOKUPS to "true". While this does provide some benefit by limiting exposure, there are still code paths which can exploit this vulnerability. It is highly recommended to upgrade log4j as soon as possible. See https://logging.apache.org/log4j/2.x/security.html for more details. This policy will mutate all initContainers and containers in an incoming Pod to add this environment variable automatically.
+digest: 26ac74de0b7c946f743487f45440375d2f069dea55ae6bfa89820cb1b095e2bc
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/mitigate_log4shell
 keywords:
     - kyverno

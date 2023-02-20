@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: kubernetes-version-check
 displayName: Kubernetes Version Check
 createdAt: "2023-02-19T19:27:48Z"
 description: It is often needed to make decisions for resources based upon the version of the Kubernetes API server in the cluster. This policy serves as an example for how to retrieve the minor version of the Kubernetes API server and subsequently use in a policy behavior. It will mutate a Secret upon its creation with a label called `apiminorversion` the value of which is the minor version of the API server.
+digest: 348725063e79c6054eef80aa9d2fa58c1dc93c820081b2eee0811534a99c1dfc
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/kubernetes_version_check
 keywords:
     - kyverno

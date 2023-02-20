@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: spread-pods
 displayName: Spread Pods Across Nodes
 createdAt: "2023-02-19T19:27:48Z"
 description: Deployments to a Kubernetes cluster with multiple availability zones often need to distribute those replicas to align with those zones to ensure site-level failures do not impact availability. This policy matches Deployments with the label `distributed=required` and mutates them to spread Pods across zones.
+digest: ab30b2b5714861288a80aec6f4228ef8f318650cb2cbb82b763b8dcad3aef3c9
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/spread_pods_across_topology
 keywords:
     - kyverno

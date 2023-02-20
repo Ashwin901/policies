@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-secrets-by-label
 displayName: Restrict Secrets by Label
 createdAt: "2023-02-19T19:27:48Z"
 description: Secrets often contain sensitive information and their access should be carefully controlled. Although Kubernetes RBAC can be effective at restricting them in several ways, it lacks the ability to use labels on referenced entities. This policy ensures that only Secrets not labeled with `status=protected` can be consumed by Pods.
+digest: 131eff5672cd989d84fa55f3b6a611e50908289c55f2750d61472a67f7b02298
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_secrets_by_label
 keywords:
     - kyverno

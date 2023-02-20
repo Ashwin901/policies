@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-edit-for-endpoints
 displayName: Restrict Edit for Endpoints CVE-2021-25740
 createdAt: "2023-02-19T19:27:48Z"
 description: Clusters not initially installed with Kubernetes 1.22 may be vulnerable to an issue defined in CVE-2021-25740 which could enable users to send network traffic to locations they would otherwise not have access to via a confused deputy attack. This was due to the system:aggregate-to-edit ClusterRole having edit permission of Endpoints. This policy, intended to run in background mode, checks if your cluster is vulnerable to CVE-2021-25740 by ensuring the system:aggregate-to-edit ClusterRole does not have the edit permission of Endpoints.
+digest: 9d8c7916ee0f436daebc8a0682a049c87f258fd5982bc3b918d0e9ec40fce11d
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-edit-for-endpoints
 keywords:
     - kyverno

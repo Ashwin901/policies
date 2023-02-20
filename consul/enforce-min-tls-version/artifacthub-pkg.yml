@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: enforce-min-tls-version
 displayName: Enforce Consul min TLS version
 createdAt: "2023-02-19T19:27:48Z"
 description: This policy will check the TLS Min version to ensure that whenever the mesh is set, there is a minimum version of TLS set for all the service mesh proxies and this enforces that service mesh mTLS traffic uses TLS v1.2 or newer.
+digest: dc8d58d80e6c0eb282746c548093c07dbe3e31283fe947cf3104d618ef84ab5f
 homeURL: https://github.com/Ashwin901/policies/tree/master/consul/enforce-min-tls-version
 keywords:
     - kyverno

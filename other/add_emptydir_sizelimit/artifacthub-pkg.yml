@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-emptydir-sizelimit
 displayName: Add emptyDir sizeLimit
 createdAt: "2023-02-19T19:27:48Z"
 description: When a Pod requests an emptyDir, by default it does not have a size limit which may allow it to consume excess or all of the space in the medium backing the volume. This can quickly overrun a Node and may result in a denial of service for other workloads. This policy adds a sizeLimit field to all Pods mounting emptyDir volumes, if not present, and sets it to 100Mi.
+digest: 0a2b387a68fe87357d120677f7db658299d7a566b9d491e794013326ccb6aafd
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_emptydir_sizelimit
 keywords:
     - kyverno

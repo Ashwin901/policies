@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: validate-userid-groupid-fsgroup
 displayName: Validate User ID, Group ID, and FS Group
 createdAt: "2023-02-19T19:27:48Z"
 description: All processes inside a Pod can be made to run with specific user and groupID by setting `runAsUser` and `runAsGroup` respectively. `fsGroup` can be specified to make sure any file created in the volume will have the specified groupID. This policy validates that these fields are set to the defined values.
+digest: b70932e2b88d571493144eb4fdddbb944c05fd3c0791fa2cfba3adc32236d50b
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_usergroup_fsgroup_id
 keywords:
     - kyverno

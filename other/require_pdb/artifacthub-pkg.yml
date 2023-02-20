@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-pdb
 displayName: Require PodDisruptionBudget
 createdAt: "2023-02-19T19:27:48Z"
 description: 'PodDisruptionBudget resources are useful to ensuring minimum availability is maintained at all times. This policy checks all incoming Deployments and StatefulSets to ensure they have a matching, preexisting PodDisruptionBudget. Note: This policy must be run in `enforce` mode to ensure accuracy.'
+digest: 18de392abe372c5a075b22c1fdbdbf1395a295a9bdce33a47bbf250d4025de6f
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_pdb
 keywords:
     - kyverno

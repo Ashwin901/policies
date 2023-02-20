@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-tekton-bundle
 displayName: Require Tekton Bundle
 createdAt: "2023-02-19T19:27:48Z"
 description: PipelineRun and TaskRun resources must be executed from a bundle
+digest: 7a292b280684a67f8fcc3d1a65876e955dcc639e94cedfa5127f496825b49b3f
 homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/require-tekton-bundle
 keywords:
     - kyverno

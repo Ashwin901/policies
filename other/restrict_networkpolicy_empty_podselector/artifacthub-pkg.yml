@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-networkpolicy-empty-podselector
 displayName: Restrict NetworkPolicy with Empty podSelector
 createdAt: "2023-02-19T19:27:48Z"
 description: By default, all pods in a Kubernetes cluster are allowed to communicate with each other, and all network traffic is unencrypted. It is recommended to not use an empty podSelector in order to more closely control the necessary traffic flows. This policy requires that all NetworkPolicies other than that of `default-deny` not use an empty podSelector.
+digest: 5709233aa8d53f1ed6a22db0bbddc2e5d755e97c02dafbb578efad8d317afc3a
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_networkpolicy_empty_podselector
 keywords:
     - kyverno

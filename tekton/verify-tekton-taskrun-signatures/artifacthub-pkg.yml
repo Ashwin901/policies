@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: signed-tekton-task-bundle
 displayName: Require Signed Tekton Task
 createdAt: "2023-02-19T19:27:48Z"
 description: A signed bundle is required.
+digest: 23d14deb4975b2a169ff6e22cf0071a2bce09643904a29255aabab95d4e2d674
 homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/verify-tekton-taskrun-signatures
 keywords:
     - kyverno

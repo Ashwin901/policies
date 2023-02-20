@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: prevent-linkerd-pod-injection-override
 displayName: Prevent Linkerd Pod Injection Override
 createdAt: "2023-02-19T19:27:48Z"
 description: Setting the annotation on a Pod (or its controller) `linkerd.io/inject` to `disabled` may effectively disable mesh participation for that workload reducing security and visibility. This policy prevents setting the annotation `linkerd.io/inject` to `disabled` for Pods.
+digest: 0566473e1b836f1c89938c71a219511ef8fbae09e2d404987fe7e201a83f3029
 homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/prevent-linkerd-pod-injection-override
 keywords:
     - kyverno

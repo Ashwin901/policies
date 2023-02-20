@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-linkerd-mesh-injection
 displayName: Add Linkerd Mesh Injection
 createdAt: "2023-02-19T19:27:48Z"
 description: Sidecar proxy injection in Linkerd may be handled at the Namespace level by setting the annotation `linkerd.io/inject` to `enabled`. In addition, a second annotation may be applied which controls the Pod startup behavior. This policy sets the annotations, if not present, `linkerd.io/inject` and `config.linkerd.io/proxy-await` to `enabled` on all new Namespaces.
+digest: c93bddfa2a0d12fb974d14c0ca3facac09573fb530c6b6c69fd7dc8af40c040e
 homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/add-linkerd-mesh-injection
 keywords:
     - kyverno

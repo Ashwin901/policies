@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-wildcard-verbs
 displayName: Restrict Wildcard in Verbs
 createdAt: "2023-02-19T19:27:48Z"
 description: Wildcards ('*') in verbs grants all access to the resources referenced by it and does not follow the principal of least privilege. As much as possible, avoid such open verbs unless scoped to perhaps a custom API group. This policy blocks any Role or ClusterRole that contains a wildcard entry in the verbs list found in any rule.
+digest: 06612ffcab49a4952fc5e36ecf4e405eeb8e6193a88efda3537d11b19c0e47d4
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-wildcard-verbs
 keywords:
     - kyverno

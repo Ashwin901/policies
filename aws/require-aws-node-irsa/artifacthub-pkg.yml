@@ -1,8 +1,8 @@
-version: '%!s(<nil>)'
 name: require-aws-node-irsa
 displayName: Require aws-node DaemonSet use IRSA
 createdAt: "2023-02-19T19:27:48Z"
 description: According to EKS best practices, the `aws-node` DaemonSet is configured to use a role assigned to the EC2 instances to assign IPs to Pods. This role includes several AWS managed policies that effectively allow all Pods running on a Node to attach/detach ENIs, assign/unassign IP addresses, or pull images from ECR. Since this presents a risk to your cluster, it is recommended that you update the `aws-node` DaemonSet to use IRSA. This policy ensures that the `aws-node` DaemonSet running in the `kube-system` Namespace is not still using the `aws-node` ServiceAccount.
+digest: 803e498af8fe19088bb1fb0961fdd5b258206db29b763f9bab17ef054b616deb
 homeURL: https://github.com/Ashwin901/policies/tree/master/aws/require-aws-node-irsa
 keywords:
     - kyverno

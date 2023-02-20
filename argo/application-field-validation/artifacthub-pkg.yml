@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: application-field-validation
 displayName: Application Field Validation
 createdAt: "2023-02-19T19:27:48Z"
 description: This policy performs some best practices validation on Application fields. Path or chart must be specified but never both. And destination.name or destination.server must be specified but never both.
+digest: 3102f8c1617fe7b44606627485ef6fefcbb2c89b438e3ad98b297ded57bfe519
 homeURL: https://github.com/Ashwin901/policies/tree/master/argo/application-field-validation
 keywords:
     - kyverno

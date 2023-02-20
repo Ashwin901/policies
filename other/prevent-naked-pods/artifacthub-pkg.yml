@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: prevent-naked-pods
 displayName: Prevent Naked Pods
 createdAt: "2023-02-19T19:27:48Z"
 description: Pods not created by workload controllers such as Deployments have no self-healing or scaling abilities and are unsuitable for production. This policy prevents such "naked" Pods from being created unless they originate from a higher-level workload controller of some sort.
+digest: 0e718ad4cb9e927090e0336b0f7219d1cfacaa41e7007abbe51c8b32f6dd3dc5
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/prevent-naked-pods
 keywords:
     - kyverno

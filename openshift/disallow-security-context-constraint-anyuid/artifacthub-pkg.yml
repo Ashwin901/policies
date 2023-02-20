@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: disallow-security-context-constraint-anyuid
 displayName: Disallow use of the SecurityContextConstraint (SCC) anyuid
 createdAt: "2023-02-19T19:27:48Z"
 description: Disallow the use of the SecurityContextConstraint (SCC) anyuid which allows a pod to run with the UID as declared in the image instead of a random UID
+digest: aa4d815d9161c764bc2c4a9960df983afe9c436a88d7b4257be5b9e0c8b72a27
 homeURL: https://github.com/Ashwin901/policies/tree/master/openshift/disallow-security-context-constraint-anyuid
 keywords:
     - kyverno

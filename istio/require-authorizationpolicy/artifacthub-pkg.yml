@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-authorizationpolicies
 displayName: Require Istio AuthorizationPolicies
 createdAt: "2023-02-19T19:27:48Z"
 description: An AuthorizationPolicy is used to provide access controls for traffic in the mesh and can be defined at multiple levels. For the Namespace level, all Namespaces should have at least one AuthorizationPolicy. This policy, designed to run in background mode for reporting purposes, ensures every Namespace has at least one AuthorizationPolicy.
+digest: 73bf29e403da1a40222e8bd8790e01302ef80109cc5fe0fc234cd29dd75d5fbc
 homeURL: https://github.com/Ashwin901/policies/tree/master/istio/require-authorizationpolicy
 keywords:
     - kyverno

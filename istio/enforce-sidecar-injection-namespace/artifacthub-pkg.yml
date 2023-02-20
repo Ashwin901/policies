@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: enforce-sidecar-injection-namespace
 displayName: Enforce Istio Sidecar Injection
 createdAt: "2023-02-19T19:27:48Z"
 description: In order for Istio to inject sidecars to workloads deployed into Namespaces, the label `istio-injection` must be set to `enabled`. This policy ensures that all new Namespaces set `istio-inject` to `enabled`.
+digest: e34e66bf6ef698a24793878198e927e2bdcd1c890c6f3e515667694c0325a10d
 homeURL: https://github.com/Ashwin901/policies/tree/master/istio/enforce-sidecar-injection-namespace
 keywords:
     - kyverno

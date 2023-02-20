@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: generate-flux-multi-tenant-resources
 displayName: Generate Flux Multi-Tenant Resources
 createdAt: "2023-02-19T19:27:48Z"
 description: As part of the tenant provisioning process, Flux needs to generate RBAC resources. This policy will create a ServiceAccount and RoleBinding when a new or existing Namespace is labeled with `toolkit.fluxcd.io/tenant`. Use of this rule may require an additional binding for the Kyverno ServiceAccount so it has permissions to properly create the RoleBinding.
+digest: f9558179a604a686fee159e4def1b1b66851b6258f9165867d0d6f55e235070a
 homeURL: https://github.com/Ashwin901/policies/tree/master/flux/generate-flux-multi-tenant-resources
 keywords:
     - kyverno

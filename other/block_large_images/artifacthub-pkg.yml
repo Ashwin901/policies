@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: block-large-images
 displayName: Block Large Images
 createdAt: "2023-02-19T19:27:48Z"
 description: Pods which run containers of very large image size take longer to pull and require more space to store. A user may either inadvertently or purposefully name an image which is unusually large to disrupt operations. This policy checks the size of every container image and blocks if it is over 2 Gibibytes.
+digest: 032beeba56dd2cfb93c2cbcb2a323a9b8fab6195098fff4e50c069771752bcf6
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/block_large_images
 keywords:
     - kyverno

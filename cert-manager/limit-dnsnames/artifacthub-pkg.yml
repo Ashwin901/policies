@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: cert-manager-limit-dnsnames
 displayName: Limit dnsNames
 createdAt: "2023-02-19T19:27:48Z"
 description: Some applications will not accept certificates containing more than a single name. This policy ensures that each certificate request contains only one DNS name entry.
+digest: dcf01ab974dccb1da6c1fef5ec71a58fd6dcd9cddc84f5f725f8d4475f81145f
 homeURL: https://github.com/Ashwin901/policies/tree/master/cert-manager/limit-dnsnames
 keywords:
     - kyverno

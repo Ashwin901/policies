@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: block-tekton-task-runs
 displayName: Block Tekton TaskRun
 createdAt: "2023-02-19T19:27:48Z"
 description: Restrict creation of TaskRun resources to the Tekton pipelines controller.
+digest: 0610b314982361f72afd7586466a6738c3eafcba26f7a8804a1cef1ffd0fdf13
 homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/block-tekton-task-runs
 keywords:
     - kyverno

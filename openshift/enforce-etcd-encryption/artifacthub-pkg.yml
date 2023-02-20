@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: enforce-etcd-encryption
 displayName: Enforce etcd encryption in OpenShift
 createdAt: "2023-02-19T19:27:48Z"
 description: Encrption at rest is a security best practice. This policy ensures encryption is enabled for etcd in OpenShift clusters.
+digest: b1a3f049ac29a2b848000784fa4e873f168a7aebfb2c2f1d97041b2193d24190
 homeURL: https://github.com/Ashwin901/policies/tree/master/openshift/enforce-etcd-encryption
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-ingress-https
 displayName: Require Ingress HTTPS
 createdAt: "2023-02-19T19:27:48Z"
 description: Ingress resources should only allow secure traffic by disabling HTTP and therefore only allowing HTTPS. This policy requires that all Ingress resources set the annotation `kubernetes.io/ingress.allow-http` to `"false"` and specify TLS in the spec.
+digest: e7e1875bf1fbfe2c5c6ac00f67f7808ade20c0a103437fc1bbdde88cd650c806
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/require-ingress-https
 keywords:
     - kyverno

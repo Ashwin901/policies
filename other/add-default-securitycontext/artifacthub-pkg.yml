@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-default-securitycontext
 displayName: Add Default securityContext
 createdAt: "2023-02-19T19:27:48Z"
 description: A Pod securityContext entry defines fields such as the user and group which should be used to run the Pod. Sometimes choosing default values for users rather than blocking is a better alternative to not impede such Pod definitions. This policy will mutate a Pod to set `runAsNonRoot`, runAsUser`, `runAsGroup`, and `fsGroup` fields within the Pod securityContext if they are not already set.
+digest: 9c60838d50c20a2e1c988160299bc6f4d56620fa8aade2d13b5fa4516af4cd2f
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/add-default-securitycontext
 keywords:
     - kyverno

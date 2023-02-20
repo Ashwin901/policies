@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-service-account
 displayName: Restrict Service Account
 createdAt: "2023-02-19T19:27:48Z"
 description: 'Users may be able to specify any ServiceAccount which exists in their Namespace without restrictions. Confining Pods to a list of authorized ServiceAccounts can be useful to ensure applications in those Pods do not have more privileges than they should. This policy verifies that in the `staging` Namespace the ServiceAccount being specified is matched based on the image and name of the container. For example: ''sa-name: ["registry/image-name"]'''
+digest: a6bea2b97ca96c3a8ad23cfbde34f80ee94cc916137706aa12db3c7e3d0f4391
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-service-account
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-image-as-env-var
 displayName: Add Image as Environment Variable
 createdAt: "2023-02-19T19:27:48Z"
 description: The Kubernetes downward API only has the ability to express so many options as environment variables. The image consumed in a Pod is commonly needed to make the application aware of some logic it must take. This policy takes the value of the `image` field and adds it as an environment variable to bare Pods and Deployments having no more than two containers. The `env` array must already exist for the policy to operate correctly. This policy may be easily extended to support other higher-level Pod controllers as well as more containers by following the established rules.
+digest: 4a5a9e3e28fcd877934816eaeb5dbf5f813df867787286a086f98ed4e4510f4a
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/add-image-as-env-var
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: prevent-linkerd-port-skipping
 displayName: Prevent Linkerd Port Skipping
 createdAt: "2023-02-19T19:27:48Z"
 description: Linkerd has the ability to skip inbound and outbound ports assigned to Pods, exempting them from mTLS. This can be important in some narrow use cases but generally should be avoided. This policy prevents Pods from setting the annotations `config.linkerd.io/skip-inbound-ports` or `config.linkerd.io/skip-outbound-ports`.
+digest: 55e7399a3e7d91536f23fb12c40b6dea15c03b07812fbff33a4d946e35869074
 homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/prevent-linkerd-port-skipping
 keywords:
     - kyverno

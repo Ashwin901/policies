@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: mutate-termination-grace-period-seconds
 displayName: Mutate termination Grace Periods Seconds
 createdAt: "2023-02-19T19:27:48Z"
 description: Pods with large terminationGracePeriodSeconds (tGPS) might prevent cluster nodes from getting drained, ultimately making the whole cluster unstable. This policy mutates all incoming Pods to set their tGPS under 50s. If the user creates a pod without specifying tGPS, then the Kubernetes default of 30s is maintained.
+digest: 1f43fcfa337ad27742a8219d08f3bbb7f9c0a24898dbcf44881c490737034a1d
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/mutate-large-termination-gps
 keywords:
     - kyverno

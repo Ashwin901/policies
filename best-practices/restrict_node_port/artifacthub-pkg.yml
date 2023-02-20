@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-nodeport
 displayName: Disallow NodePort
 createdAt: "2023-02-19T19:27:48Z"
 description: A Kubernetes Service of type NodePort uses a host port to receive traffic from any source. A NetworkPolicy cannot be used to control traffic to host ports. Although NodePort Services can be useful, their use must be limited to Services with additional upstream security checks. This policy validates that any new Services do not use the `NodePort` type.
+digest: 0fd070f56ddfb8f07ae350a703bd476279ae20de90a0c149fada288407a49225
 homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/restrict_node_port
 keywords:
     - kyverno

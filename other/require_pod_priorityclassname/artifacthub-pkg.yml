@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-pod-priorityclassname
 displayName: Require Pod priorityClassName
 createdAt: "2023-02-19T19:27:48Z"
 description: A Pod may optionally specify a priorityClassName which indicates the scheduling priority relative to others. This requires creation of a PriorityClass object in advance. With this created, a Pod may set this field to that value. In a multi-tenant environment, it is often desired to require this priorityClassName be set to make certain tenant scheduling guarantees. This policy requires that a Pod defines the priorityClassName field with some value.
+digest: edf70e2d9181baed076b85a7aa92ce4f7dd6993462dd92a1f1f8d5ce1a02cdc6
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_pod_priorityclassname
 keywords:
     - kyverno

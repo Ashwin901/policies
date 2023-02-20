@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: record-creation-details
 displayName: Record Creation Details
 createdAt: "2023-02-19T19:27:48Z"
 description: Kubernetes by default does not make a record of who or what created a resource in that resource itself. It must be retrieved from an audit log, if enabled, which can make it difficult for cluster operators to know who was responsible for an object's creation. This policy writes an annotation with the key `kyverno.io/created-by` having all the userInfo fields present in the AdmissionReview request for any object being created. It then protects this annotation from tampering or removal making it immutable. Although this policy matches on all kinds ("*") it is highly recommend to more narrowly scope it to only the resources which should be labeled.
+digest: 8d935d93d6ec0ef08ec0d87106b2016d2cccd4e774208407ba617ca43a6986f8
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/record-creation-details
 keywords:
     - kyverno

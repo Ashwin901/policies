@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-privileged-existing-namespaces
 displayName: Add Privileged Label to Existing Namespaces
 createdAt: "2023-02-19T19:27:48Z"
 description: 'When Pod Security Admission is configured with a cluster-wide AdmissionConfiguration file which sets either baseline or restricted, for example in many PaaS CIS profiles, it may be necessary to relax this to privileged on a per-Namespace basis so that more granular control can be provided. This policy labels new and existing Namespaces, except that of kube-system, with the `pod-security.kubernetes.io/enforce: privileged` label.'
+digest: 048b4d5829039f7039327d8b0fe957e372376135f56162950b9dd0dd6b2fc45f
 homeURL: https://github.com/Ashwin901/policies/tree/master/psa/add-privileged-existing-namespaces
 keywords:
     - kyverno

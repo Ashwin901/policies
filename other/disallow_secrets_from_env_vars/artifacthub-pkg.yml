@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: secrets-not-from-env-vars
 displayName: Disallow Secrets from Env Vars
 createdAt: "2023-02-19T19:27:48Z"
 description: Secrets used as environment variables containing sensitive information may, if not carefully controlled,  be printed in log output which could be visible to unauthorized people and captured in forwarding applications. This policy disallows using Secrets as environment variables.
+digest: 92200cd76fe6c8e050f03b7166c7af2a9f94e0d6400ec3482e875cb8fe8e50b7
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/disallow_secrets_from_env_vars
 keywords:
     - kyverno

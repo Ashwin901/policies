@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-storageclass
 displayName: Restrict StorageClass
 createdAt: "2023-02-19T19:27:48Z"
 description: StorageClasses allow description of custom "classes" of storage offered by the cluster, based on quality-of-service levels, backup policies, or custom policies determined by the cluster administrators. For shared StorageClasses in a multi-tenancy environment, a reclaimPolicy of `Delete` should be used to ensure a PersistentVolume cannot be reused across Namespaces. This policy requires StorageClasses set a reclaimPolicy of `Delete`.
+digest: dfa36fa1a90af435e7382e6d7a71cd45c2246883cbd63c56aaa7ac653bac37d6
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_storageclass
 keywords:
     - kyverno

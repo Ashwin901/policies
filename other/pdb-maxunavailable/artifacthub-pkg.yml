@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: pdb-maxunavailable
 displayName: PodDisruptionBudget maxUnavailable Non-Zero
 createdAt: "2023-02-19T19:27:48Z"
 description: A PodDisruptionBudget which sets its maxUnavailable value to zero prevents all voluntary evictions including Node drains which may impact maintenance tasks. This policy enforces that if a PodDisruptionBudget specifies the maxUnavailable field it must be greater than zero.
+digest: dad32698bba3b321c03d8f96ecda41d8f55ef0026373ce55efdc393a0e7a396f
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/pdb-maxunavailable
 keywords:
     - kyverno

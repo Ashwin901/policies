@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-linkerd-mesh-injection
 displayName: Require Linkerd Mesh Injection
 createdAt: "2023-02-19T19:27:48Z"
 description: Sidecar proxy injection in Linkerd may be handled at the Namespace level by setting the annotation `linkerd.io/inject` to `enabled`. This policy enforces that all Namespaces contain the annotation `linkerd.io/inject` set to `enabled`.
+digest: 310457d9fc27980937f13a47bf7b33524b665ad1f610f51bbcc761b3918f8cd9
 homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/require-linkerd-mesh-injection
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-default-resources
 displayName: Add Default Resources
 createdAt: "2023-02-19T19:27:48Z"
 description: Pods which don't specify at least resource requests are assigned a QoS class of BestEffort which can hog resources for other Pods on Nodes. At a minimum, all Pods should specify resource requests in order to be labeled as the QoS class Burstable. This sample mutates any container in a Pod which doesn't specify memory or cpu requests to apply some sane defaults.
+digest: 4db05097c5d6a88383f8c7e1ac6aa5b47e6b25a846f424259b5ba087d09f0a75
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_default_resources
 keywords:
     - kyverno

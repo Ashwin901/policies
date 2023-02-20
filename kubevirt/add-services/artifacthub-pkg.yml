@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: k6t-add-services
 displayName: Add Services
 createdAt: "2023-02-19T19:27:48Z"
 description: Add an SSH Service to every VirtualMachineInstance which is getting created. This Service will use a ClusterIP, thus the admin has to ensure that the IP space is large enough and ClusterIP type can be met.
+digest: 8f08f41020cfdbeb306f02aada5343eef47c91b0ae1a3c91d1b8d69c89ac1338
 homeURL: https://github.com/Ashwin901/policies/tree/master/kubevirt/add-services
 keywords:
     - kyverno

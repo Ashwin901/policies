@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: only-trustworthy-registries-set-root
 displayName: Only Trustworthy Registries Set Root
 createdAt: "2023-02-19T19:27:48Z"
 description: Some containers must be built to run as root in order to function properly, but use of those images should be carefully restricted to prevent unneeded privileges. This policy blocks any image that runs as root if it does not come from a trustworthy registry, `ghcr.io` in this case.
+digest: 6ceadc75faf1b267a07ad5f94ae850090607ff9e98a907f56dd1cec40c17f6bf
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/only_trustworthy_registries_set_root
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-node-affinity
 displayName: Restrict Node Affinity
 createdAt: "2023-02-19T19:27:48Z"
 description: Pods may use several mechanisms to prefer scheduling on a set of nodes, and nodeAffinity is one of them. nodeAffinity uses expressions to select eligible nodes for scheduling decisions and may override intended placement options by cluster administrators. This policy ensures that nodeAffinity is not used in a Pod spec.
+digest: 73ffca21e4d47d1ac0aa01da2bcc32c2dd33a3f6f05e8576e27bb2d7d92a671d
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_node_affinity
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: require-non-root-groups
 displayName: '%!s(<nil>)'
 createdAt: "2023-02-19T19:27:48Z"
 description: Containers should be forbidden from running with a root primary or supplementary GID. This policy ensures the `runAsGroup`, `supplementalGroups`, and `fsGroup` fields are set to a number greater than zero (i.e., non root). A known issue prevents a policy such as this using `anyPattern` from being persisted properly in Kubernetes 1.23.0-1.23.2.
+digest: 8a77db42545760711d789f25aab3309c7abc34e057026b17b7e5d670540540ad
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/require-non-root-groups
 keywords:
     - kyverno

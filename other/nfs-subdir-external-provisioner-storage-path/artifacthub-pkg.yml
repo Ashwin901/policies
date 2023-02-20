@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: nfs-subdir-external-provisioner-storage-path
 displayName: NFS Subdirectory External Provisioner Enforce Storage Path
 createdAt: "2023-02-19T19:27:48Z"
 description: The NFS subdir external provisioner project allows defining a StorageClass with a pathPattern, a template used to provision subdirectories on NFS exports. This can be controlled with an annotation on a PVC called `nfs.io/storage-path`. This policy ensures that if the StorageClass name `nfs-client` is used by a PVC, corresponding to the NFS subdir external provisioner, and if it sets the nfs.io/storage-path annotation that it cannot be empty, which may otherwise result in it consuming the root of the designated path.
+digest: f672deb808bb3f05f16269c9dff2da439f587e6efbf37494c19c8982db9ced0d
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/nfs-subdir-external-provisioner-storage-path
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-node-affinity
 displayName: Add Node Affinity
 createdAt: "2023-02-19T19:27:48Z"
 description: Node affinity, similar to node selection, is a way to specify which node(s) on which Pods will be scheduled but based on more complex conditions. This policy will add node affinity to a Deployment and if one already exists an expression will be added to it.
+digest: 38e113d1817071c91710312b88d049e997344bbd9d6928f72a1760b46d41033a
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_node_affinity
 keywords:
     - kyverno

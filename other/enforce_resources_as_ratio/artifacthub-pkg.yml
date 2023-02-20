@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: enforce-resources-as-ratio
 displayName: Enforce Resources as Ratio
 createdAt: "2023-02-19T19:27:48Z"
 description: Resource requests often need to be tailored to the type of workload in the container/Pod. With many different types of applications in a cluster, enforcing hard limits on requests or limits may not work and a ratio may be better suited instead. This policy checks every container in a Pod and ensures that memory limits are no more than 2.5x its requests.
+digest: a901aa5b0a21b101296937c125a1c5841c58be671b35fc38b8e4d2c6aa9316cd
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/enforce_resources_as_ratio
 keywords:
     - kyverno

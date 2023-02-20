@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-wildcard-resources
 displayName: Restrict Wildcards in Resources
 createdAt: "2023-02-19T19:27:48Z"
 description: Wildcards ('*') in resources grants access to all of the resources referenced by the given API group and does not follow the principal of least privilege. As much as possible, avoid such open resources unless scoped to perhaps a custom API group. This policy blocks any Role or ClusterRole that contains a wildcard entry in the resources list found in any rule.
+digest: 281cc47ab43ff86f37c607e5a4c7726fb4de69e5e3a0d8cf0b18e9fd7bf62b42
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-wildcard-resources
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-pod-count
 displayName: Restrict Pod Count per Node
 createdAt: "2023-02-19T19:27:48Z"
 description: Sometimes Kubernetes Nodes may have a maximum number of Pods they can accommodate due to resources outside CPU and memory such as licensing, or in some development cases. This policy restricts Pod count on a Node named `minikube` to be no more than 10.
+digest: b6c44d8f03f19c25ff724897583a305f0ecc73af6dc2f19a2f57b08f445574ca
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_pod_count_per_node
 keywords:
     - kyverno

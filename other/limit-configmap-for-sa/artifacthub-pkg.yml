@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: limit-configmap-for-sa
 displayName: Limit ConfigMap to ServiceAccounts for a User
 createdAt: "2023-02-19T19:27:48Z"
 description: This policy shows how to restrict certain operations on specific ConfigMaps by ServiceAccounts.
+digest: f95a67e7001a82edb3b1709ef04ddcfe8991f47843f367e27e72f4b2122ed54f
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/limit-configmap-for-sa
 keywords:
     - kyverno

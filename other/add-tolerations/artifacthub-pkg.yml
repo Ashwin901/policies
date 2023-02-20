@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-tolerations
 displayName: Add Tolerations
 createdAt: "2023-02-19T19:27:48Z"
 description: Pod tolerations are used to schedule on Nodes which have a matching taint. This policy adds the toleration `org.com/role=service:NoSchedule` if existing tolerations do not contain the key `org.com/role`.
+digest: 9c59abf84ec956db4e0e479bb8f12d75b9324673b6229cae764bba4f2623a2dd
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/add-tolerations
 keywords:
     - kyverno

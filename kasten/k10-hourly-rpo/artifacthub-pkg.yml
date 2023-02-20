@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: k10-policy-hourly-rpo
 displayName: Check Hourly RPO
 createdAt: "2023-02-19T19:27:48Z"
 description: 'K10 Policy resources can be educated to adhere to common Recovery Point Objective (RPO) best practices.  This policy is advising to use an RPO frequency that with hourly granularity if it has the appPriority: Mission Critical'
+digest: 9e11ae762127d12aeda08d31348a2b78147c53561bd280d416e4d7937c9d1fe9
 homeURL: https://github.com/Ashwin901/policies/tree/master/kasten/k10-hourly-rpo
 keywords:
     - kyverno

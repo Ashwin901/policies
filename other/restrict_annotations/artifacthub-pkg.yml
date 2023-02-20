@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: restrict-annotations
 displayName: Restrict Annotations
 createdAt: "2023-02-19T19:27:48Z"
 description: Some annotations control functionality driven by other cluster-wide tools and are not normally set by some class of users. This policy prevents the use of an annotation beginning with `fluxcd.io/`. This can be useful to ensure users either don't set reserved annotations or to force them to use a newer version of an annotation.
+digest: 411737f35d0c9d6b7cb49376f56aaec1c3ea9a6d7c52088dec27b795c1f15539
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_annotations
 keywords:
     - kyverno

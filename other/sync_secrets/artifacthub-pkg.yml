@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: sync-secrets
 displayName: Sync Secrets
 createdAt: "2023-02-19T19:27:48Z"
 description: 'Secrets like registry credentials often need to exist in multiple Namespaces so Pods there have access. Manually duplicating those Secrets is time consuming and error prone. This policy will copy a Secret called `regcred` which exists in the `default` Namespace to new Namespaces when they are created. It will also push updates to the copied Secrets should the source Secret be changed.      '
+digest: 51da2430128835dba1c169edaa76a5d50159a4e506482b21e944083c2e151299
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/sync_secrets
 keywords:
     - kyverno

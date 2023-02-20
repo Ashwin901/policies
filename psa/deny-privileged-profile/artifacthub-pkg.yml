@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: deny-privileged-profile
 displayName: Deny Privileged Profile
 createdAt: "2023-02-19T19:27:48Z"
 description: When Pod Security Admission (PSA) is enforced at the cluster level via an AdmissionConfiguration file which defines a default level at baseline or restricted, setting of a label at the `privileged` profile will effectively cause unrestricted workloads in that Namespace, overriding the cluster default. This may effectively represent a circumvention attempt and should be closely controlled. This policy ensures that only those holding the cluster-admin ClusterRole may create Namespaces which assign the label `pod-security.kubernetes.io/enforce=privileged`.
+digest: 3799c1849e3bbbf923a2a81eb8475861e62781f0b47eeec9da72ba8074a10ade
 homeURL: https://github.com/Ashwin901/policies/tree/master/psa/deny-privileged-profile
 keywords:
     - kyverno

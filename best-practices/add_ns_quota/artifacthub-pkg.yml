@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: add-ns-quota
 displayName: Add Quota
 createdAt: "2023-02-19T19:27:48Z"
 description: To better control the number of resources that can be created in a given Namespace and provide default resource consumption limits for Pods, ResourceQuota and LimitRange resources are recommended. This policy will generate ResourceQuota and LimitRange resources when a new Namespace is created.
+digest: 4dac2d4deb68a93a5f81ea8935944668d2a2f663a7ed8ce7998f6857c4ae67bd
 homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/add_ns_quota
 keywords:
     - kyverno

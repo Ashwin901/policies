@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: check-env-vars
 displayName: Check Environment Variables
 createdAt: "2023-02-19T19:27:48Z"
 description: Environment variables control many aspects of a container's execution and are often the source of many different configuration settings. Being able to ensure that the value of a specific environment variable either is or is not set to a specific string is useful to maintain such controls. This policy checks every container to ensure that if the `DISABLE_OPA` environment variable is defined, it must not be set to a value of `"true"`.
+digest: e92f03c926c17b1b65eeea3ba4e9bdad17d296c3f44a0a5b8917ef781900071d
 homeURL: https://github.com/Ashwin901/policies/tree/master/other/check-env-vars
 keywords:
     - kyverno

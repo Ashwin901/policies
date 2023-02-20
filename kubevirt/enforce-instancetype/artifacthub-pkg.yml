@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: k6t-enforce-instancetype
 displayName: Enforce instanceTypes
 createdAt: "2023-02-19T19:27:48Z"
 description: Check VirtualMachines and validate that they are not using a domain template (`.spec.template.domain`) but instead are based on instaceTypes and preferences only.
+digest: 4099fc8cff049c84aebaacca4420f9f087ca1c5c029fe29eb6864f869adcd910
 homeURL: https://github.com/Ashwin901/policies/tree/master/kubevirt/enforce-instancetype
 keywords:
     - kyverno

@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: unique-routes
 displayName: Require unique host names in OpenShift routes
 createdAt: "2023-02-19T19:27:48Z"
 description: An Route host is a URL at which services may be made available externally. In most cases, these hosts should be unique across the cluster to ensure no routing conflicts occur. This policy checks an incoming Route resource to ensure its hosts are unique to the cluster.
+digest: 9fb4ccae9627c7a413bedb5e974afbac341042f92ffdbd410990002476f2cbbc
 homeURL: https://github.com/Ashwin901/policies/tree/master/openshift/unique-routes
 keywords:
     - kyverno

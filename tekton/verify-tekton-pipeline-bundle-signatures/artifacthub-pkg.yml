@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: signed-pipeline-bundle
 displayName: Require Signed Tekton Pipeline
 createdAt: "2023-02-19T19:27:48Z"
 description: A signed bundle is required
+digest: 78d45769bb6576b29459934f5e5fa2d53542ce73e0735e527fa0e90bf3c97f20
 homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/verify-tekton-pipeline-bundle-signatures
 keywords:
     - kyverno

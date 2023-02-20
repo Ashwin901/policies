@@ -1,8 +1,9 @@
-version: '%!s(<nil>)'
+version: 1.0.0
 name: psp-check-supplemental-groups
 displayName: Check supplementalGroups
 createdAt: "2023-02-19T19:27:48Z"
 description: Supplemental groups control which group IDs containers add and can coincide with restricted groups on the host. Pod Security Policies (PSP) allowed a range of these group IDs to be specified which were allowed. This policy ensures any Pod may only specify supplementalGroup IDs between 100-200 or 500-600.
+digest: 4772a4d62aae0053263b2da6dfaa51b6705a534265864fb8aaa761c3d78418f7
 homeURL: https://github.com/Ashwin901/policies/tree/master/psp-migration/check_supplemental_groups
 keywords:
     - kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-wildcard-verbs
 displayName: Restrict Wildcard in Verbs
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Wildcards ('*') in verbs grants all access to the resources referenced by it and does not follow the principal of least privilege. As much as possible, avoid such open verbs unless scoped to perhaps a custom API group. This policy blocks any Role or ClusterRole that contains a wildcard entry in the verbs list found in any rule.
 digest: 06612ffcab49a4952fc5e36ecf4e405eeb8e6193a88efda3537d11b19c0e47d4
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-wildcard-verbs
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict-wildcard-verbs
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict-wildcard-verbs/restrict-wildcard-verbs.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict-wildcard-verbs/restrict-wildcard-verbs.yaml
 readme: |-
     # Restrict Wildcard in Verbs
-    Wildcards ('*') in verbs grants all access to the resources referenced by it and does not follow the principal of least privilege. As much as possible, avoid such open verbs unless scoped to perhaps a custom API group. This policy blocks any Role or ClusterRole that contains a wildcard entry in the verbs list found in any rule.
+    	Wildcards ('*') in verbs grants all access to the resources referenced by it and does not follow the principal of least privilege. As much as possible, avoid such open verbs unless scoped to perhaps a custom API group. This policy blocks any Role or ClusterRole that contains a wildcard entry in the verbs list found in any rule.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict-wildcard-verbs/restrict-wildcard-verbs.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict-wildcard-verbs/restrict-wildcard-verbs.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-virtual-service-wildcard
 displayName: Restrict Virtual Service Host with Wildcards
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Virtual Services optionally accept a wildcard as an alternative to precise matching. In some cases, this may be too permissive as it would direct unintended traffic to the given resource. This policy enforces that any Virtual Service host does not contain a wildcard character and allows for more governance when a single mesh deployment  model is used.
 digest: ae4a9c163f5e73517675a6d710a883efdaebf5c3d84687d14c164a7eb50d6f82
-homeURL: https://github.com/Ashwin901/policies/tree/master/istio/restrict-virtual-service-wildcard
+homeURL: https://github.com/kyverno/policies/tree/master/istio/restrict-virtual-service-wildcard
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/istio/restrict-virtual-service-wildcard/restrict-virtual-service-wildcard.yaml
+      url: https://github.com/kyverno/policies/blob/master/istio/restrict-virtual-service-wildcard/restrict-virtual-service-wildcard.yaml
 readme: |-
     # Restrict Virtual Service Host with Wildcards
-    Virtual Services optionally accept a wildcard as an alternative to precise matching. In some cases, this may be too permissive as it would direct unintended traffic to the given resource. This policy enforces that any Virtual Service host does not contain a wildcard character and allows for more governance when a single mesh deployment  model is used.
+    	Virtual Services optionally accept a wildcard as an alternative to precise matching. In some cases, this may be too permissive as it would direct unintended traffic to the given resource. This policy enforces that any Virtual Service host does not contain a wildcard character and allows for more governance when a single mesh deployment  model is used.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/istio/restrict-virtual-service-wildcard/restrict-virtual-service-wildcard.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/istio/restrict-virtual-service-wildcard/restrict-virtual-service-wildcard.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,22 +1,23 @@
+version: 1.0.0
 name: require-aws-node-irsa
 displayName: Require aws-node DaemonSet use IRSA
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:29Z"
 description: According to EKS best practices, the `aws-node` DaemonSet is configured to use a role assigned to the EC2 instances to assign IPs to Pods. This role includes several AWS managed policies that effectively allow all Pods running on a Node to attach/detach ENIs, assign/unassign IP addresses, or pull images from ECR. Since this presents a risk to your cluster, it is recommended that you update the `aws-node` DaemonSet to use IRSA. This policy ensures that the `aws-node` DaemonSet running in the `kube-system` Namespace is not still using the `aws-node` ServiceAccount.
 digest: 803e498af8fe19088bb1fb0961fdd5b258206db29b763f9bab17ef054b616deb
-homeURL: https://github.com/Ashwin901/policies/tree/master/aws/require-aws-node-irsa
+homeURL: https://github.com/kyverno/policies/tree/master/aws/require-aws-node-irsa
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/aws/require-aws-node-irsa/require-aws-node-irsa.yaml
+      url: https://github.com/kyverno/policies/blob/master/aws/require-aws-node-irsa/require-aws-node-irsa.yaml
 readme: |-
     # Require aws-node DaemonSet use IRSA
-    According to EKS best practices, the `aws-node` DaemonSet is configured to use a role assigned to the EC2 instances to assign IPs to Pods. This role includes several AWS managed policies that effectively allow all Pods running on a Node to attach/detach ENIs, assign/unassign IP addresses, or pull images from ECR. Since this presents a risk to your cluster, it is recommended that you update the `aws-node` DaemonSet to use IRSA. This policy ensures that the `aws-node` DaemonSet running in the `kube-system` Namespace is not still using the `aws-node` ServiceAccount.
+    	According to EKS best practices, the `aws-node` DaemonSet is configured to use a role assigned to the EC2 instances to assign IPs to Pods. This role includes several AWS managed policies that effectively allow all Pods running on a Node to attach/detach ENIs, assign/unassign IP addresses, or pull images from ECR. Since this presents a risk to your cluster, it is recommended that you update the `aws-node` DaemonSet to use IRSA. This policy ensures that the `aws-node` DaemonSet running in the `kube-system` Namespace is not still using the `aws-node` ServiceAccount.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/aws/require-aws-node-irsa/require-aws-node-irsa.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/aws/require-aws-node-irsa/require-aws-node-irsa.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

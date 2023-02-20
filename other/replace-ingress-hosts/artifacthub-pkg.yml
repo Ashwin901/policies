@@ -1,23 +1,23 @@
 version: 1.0.0
 name: replace-ingress-hosts
 displayName: Replace Ingress Hosts
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: An Ingress may specify host names at a variety of locations in the same resource. In some cases, those host names should be modified to, for example, update domain names silently. The replacement must be done in all the fields where a host name can be specified. This policy, illustrating the use of nested foreach loops and operable in Kyverno 1.9+, replaces host names that end with `old.com` with `new.com`.
 digest: b8eccf9ca074d37fb85abc079152a9a788294f60e3e511697d253f82b9f2e5dd
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/replace-ingress-hosts
+homeURL: https://github.com/kyverno/policies/tree/master/other/replace-ingress-hosts
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/replace-ingress-hosts/replace-ingress-hosts.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/replace-ingress-hosts/replace-ingress-hosts.yaml
 readme: |-
     # Replace Ingress Hosts
-    An Ingress may specify host names at a variety of locations in the same resource. In some cases, those host names should be modified to, for example, update domain names silently. The replacement must be done in all the fields where a host name can be specified. This policy, illustrating the use of nested foreach loops and operable in Kyverno 1.9+, replaces host names that end with `old.com` with `new.com`.
+    	An Ingress may specify host names at a variety of locations in the same resource. In some cases, those host names should be modified to, for example, update domain names silently. The replacement must be done in all the fields where a host name can be specified. This policy, illustrating the use of nested foreach loops and operable in Kyverno 1.9+, replaces host names that end with `old.com` with `new.com`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/replace-ingress-hosts/replace-ingress-hosts.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/replace-ingress-hosts/replace-ingress-hosts.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: block-ephemeral-containers
 displayName: Block Ephemeral Containers
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Ephemeral containers, enabled by default in Kubernetes 1.23, allow users to use the `kubectl debug` functionality and attach a temporary container to an existing Pod. This may potentially be used to gain access to unauthorized information executing inside one or more containers in that Pod. This policy blocks the use of ephemeral containers.
 digest: e1f8a9a351fa91ed1465b0a77c8735754401dbcf8bca5f887c1aafd0257e3d19
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/block_ephemeral_containers
+homeURL: https://github.com/kyverno/policies/tree/master/other/block_ephemeral_containers
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/block_ephemeral_containers/block-ephemeral-containers.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/block_ephemeral_containers/block-ephemeral-containers.yaml
 readme: |-
     # Block Ephemeral Containers
-    Ephemeral containers, enabled by default in Kubernetes 1.23, allow users to use the `kubectl debug` functionality and attach a temporary container to an existing Pod. This may potentially be used to gain access to unauthorized information executing inside one or more containers in that Pod. This policy blocks the use of ephemeral containers.
+    	Ephemeral containers, enabled by default in Kubernetes 1.23, allow users to use the `kubectl debug` functionality and attach a temporary container to an existing Pod. This may potentially be used to gain access to unauthorized information executing inside one or more containers in that Pod. This policy blocks the use of ephemeral containers.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/block_ephemeral_containers/block_ephemeral_containers.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/block_ephemeral_containers/block_ephemeral_containers.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: add-default-resources
 displayName: Add Default Resources
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Pods which don't specify at least resource requests are assigned a QoS class of BestEffort which can hog resources for other Pods on Nodes. At a minimum, all Pods should specify resource requests in order to be labeled as the QoS class Burstable. This sample mutates any container in a Pod which doesn't specify memory or cpu requests to apply some sane defaults.
 digest: 4db05097c5d6a88383f8c7e1ac6aa5b47e6b25a846f424259b5ba087d09f0a75
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_default_resources
+homeURL: https://github.com/kyverno/policies/tree/master/other/add_default_resources
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/add_default_resources/add-default-resources.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/add_default_resources/add-default-resources.yaml
 readme: |-
     # Add Default Resources
-    Pods which don't specify at least resource requests are assigned a QoS class of BestEffort which can hog resources for other Pods on Nodes. At a minimum, all Pods should specify resource requests in order to be labeled as the QoS class Burstable. This sample mutates any container in a Pod which doesn't specify memory or cpu requests to apply some sane defaults.
+    	Pods which don't specify at least resource requests are assigned a QoS class of BestEffort which can hog resources for other Pods on Nodes. At a minimum, all Pods should specify resource requests in order to be labeled as the QoS class Burstable. This sample mutates any container in a Pod which doesn't specify memory or cpu requests to apply some sane defaults.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_default_resources/add_default_resources.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/add_default_resources/add_default_resources.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

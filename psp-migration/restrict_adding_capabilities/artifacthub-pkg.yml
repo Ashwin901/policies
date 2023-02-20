@@ -1,23 +1,23 @@
 version: 1.0.0
 name: psp-restrict-adding-capabilities
 displayName: Restrict Adding Capabilities
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Adding capabilities is a way for containers in a Pod to request higher levels of ability than those with which they may be provisioned. Many capabilities allow system-level control and should be prevented. Pod Security Policies (PSP) allowed a list of "good" capabilities to be added. This policy checks ephemeralContainers, initContainers, and containers to ensure the only capabilities that can be added are either NET_BIND_SERVICE or CAP_CHOWN.
 digest: 5bb6972c24da6a1f30a3e621eaa2ebae59a2306e345150f863121394551e87e5
-homeURL: https://github.com/Ashwin901/policies/tree/master/psp-migration/restrict_adding_capabilities
+homeURL: https://github.com/kyverno/policies/tree/master/psp-migration/restrict_adding_capabilities
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/psp-migration/restrict_adding_capabilities/restrict-adding-capabilities.yaml
+      url: https://github.com/kyverno/policies/blob/master/psp-migration/restrict_adding_capabilities/restrict-adding-capabilities.yaml
 readme: |-
     # Restrict Adding Capabilities
-    Adding capabilities is a way for containers in a Pod to request higher levels of ability than those with which they may be provisioned. Many capabilities allow system-level control and should be prevented. Pod Security Policies (PSP) allowed a list of "good" capabilities to be added. This policy checks ephemeralContainers, initContainers, and containers to ensure the only capabilities that can be added are either NET_BIND_SERVICE or CAP_CHOWN.
+    	Adding capabilities is a way for containers in a Pod to request higher levels of ability than those with which they may be provisioned. Many capabilities allow system-level control and should be prevented. Pod Security Policies (PSP) allowed a list of "good" capabilities to be added. This policy checks ephemeralContainers, initContainers, and containers to ensure the only capabilities that can be added are either NET_BIND_SERVICE or CAP_CHOWN.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/psp-migration/restrict_adding_capabilities/restrict_adding_capabilities.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/psp-migration/restrict_adding_capabilities/restrict_adding_capabilities.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

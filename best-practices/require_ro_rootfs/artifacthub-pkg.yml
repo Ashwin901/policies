@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-ro-rootfs
 displayName: Require Read-Only Root Filesystem
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: 'A read-only root file system helps to enforce an immutable infrastructure strategy; the container only needs to write on the mounted volume that persists the state. An immutable root filesystem can also prevent malicious binaries from writing to the host system. This policy validates that containers define a securityContext with `readOnlyRootFilesystem: true`.'
 digest: e2e5a48b2db6e45a9113dd932e373e563cf96275bf678d82502959ecde1b9044
-homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/require_ro_rootfs
+homeURL: https://github.com/kyverno/policies/tree/master/best-practices/require_ro_rootfs
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/best-practices/require_ro_rootfs/require_ro_rootfs.yaml
+      url: https://github.com/kyverno/policies/blob/master/best-practices/require_ro_rootfs/require_ro_rootfs.yaml
 readme: |-
     # Require Read-Only Root Filesystem
-    A read-only root file system helps to enforce an immutable infrastructure strategy; the container only needs to write on the mounted volume that persists the state. An immutable root filesystem can also prevent malicious binaries from writing to the host system. This policy validates that containers define a securityContext with `readOnlyRootFilesystem: true`.
+    	A read-only root file system helps to enforce an immutable infrastructure strategy; the container only needs to write on the mounted volume that persists the state. An immutable root filesystem can also prevent malicious binaries from writing to the host system. This policy validates that containers define a securityContext with `readOnlyRootFilesystem: true`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/require_ro_rootfs/require_ro_rootfs.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/best-practices/require_ro_rootfs/require_ro_rootfs.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

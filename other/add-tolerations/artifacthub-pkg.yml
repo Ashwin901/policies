@@ -1,23 +1,23 @@
 version: 1.0.0
 name: add-tolerations
 displayName: Add Tolerations
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Pod tolerations are used to schedule on Nodes which have a matching taint. This policy adds the toleration `org.com/role=service:NoSchedule` if existing tolerations do not contain the key `org.com/role`.
 digest: 9c59abf84ec956db4e0e479bb8f12d75b9324673b6229cae764bba4f2623a2dd
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/add-tolerations
+homeURL: https://github.com/kyverno/policies/tree/master/other/add-tolerations
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/add-tolerations/add-tolerations.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/add-tolerations/add-tolerations.yaml
 readme: |-
     # Add Tolerations
-    Pod tolerations are used to schedule on Nodes which have a matching taint. This policy adds the toleration `org.com/role=service:NoSchedule` if existing tolerations do not contain the key `org.com/role`.
+    	Pod tolerations are used to schedule on Nodes which have a matching taint. This policy adds the toleration `org.com/role=service:NoSchedule` if existing tolerations do not contain the key `org.com/role`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add-tolerations/add-tolerations.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/add-tolerations/add-tolerations.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

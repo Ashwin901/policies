@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-storageclass
 displayName: Require StorageClass
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: PersistentVolumeClaims (PVCs) and StatefulSets may optionally define a StorageClass to dynamically provision storage. In a multi-tenancy environment where StorageClasses are far more common, it is often better to require storage only be provisioned from these StorageClasses. This policy requires that PVCs and StatefulSets define the storageClassName field with some value.
 digest: b9d339d4c857fff1b5128939bce5705fac1c4ecb9f23dada72a613d5c6d4835c
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_storageclass
+homeURL: https://github.com/kyverno/policies/tree/master/other/require_storageclass
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/require_storageclass/require_storageclass.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/require_storageclass/require_storageclass.yaml
 readme: |-
     # Require StorageClass
-    PersistentVolumeClaims (PVCs) and StatefulSets may optionally define a StorageClass to dynamically provision storage. In a multi-tenancy environment where StorageClasses are far more common, it is often better to require storage only be provisioned from these StorageClasses. This policy requires that PVCs and StatefulSets define the storageClassName field with some value.
+    	PersistentVolumeClaims (PVCs) and StatefulSets may optionally define a StorageClass to dynamically provision storage. In a multi-tenancy environment where StorageClasses are far more common, it is often better to require storage only be provisioned from these StorageClasses. This policy requires that PVCs and StatefulSets define the storageClassName field with some value.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_storageclass/require_storageclass.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/require_storageclass/require_storageclass.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

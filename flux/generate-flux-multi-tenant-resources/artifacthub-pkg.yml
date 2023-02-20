@@ -1,23 +1,23 @@
 version: 1.0.0
 name: generate-flux-multi-tenant-resources
 displayName: Generate Flux Multi-Tenant Resources
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: As part of the tenant provisioning process, Flux needs to generate RBAC resources. This policy will create a ServiceAccount and RoleBinding when a new or existing Namespace is labeled with `toolkit.fluxcd.io/tenant`. Use of this rule may require an additional binding for the Kyverno ServiceAccount so it has permissions to properly create the RoleBinding.
 digest: f9558179a604a686fee159e4def1b1b66851b6258f9165867d0d6f55e235070a
-homeURL: https://github.com/Ashwin901/policies/tree/master/flux/generate-flux-multi-tenant-resources
+homeURL: https://github.com/kyverno/policies/tree/master/flux/generate-flux-multi-tenant-resources
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/flux/generate-flux-multi-tenant-resources/generate-flux-multi-tenant-resources.yaml
+      url: https://github.com/kyverno/policies/blob/master/flux/generate-flux-multi-tenant-resources/generate-flux-multi-tenant-resources.yaml
 readme: |-
     # Generate Flux Multi-Tenant Resources
-    As part of the tenant provisioning process, Flux needs to generate RBAC resources. This policy will create a ServiceAccount and RoleBinding when a new or existing Namespace is labeled with `toolkit.fluxcd.io/tenant`. Use of this rule may require an additional binding for the Kyverno ServiceAccount so it has permissions to properly create the RoleBinding.
+    	As part of the tenant provisioning process, Flux needs to generate RBAC resources. This policy will create a ServiceAccount and RoleBinding when a new or existing Namespace is labeled with `toolkit.fluxcd.io/tenant`. Use of this rule may require an additional binding for the Kyverno ServiceAccount so it has permissions to properly create the RoleBinding.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/flux/generate-flux-multi-tenant-resources/generate-flux-multi-tenant-resources.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/flux/generate-flux-multi-tenant-resources/generate-flux-multi-tenant-resources.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

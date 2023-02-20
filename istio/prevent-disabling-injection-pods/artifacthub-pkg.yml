@@ -1,23 +1,23 @@
 version: 1.0.0
 name: prevent-disabling-injection-pods
 displayName: Prevent Disabling Istio Sidecar Injection
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: One way sidecar injection in an Istio service mesh may be accomplished is by defining an annotation at the Pod level. Pods not receiving a sidecar cannot participate in the mesh thereby reducing visibility. This policy ensures that Pods cannot set the annotation `sidecar.istio.io/inject` to a value of `false`.
 digest: 748aed0bd683a491fc74faec29166af4086e5392ec91e8300a4cec38199c6e20
-homeURL: https://github.com/Ashwin901/policies/tree/master/istio/prevent-disabling-injection-pods
+homeURL: https://github.com/kyverno/policies/tree/master/istio/prevent-disabling-injection-pods
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/istio/prevent-disabling-injection-pods/prevent-disabling-injection-pods.yaml
+      url: https://github.com/kyverno/policies/blob/master/istio/prevent-disabling-injection-pods/prevent-disabling-injection-pods.yaml
 readme: |-
     # Prevent Disabling Istio Sidecar Injection
-    One way sidecar injection in an Istio service mesh may be accomplished is by defining an annotation at the Pod level. Pods not receiving a sidecar cannot participate in the mesh thereby reducing visibility. This policy ensures that Pods cannot set the annotation `sidecar.istio.io/inject` to a value of `false`.
+    	One way sidecar injection in an Istio service mesh may be accomplished is by defining an annotation at the Pod level. Pods not receiving a sidecar cannot participate in the mesh thereby reducing visibility. This policy ensures that Pods cannot set the annotation `sidecar.istio.io/inject` to a value of `false`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/istio/prevent-disabling-injection-pods/prevent-disabling-injection-pods.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/istio/prevent-disabling-injection-pods/prevent-disabling-injection-pods.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

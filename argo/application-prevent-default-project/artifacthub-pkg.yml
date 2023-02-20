@@ -1,23 +1,23 @@
 version: 1.0.0
 name: application-prevent-default-project
 displayName: Prevent Use of Default Project
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:29Z"
 description: This policy prevents the use of the default project in an Application.
 digest: 15f899a4cb443ee0a5d76ef072c4710dba5dfb38ce0b8afbf3a28c00dd394a13
-homeURL: https://github.com/Ashwin901/policies/tree/master/argo/application-prevent-default-project
+homeURL: https://github.com/kyverno/policies/tree/master/argo/application-prevent-default-project
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/argo/application-prevent-default-project/application-prevent-default-project.yaml
+      url: https://github.com/kyverno/policies/blob/master/argo/application-prevent-default-project/application-prevent-default-project.yaml
 readme: |-
     # Prevent Use of Default Project
-    This policy prevents the use of the default project in an Application.
+    	This policy prevents the use of the default project in an Application.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/argo/application-prevent-default-project/application-prevent-default-project.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/argo/application-prevent-default-project/application-prevent-default-project.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

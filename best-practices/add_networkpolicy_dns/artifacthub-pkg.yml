@@ -1,23 +1,23 @@
 version: 1.0.0
 name: add-networkpolicy-dns
 displayName: Add Network Policy for DNS
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:29Z"
 description: By default, Kubernetes allows communications across all Pods within a cluster. The NetworkPolicy resource and a CNI plug-in that supports NetworkPolicy must be used to restrict communications. A default NetworkPolicy should be configured for each Namespace to default deny all ingress and egress traffic to the Pods in the Namespace. Application teams can then configure additional NetworkPolicy resources to allow desired traffic to application Pods from select sources. This policy will create a new NetworkPolicy resource named `default-deny` which will deny all traffic anytime a new Namespace is created.
 digest: 6b1ff4bdcb3a502cad6ae739c9b5c8353bf1c4764e7c0d716e40a7b689bcb8d1
-homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/add_networkpolicy_dns
+homeURL: https://github.com/kyverno/policies/tree/master/best-practices/add_networkpolicy_dns
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/best-practices/add_networkpolicy_dns/add-networkpolicy-dns.yaml
+      url: https://github.com/kyverno/policies/blob/master/best-practices/add_networkpolicy_dns/add-networkpolicy-dns.yaml
 readme: |-
     # Add Network Policy for DNS
-    By default, Kubernetes allows communications across all Pods within a cluster. The NetworkPolicy resource and a CNI plug-in that supports NetworkPolicy must be used to restrict communications. A default NetworkPolicy should be configured for each Namespace to default deny all ingress and egress traffic to the Pods in the Namespace. Application teams can then configure additional NetworkPolicy resources to allow desired traffic to application Pods from select sources. This policy will create a new NetworkPolicy resource named `default-deny` which will deny all traffic anytime a new Namespace is created.
+    	By default, Kubernetes allows communications across all Pods within a cluster. The NetworkPolicy resource and a CNI plug-in that supports NetworkPolicy must be used to restrict communications. A default NetworkPolicy should be configured for each Namespace to default deny all ingress and egress traffic to the Pods in the Namespace. Application teams can then configure additional NetworkPolicy resources to allow desired traffic to application Pods from select sources. This policy will create a new NetworkPolicy resource named `default-deny` which will deny all traffic anytime a new Namespace is created.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/add_networkpolicy_dns/add_networkpolicy_dns.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/best-practices/add_networkpolicy_dns/add_networkpolicy_dns.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

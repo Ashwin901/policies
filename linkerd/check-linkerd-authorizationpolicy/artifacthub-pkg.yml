@@ -1,23 +1,23 @@
 version: 1.0.0
 name: check-linkerd-authorizationpolicy
 displayName: Check Linkerd AuthorizationPolicy
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: As of Linkerd 2.12, an AuthorizationPolicy is a resource used to selectively allow traffic to either a Server or HTTPRoute resource. Creating AuthorizationPolicies is needed when a Server exists in order to control what traffic is permitted within the mesh to the Pods selected by the Server or HTTPRoute. This policy, requiring Linkerd 2.12+, checks incoming AuthorizationPolicy resources to ensure that either a matching Server or HTTPRoute exists first.
 digest: 00301cfff748cacec3b980f910da84850ae023b8f474e85abdcf35cfeddf8b83
-homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/check-linkerd-authorizationpolicy
+homeURL: https://github.com/kyverno/policies/tree/master/linkerd/check-linkerd-authorizationpolicy
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/linkerd/check-linkerd-authorizationpolicy/check-linkerd-authorizationpolicy.yaml
+      url: https://github.com/kyverno/policies/blob/master/linkerd/check-linkerd-authorizationpolicy/check-linkerd-authorizationpolicy.yaml
 readme: |-
     # Check Linkerd AuthorizationPolicy
-    As of Linkerd 2.12, an AuthorizationPolicy is a resource used to selectively allow traffic to either a Server or HTTPRoute resource. Creating AuthorizationPolicies is needed when a Server exists in order to control what traffic is permitted within the mesh to the Pods selected by the Server or HTTPRoute. This policy, requiring Linkerd 2.12+, checks incoming AuthorizationPolicy resources to ensure that either a matching Server or HTTPRoute exists first.
+    	As of Linkerd 2.12, an AuthorizationPolicy is a resource used to selectively allow traffic to either a Server or HTTPRoute resource. Creating AuthorizationPolicies is needed when a Server exists in order to control what traffic is permitted within the mesh to the Pods selected by the Server or HTTPRoute. This policy, requiring Linkerd 2.12+, checks incoming AuthorizationPolicy resources to ensure that either a matching Server or HTTPRoute exists first.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/linkerd/check-linkerd-authorizationpolicy/check-linkerd-authorizationpolicy.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/linkerd/check-linkerd-authorizationpolicy/check-linkerd-authorizationpolicy.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

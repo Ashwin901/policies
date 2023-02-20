@@ -1,23 +1,23 @@
 version: 1.0.0
 name: exclude-namespaces-example
 displayName: Exclude Namespaces Dynamically
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: It's common where policy lookups need to consider a mapping to many possible values rather than a static mapping. This is a sample which demonstrates how to dynamically look up an allow list of Namespaces from a ConfigMap where the ConfigMap stores an array of strings. This policy validates that any Pods created outside of the list of Namespaces have the label `foo` applied.
 digest: c66bf7c078f2d6fc8dfb3a1e59a68eeea2e991ea2e74372a498042bb9e3a084a
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/exclude_namespaces_dynamically
+homeURL: https://github.com/kyverno/policies/tree/master/other/exclude_namespaces_dynamically
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/exclude_namespaces_dynamically/exclude_namespaces_dynamically.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/exclude_namespaces_dynamically/exclude_namespaces_dynamically.yaml
 readme: |-
     # Exclude Namespaces Dynamically
-    It's common where policy lookups need to consider a mapping to many possible values rather than a static mapping. This is a sample which demonstrates how to dynamically look up an allow list of Namespaces from a ConfigMap where the ConfigMap stores an array of strings. This policy validates that any Pods created outside of the list of Namespaces have the label `foo` applied.
+    	It's common where policy lookups need to consider a mapping to many possible values rather than a static mapping. This is a sample which demonstrates how to dynamically look up an allow list of Namespaces from a ConfigMap where the ConfigMap stores an array of strings. This policy validates that any Pods created outside of the list of Namespaces have the label `foo` applied.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/exclude_namespaces_dynamically/exclude_namespaces_dynamically.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/exclude_namespaces_dynamically/exclude_namespaces_dynamically.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

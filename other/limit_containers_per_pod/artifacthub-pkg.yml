@@ -1,23 +1,23 @@
 version: 1.0.0
 name: limit-containers-per-pod
 displayName: Limit Containers per Pod
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Pods can have many different containers which are tightly coupled. It may be desirable to limit the amount of containers that can be in a single Pod to control best practice application or so policy can be applied consistently. This policy checks all Pods to ensure they have no more than four containers.
 digest: 5c20e88cfc1a23dd5e4e8b38becf32828e954d522eaf38d665570d40bcb58f78
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/limit_containers_per_pod
+homeURL: https://github.com/kyverno/policies/tree/master/other/limit_containers_per_pod
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/limit_containers_per_pod/limit_containers_per_pod.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/limit_containers_per_pod/limit_containers_per_pod.yaml
 readme: |-
     # Limit Containers per Pod
-    Pods can have many different containers which are tightly coupled. It may be desirable to limit the amount of containers that can be in a single Pod to control best practice application or so policy can be applied consistently. This policy checks all Pods to ensure they have no more than four containers.
+    	Pods can have many different containers which are tightly coupled. It may be desirable to limit the amount of containers that can be in a single Pod to control best practice application or so policy can be applied consistently. This policy checks all Pods to ensure they have no more than four containers.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/limit_containers_per_pod/limit_containers_per_pod.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/limit_containers_per_pod/limit_containers_per_pod.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

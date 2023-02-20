@@ -1,23 +1,23 @@
 version: 1.0.0
 name: resolve-image-to-digest
 displayName: Resolve Image to Digest
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Image tags are mutable and the change of an image can result in the same tag. This policy resolves the image digest of each image in a container and replaces the image with the fully resolved reference which includes the digest rather than tag.
 digest: c3132ddc214c3f9adee7bf9e2d659071c8ba683b54b558413938825b56b4b71b
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/resolve_image_to_digest
+homeURL: https://github.com/kyverno/policies/tree/master/other/resolve_image_to_digest
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/resolve_image_to_digest/resolve-image-to-digest.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/resolve_image_to_digest/resolve-image-to-digest.yaml
 readme: |-
     # Resolve Image to Digest
-    Image tags are mutable and the change of an image can result in the same tag. This policy resolves the image digest of each image in a container and replaces the image with the fully resolved reference which includes the digest rather than tag.
+    	Image tags are mutable and the change of an image can result in the same tag. This policy resolves the image digest of each image in a container and replaces the image with the fully resolved reference which includes the digest rather than tag.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/resolve_image_to_digest/resolve_image_to_digest.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/resolve_image_to_digest/resolve_image_to_digest.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

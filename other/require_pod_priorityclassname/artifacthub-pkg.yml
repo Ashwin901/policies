@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-pod-priorityclassname
 displayName: Require Pod priorityClassName
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: A Pod may optionally specify a priorityClassName which indicates the scheduling priority relative to others. This requires creation of a PriorityClass object in advance. With this created, a Pod may set this field to that value. In a multi-tenant environment, it is often desired to require this priorityClassName be set to make certain tenant scheduling guarantees. This policy requires that a Pod defines the priorityClassName field with some value.
 digest: edf70e2d9181baed076b85a7aa92ce4f7dd6993462dd92a1f1f8d5ce1a02cdc6
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_pod_priorityclassname
+homeURL: https://github.com/kyverno/policies/tree/master/other/require_pod_priorityclassname
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/require_pod_priorityclassname/require_pod_priorityclassname.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/require_pod_priorityclassname/require_pod_priorityclassname.yaml
 readme: |-
     # Require Pod priorityClassName
-    A Pod may optionally specify a priorityClassName which indicates the scheduling priority relative to others. This requires creation of a PriorityClass object in advance. With this created, a Pod may set this field to that value. In a multi-tenant environment, it is often desired to require this priorityClassName be set to make certain tenant scheduling guarantees. This policy requires that a Pod defines the priorityClassName field with some value.
+    	A Pod may optionally specify a priorityClassName which indicates the scheduling priority relative to others. This requires creation of a PriorityClass object in advance. With this created, a Pod may set this field to that value. In a multi-tenant environment, it is often desired to require this priorityClassName be set to make certain tenant scheduling guarantees. This policy requires that a Pod defines the priorityClassName field with some value.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_pod_priorityclassname/require_pod_priorityclassname.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/require_pod_priorityclassname/require_pod_priorityclassname.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

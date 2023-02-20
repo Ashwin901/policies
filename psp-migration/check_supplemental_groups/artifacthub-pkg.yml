@@ -1,23 +1,23 @@
 version: 1.0.0
 name: psp-check-supplemental-groups
 displayName: Check supplementalGroups
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Supplemental groups control which group IDs containers add and can coincide with restricted groups on the host. Pod Security Policies (PSP) allowed a range of these group IDs to be specified which were allowed. This policy ensures any Pod may only specify supplementalGroup IDs between 100-200 or 500-600.
 digest: 4772a4d62aae0053263b2da6dfaa51b6705a534265864fb8aaa761c3d78418f7
-homeURL: https://github.com/Ashwin901/policies/tree/master/psp-migration/check_supplemental_groups
+homeURL: https://github.com/kyverno/policies/tree/master/psp-migration/check_supplemental_groups
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/psp-migration/check_supplemental_groups/check-supplemental-groups.yaml
+      url: https://github.com/kyverno/policies/blob/master/psp-migration/check_supplemental_groups/check-supplemental-groups.yaml
 readme: |-
     # Check supplementalGroups
-    Supplemental groups control which group IDs containers add and can coincide with restricted groups on the host. Pod Security Policies (PSP) allowed a range of these group IDs to be specified which were allowed. This policy ensures any Pod may only specify supplementalGroup IDs between 100-200 or 500-600.
+    	Supplemental groups control which group IDs containers add and can coincide with restricted groups on the host. Pod Security Policies (PSP) allowed a range of these group IDs to be specified which were allowed. This policy ensures any Pod may only specify supplementalGroup IDs between 100-200 or 500-600.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/psp-migration/check_supplemental_groups/check_supplemental_groups.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/psp-migration/check_supplemental_groups/check_supplemental_groups.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

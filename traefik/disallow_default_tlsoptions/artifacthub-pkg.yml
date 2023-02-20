@@ -1,23 +1,23 @@
 version: 1.0.0
 name: disallow-default-tlsoptions
 displayName: Disallow Default TLSOptions
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: The TLSOption CustomResource sets cluster-wide TLS configuration options for Traefik when  none are specified in a TLS router. Since this can take effect for all Ingress resources, creating the `default` TLSOption is a restricted operation. This policy ensures that only a cluster-admin can create the `default` TLSOption resource.
 digest: 68568a6f9657dbd74e95fea94f577a1516283f7be0d3866f05979c778ff5ebec
-homeURL: https://github.com/Ashwin901/policies/tree/master/traefik/disallow_default_tlsoptions
+homeURL: https://github.com/kyverno/policies/tree/master/traefik/disallow_default_tlsoptions
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/traefik/disallow_default_tlsoptions/disallow_default_tlsoptions.yaml
+      url: https://github.com/kyverno/policies/blob/master/traefik/disallow_default_tlsoptions/disallow_default_tlsoptions.yaml
 readme: |-
     # Disallow Default TLSOptions
-    The TLSOption CustomResource sets cluster-wide TLS configuration options for Traefik when  none are specified in a TLS router. Since this can take effect for all Ingress resources, creating the `default` TLSOption is a restricted operation. This policy ensures that only a cluster-admin can create the `default` TLSOption resource.
+    	The TLSOption CustomResource sets cluster-wide TLS configuration options for Traefik when  none are specified in a TLS router. Since this can take effect for all Ingress resources, creating the `default` TLSOption is a restricted operation. This policy ensures that only a cluster-admin can create the `default` TLSOption resource.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/traefik/disallow_default_tlsoptions/disallow_default_tlsoptions.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/traefik/disallow_default_tlsoptions/disallow_default_tlsoptions.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

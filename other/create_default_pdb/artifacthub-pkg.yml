@@ -1,23 +1,23 @@
 version: 1.0.0
 name: create-default-pdb
 displayName: Add Pod Disruption Budget
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: A PodDisruptionBudget limits the number of Pods of a replicated application that are down simultaneously from voluntary disruptions. For example, a quorum-based application would like to ensure that the number of replicas running is never brought below the number needed for a quorum. As an application owner, you can create a PodDisruptionBudget (PDB) for each application. This policy will create a PDB resource whenever a new Deployment is created.
 digest: f28b2f0547e4263bd53207ba00c43a0751524148bb587ea7250863cb59923434
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/create_default_pdb
+homeURL: https://github.com/kyverno/policies/tree/master/other/create_default_pdb
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/create_default_pdb/create_default_pdb.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/create_default_pdb/create_default_pdb.yaml
 readme: |-
     # Add Pod Disruption Budget
-    A PodDisruptionBudget limits the number of Pods of a replicated application that are down simultaneously from voluntary disruptions. For example, a quorum-based application would like to ensure that the number of replicas running is never brought below the number needed for a quorum. As an application owner, you can create a PodDisruptionBudget (PDB) for each application. This policy will create a PDB resource whenever a new Deployment is created.
+    	A PodDisruptionBudget limits the number of Pods of a replicated application that are down simultaneously from voluntary disruptions. For example, a quorum-based application would like to ensure that the number of replicas running is never brought below the number needed for a quorum. As an application owner, you can create a PodDisruptionBudget (PDB) for each application. This policy will create a PDB resource whenever a new Deployment is created.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/create_default_pdb/create_default_pdb.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/create_default_pdb/create_default_pdb.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

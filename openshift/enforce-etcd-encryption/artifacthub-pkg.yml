@@ -1,23 +1,23 @@
 version: 1.0.0
 name: enforce-etcd-encryption
 displayName: Enforce etcd encryption in OpenShift
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Encrption at rest is a security best practice. This policy ensures encryption is enabled for etcd in OpenShift clusters.
 digest: b1a3f049ac29a2b848000784fa4e873f168a7aebfb2c2f1d97041b2193d24190
-homeURL: https://github.com/Ashwin901/policies/tree/master/openshift/enforce-etcd-encryption
+homeURL: https://github.com/kyverno/policies/tree/master/openshift/enforce-etcd-encryption
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/openshift/enforce-etcd-encryption/enforce-etcd-encryption.yaml
+      url: https://github.com/kyverno/policies/blob/master/openshift/enforce-etcd-encryption/enforce-etcd-encryption.yaml
 readme: |-
     # Enforce etcd encryption in OpenShift
-    Encrption at rest is a security best practice. This policy ensures encryption is enabled for etcd in OpenShift clusters.
+    	Encrption at rest is a security best practice. This policy ensures encryption is enabled for etcd in OpenShift clusters.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/openshift/enforce-etcd-encryption/enforce-etcd-encryption.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/openshift/enforce-etcd-encryption/enforce-etcd-encryption.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

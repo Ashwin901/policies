@@ -1,23 +1,23 @@
 version: 1.0.0
 name: disable-service-discovery
 displayName: Disable Service Discovery
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Not all Pods require communicating with other Pods or resolving in-cluster Services. For those, disabling service discovery can increase security as the Pods are limited to what they can see. This policy mutates Pods to set dnsPolicy to `Default` and enableServiceLinks to `false`.
 digest: 237c9ec006cb6f578f0223667f0421f3170ba5e5e386f343bb9c5c2daa9c05e1
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/disable_service_discovery
+homeURL: https://github.com/kyverno/policies/tree/master/other/disable_service_discovery
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/disable_service_discovery/disable-service-discovery.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/disable_service_discovery/disable-service-discovery.yaml
 readme: |-
     # Disable Service Discovery
-    Not all Pods require communicating with other Pods or resolving in-cluster Services. For those, disabling service discovery can increase security as the Pods are limited to what they can see. This policy mutates Pods to set dnsPolicy to `Default` and enableServiceLinks to `false`.
+    	Not all Pods require communicating with other Pods or resolving in-cluster Services. For those, disabling service discovery can increase security as the Pods are limited to what they can see. This policy mutates Pods to set dnsPolicy to `Default` and enableServiceLinks to `false`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/disable_service_discovery/disable_service_discovery.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/disable_service_discovery/disable_service_discovery.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-networkpolicy-empty-podselector
 displayName: Restrict NetworkPolicy with Empty podSelector
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: By default, all pods in a Kubernetes cluster are allowed to communicate with each other, and all network traffic is unencrypted. It is recommended to not use an empty podSelector in order to more closely control the necessary traffic flows. This policy requires that all NetworkPolicies other than that of `default-deny` not use an empty podSelector.
 digest: 5709233aa8d53f1ed6a22db0bbddc2e5d755e97c02dafbb578efad8d317afc3a
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_networkpolicy_empty_podselector
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict_networkpolicy_empty_podselector
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict_networkpolicy_empty_podselector/restrict_networkpolicy_empty_podselector.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict_networkpolicy_empty_podselector/restrict_networkpolicy_empty_podselector.yaml
 readme: |-
     # Restrict NetworkPolicy with Empty podSelector
-    By default, all pods in a Kubernetes cluster are allowed to communicate with each other, and all network traffic is unencrypted. It is recommended to not use an empty podSelector in order to more closely control the necessary traffic flows. This policy requires that all NetworkPolicies other than that of `default-deny` not use an empty podSelector.
+    	By default, all pods in a Kubernetes cluster are allowed to communicate with each other, and all network traffic is unencrypted. It is recommended to not use an empty podSelector in order to more closely control the necessary traffic flows. This policy requires that all NetworkPolicies other than that of `default-deny` not use an empty podSelector.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict_networkpolicy_empty_podselector/restrict_networkpolicy_empty_podselector.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict_networkpolicy_empty_podselector/restrict_networkpolicy_empty_podselector.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

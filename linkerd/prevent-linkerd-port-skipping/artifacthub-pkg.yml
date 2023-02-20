@@ -1,23 +1,23 @@
 version: 1.0.0
 name: prevent-linkerd-port-skipping
 displayName: Prevent Linkerd Port Skipping
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Linkerd has the ability to skip inbound and outbound ports assigned to Pods, exempting them from mTLS. This can be important in some narrow use cases but generally should be avoided. This policy prevents Pods from setting the annotations `config.linkerd.io/skip-inbound-ports` or `config.linkerd.io/skip-outbound-ports`.
 digest: 55e7399a3e7d91536f23fb12c40b6dea15c03b07812fbff33a4d946e35869074
-homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/prevent-linkerd-port-skipping
+homeURL: https://github.com/kyverno/policies/tree/master/linkerd/prevent-linkerd-port-skipping
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/linkerd/prevent-linkerd-port-skipping/prevent-linkerd-port-skipping.yaml
+      url: https://github.com/kyverno/policies/blob/master/linkerd/prevent-linkerd-port-skipping/prevent-linkerd-port-skipping.yaml
 readme: |-
     # Prevent Linkerd Port Skipping
-    Linkerd has the ability to skip inbound and outbound ports assigned to Pods, exempting them from mTLS. This can be important in some narrow use cases but generally should be avoided. This policy prevents Pods from setting the annotations `config.linkerd.io/skip-inbound-ports` or `config.linkerd.io/skip-outbound-ports`.
+    	Linkerd has the ability to skip inbound and outbound ports assigned to Pods, exempting them from mTLS. This can be important in some narrow use cases but generally should be avoided. This policy prevents Pods from setting the annotations `config.linkerd.io/skip-inbound-ports` or `config.linkerd.io/skip-outbound-ports`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/linkerd/prevent-linkerd-port-skipping/prevent-linkerd-port-skipping.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/linkerd/prevent-linkerd-port-skipping/prevent-linkerd-port-skipping.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: kubernetes-version-check
 displayName: Kubernetes Version Check
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: It is often needed to make decisions for resources based upon the version of the Kubernetes API server in the cluster. This policy serves as an example for how to retrieve the minor version of the Kubernetes API server and subsequently use in a policy behavior. It will mutate a Secret upon its creation with a label called `apiminorversion` the value of which is the minor version of the API server.
 digest: 348725063e79c6054eef80aa9d2fa58c1dc93c820081b2eee0811534a99c1dfc
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/kubernetes_version_check
+homeURL: https://github.com/kyverno/policies/tree/master/other/kubernetes_version_check
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/kubernetes_version_check/kubernetes-version-check.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/kubernetes_version_check/kubernetes-version-check.yaml
 readme: |-
     # Kubernetes Version Check
-    It is often needed to make decisions for resources based upon the version of the Kubernetes API server in the cluster. This policy serves as an example for how to retrieve the minor version of the Kubernetes API server and subsequently use in a policy behavior. It will mutate a Secret upon its creation with a label called `apiminorversion` the value of which is the minor version of the API server.
+    	It is often needed to make decisions for resources based upon the version of the Kubernetes API server in the cluster. This policy serves as an example for how to retrieve the minor version of the Kubernetes API server and subsequently use in a policy behavior. It will mutate a Secret upon its creation with a label called `apiminorversion` the value of which is the minor version of the API server.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/kubernetes_version_check/kubernetes_version_check.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/kubernetes_version_check/kubernetes_version_check.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-image-checksum
 displayName: Require Images Use Checksums
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Use of a SHA checksum when pulling an image is often preferable because tags are mutable and can be overwritten. This policy checks to ensure that all images use SHA checksums rather than tags.
 digest: 9db3557eb3badffb66d99721123e54007739830762eee571630f450cbacb9141
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_image_checksum
+homeURL: https://github.com/kyverno/policies/tree/master/other/require_image_checksum
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/require_image_checksum/require_image_checksum.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/require_image_checksum/require_image_checksum.yaml
 readme: |-
     # Require Images Use Checksums
-    Use of a SHA checksum when pulling an image is often preferable because tags are mutable and can be overwritten. This policy checks to ensure that all images use SHA checksums rather than tags.
+    	Use of a SHA checksum when pulling an image is often preferable because tags are mutable and can be overwritten. This policy checks to ensure that all images use SHA checksums rather than tags.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_image_checksum/require_image_checksum.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/require_image_checksum/require_image_checksum.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

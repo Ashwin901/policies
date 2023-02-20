@@ -1,23 +1,23 @@
 version: 1.0.0
 name: time-bound-policy
 displayName: Time-Bound Policy
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Sometimes a policy should be active or inactive based on a time window determined as part of the policy. Whether the policy should come into play should be dependent on that time. This policy illustrates how to time-bound any policy by using preconditions with JMESPath time filters. In this case, the policy enforces that label `foo` be required on all ConfigMaps during the hours of 8am-5pm EST (expressed in UTC). Additional, similar preconditions may be added to perform other time checks, for example a range of days.
 digest: ba19df784de2d5a3ca0a1e77364bf33b0451459d2da11ca08450cdfeef9e04e1
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/time-bound-policy
+homeURL: https://github.com/kyverno/policies/tree/master/other/time-bound-policy
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/time-bound-policy/time-bound-policy.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/time-bound-policy/time-bound-policy.yaml
 readme: |-
     # Time-Bound Policy
-    Sometimes a policy should be active or inactive based on a time window determined as part of the policy. Whether the policy should come into play should be dependent on that time. This policy illustrates how to time-bound any policy by using preconditions with JMESPath time filters. In this case, the policy enforces that label `foo` be required on all ConfigMaps during the hours of 8am-5pm EST (expressed in UTC). Additional, similar preconditions may be added to perform other time checks, for example a range of days.
+    	Sometimes a policy should be active or inactive based on a time window determined as part of the policy. Whether the policy should come into play should be dependent on that time. This policy illustrates how to time-bound any policy by using preconditions with JMESPath time filters. In this case, the policy enforces that label `foo` be required on all ConfigMaps during the hours of 8am-5pm EST (expressed in UTC). Additional, similar preconditions may be added to perform other time checks, for example a range of days.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/time-bound-policy/time-bound-policy.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/time-bound-policy/time-bound-policy.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

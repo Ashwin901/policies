@@ -1,23 +1,23 @@
 version: 1.0.0
 name: unique-external-dns
 displayName: Require Unique External DNS Services
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: ExternalDNS, part of Kubernetes SIGs, triggers the creation of external DNS records in supported providers when the annotation`external-dns.alpha.kubernetes.io/hostname` is present. Like with internal DNS, duplicates must be avoided. This policy requires every such Service have a cluster-unique hostname present in the value of the annotation.
 digest: d57175b08da7e68de9d6923e9ffa8270665e135bf9dbe5b31a00306be66d0efd
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_unique_external_dns
+homeURL: https://github.com/kyverno/policies/tree/master/other/require_unique_external_dns
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/require_unique_external_dns/require_unique_external_dns.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/require_unique_external_dns/require_unique_external_dns.yaml
 readme: |-
     # Require Unique External DNS Services
-    ExternalDNS, part of Kubernetes SIGs, triggers the creation of external DNS records in supported providers when the annotation`external-dns.alpha.kubernetes.io/hostname` is present. Like with internal DNS, duplicates must be avoided. This policy requires every such Service have a cluster-unique hostname present in the value of the annotation.
+    	ExternalDNS, part of Kubernetes SIGs, triggers the creation of external DNS records in supported providers when the annotation`external-dns.alpha.kubernetes.io/hostname` is present. Like with internal DNS, duplicates must be avoided. This policy requires every such Service have a cluster-unique hostname present in the value of the annotation.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_unique_external_dns/require_unique_external_dns.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/require_unique_external_dns/require_unique_external_dns.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

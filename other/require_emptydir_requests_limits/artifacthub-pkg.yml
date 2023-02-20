@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-emptydir-requests-and-limits
 displayName: Require Requests and Limits for emptyDir
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Pods which mount emptyDir volumes may be allowed to potentially overrun the medium backing the emptyDir volume. This sample ensures that any initContainers or containers mounting an emptyDir volume have ephemeral-storage requests and limits set. Policy will be skipped if the volume has already a sizeLimit set.
 digest: d1b8b382c8240d3577152d91babc2228f419dd95fdedda465b86dcc469474036
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_emptydir_requests_limits
+homeURL: https://github.com/kyverno/policies/tree/master/other/require_emptydir_requests_limits
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/require_emptydir_requests_limits/require-emptydir-requests-limits.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/require_emptydir_requests_limits/require-emptydir-requests-limits.yaml
 readme: |-
     # Require Requests and Limits for emptyDir
-    Pods which mount emptyDir volumes may be allowed to potentially overrun the medium backing the emptyDir volume. This sample ensures that any initContainers or containers mounting an emptyDir volume have ephemeral-storage requests and limits set. Policy will be skipped if the volume has already a sizeLimit set.
+    	Pods which mount emptyDir volumes may be allowed to potentially overrun the medium backing the emptyDir volume. This sample ensures that any initContainers or containers mounting an emptyDir volume have ephemeral-storage requests and limits set. Policy will be skipped if the volume has already a sizeLimit set.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_emptydir_requests_limits/require_emptydir_requests_limits.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/require_emptydir_requests_limits/require_emptydir_requests_limits.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

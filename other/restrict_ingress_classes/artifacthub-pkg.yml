@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-ingress-classes
 displayName: Restrict Ingress Classes
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Ingress classes should only be allowed which match up to deployed Ingress controllers in the cluster. Allowing users to define classes which cannot be satisfied by a deployed Ingress controller can result in either no or undesired functionality. This policy checks Ingress resources and only allows those which define `HAProxy` or `nginx` in the respective annotation. This annotation has largely been replaced as of Kubernetes 1.18 with the IngressClass resource.
 digest: 7b0375e80d62f8f53fff62b6dce17c6e37f27723cf8d83556bf74c9cd21df396
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_ingress_classes
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict_ingress_classes
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict_ingress_classes/restrict_ingress_classes.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict_ingress_classes/restrict_ingress_classes.yaml
 readme: |-
     # Restrict Ingress Classes
-    Ingress classes should only be allowed which match up to deployed Ingress controllers in the cluster. Allowing users to define classes which cannot be satisfied by a deployed Ingress controller can result in either no or undesired functionality. This policy checks Ingress resources and only allows those which define `HAProxy` or `nginx` in the respective annotation. This annotation has largely been replaced as of Kubernetes 1.18 with the IngressClass resource.
+    	Ingress classes should only be allowed which match up to deployed Ingress controllers in the cluster. Allowing users to define classes which cannot be satisfied by a deployed Ingress controller can result in either no or undesired functionality. This policy checks Ingress resources and only allows those which define `HAProxy` or `nginx` in the respective annotation. This annotation has largely been replaced as of Kubernetes 1.18 with the IngressClass resource.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict_ingress_classes/restrict_ingress_classes.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict_ingress_classes/restrict_ingress_classes.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

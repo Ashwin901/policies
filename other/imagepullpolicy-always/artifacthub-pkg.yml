@@ -1,23 +1,23 @@
 version: 1.0.0
 name: imagepullpolicy-always
 displayName: Require imagePullPolicy Always
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: If the `latest` tag is allowed for images, it is a good idea to have the imagePullPolicy field set to `Always` to ensure should that tag be overwritten that future pulls will get the updated image. This policy validates the imagePullPolicy is set to `Always` when the `latest` tag is specified explicitly or where a tag is not defined at all.
 digest: b522e9c3925736e0f8d87f82d8eeda6f15b2f7b8ddef8eefe0757e6780c4b6df
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/imagepullpolicy-always
+homeURL: https://github.com/kyverno/policies/tree/master/other/imagepullpolicy-always
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/imagepullpolicy-always/imagepullpolicy-always.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/imagepullpolicy-always/imagepullpolicy-always.yaml
 readme: |-
     # Require imagePullPolicy Always
-    If the `latest` tag is allowed for images, it is a good idea to have the imagePullPolicy field set to `Always` to ensure should that tag be overwritten that future pulls will get the updated image. This policy validates the imagePullPolicy is set to `Always` when the `latest` tag is specified explicitly or where a tag is not defined at all.
+    	If the `latest` tag is allowed for images, it is a good idea to have the imagePullPolicy field set to `Always` to ensure should that tag be overwritten that future pulls will get the updated image. This policy validates the imagePullPolicy is set to `Always` when the `latest` tag is specified explicitly or where a tag is not defined at all.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/imagepullpolicy-always/imagepullpolicy-always.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/imagepullpolicy-always/imagepullpolicy-always.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

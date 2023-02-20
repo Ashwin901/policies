@@ -1,23 +1,23 @@
 version: 1.0.0
 name: disable-automountserviceaccounttoken
 displayName: Disable automountServiceAccountToken
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: A new ServiceAccount called `default` is created whenever a new Namespace is created. Pods spawned in that Namespace, unless otherwise set, will be assigned this ServiceAccount. This policy mutates any new `default` ServiceAccounts to disable auto-mounting of the token into Pods obviating the need to do so individually.
 digest: 48956d816dea3c07297a53ef305df190d99e95b71856924cd5828deefe16e5af
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/disable_automountserviceaccounttoken
+homeURL: https://github.com/kyverno/policies/tree/master/other/disable_automountserviceaccounttoken
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/disable_automountserviceaccounttoken/disable-automountserviceaccounttoken.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/disable_automountserviceaccounttoken/disable-automountserviceaccounttoken.yaml
 readme: |-
     # Disable automountServiceAccountToken
-    A new ServiceAccount called `default` is created whenever a new Namespace is created. Pods spawned in that Namespace, unless otherwise set, will be assigned this ServiceAccount. This policy mutates any new `default` ServiceAccounts to disable auto-mounting of the token into Pods obviating the need to do so individually.
+    	A new ServiceAccount called `default` is created whenever a new Namespace is created. Pods spawned in that Namespace, unless otherwise set, will be assigned this ServiceAccount. This policy mutates any new `default` ServiceAccounts to disable auto-mounting of the token into Pods obviating the need to do so individually.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/disable_automountserviceaccounttoken/disable_automountserviceaccounttoken.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/disable_automountserviceaccounttoken/disable_automountserviceaccounttoken.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

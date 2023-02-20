@@ -1,23 +1,23 @@
 version: 1.0.0
 name: deployment-has-multiple-replicas
 displayName: Require Multiple Replicas
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Deployments with a single replica cannot be highly available and thus the application may suffer downtime if that one replica goes down. This policy validates that Deployments have more than one replica.
 digest: bec1932f84da76acd84d543f80f59eff12db63347b0dbf45651b52594484bf46
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_deployments_have_multiple_replicas
+homeURL: https://github.com/kyverno/policies/tree/master/other/require_deployments_have_multiple_replicas
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/require_deployments_have_multiple_replicas/require_deployments_have_multiple_replicas.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/require_deployments_have_multiple_replicas/require_deployments_have_multiple_replicas.yaml
 readme: |-
     # Require Multiple Replicas
-    Deployments with a single replica cannot be highly available and thus the application may suffer downtime if that one replica goes down. This policy validates that Deployments have more than one replica.
+    	Deployments with a single replica cannot be highly available and thus the application may suffer downtime if that one replica goes down. This policy validates that Deployments have more than one replica.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_deployments_have_multiple_replicas/require_deployments_have_multiple_replicas.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/require_deployments_have_multiple_replicas/require_deployments_have_multiple_replicas.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

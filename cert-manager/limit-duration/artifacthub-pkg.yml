@@ -1,23 +1,23 @@
 version: 1.0.0
 name: cert-manager-limit-duration
 displayName: Certificate max duration 100 days
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Kubernetes managed non-letsencrypt certificates have to be renewed in every 100 days.
 digest: fccb51e4597984d27a2d941a7f8095cca258b02e2f5d0121cf06fe5a23752743
-homeURL: https://github.com/Ashwin901/policies/tree/master/cert-manager/limit-duration
+homeURL: https://github.com/kyverno/policies/tree/master/cert-manager/limit-duration
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/cert-manager/limit-duration/limit-duration.yaml
+      url: https://github.com/kyverno/policies/blob/master/cert-manager/limit-duration/limit-duration.yaml
 readme: |-
     # Certificate max duration 100 days
-    Kubernetes managed non-letsencrypt certificates have to be renewed in every 100 days.
+    	Kubernetes managed non-letsencrypt certificates have to be renewed in every 100 days.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/cert-manager/limit-duration/limit-duration.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/cert-manager/limit-duration/limit-duration.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

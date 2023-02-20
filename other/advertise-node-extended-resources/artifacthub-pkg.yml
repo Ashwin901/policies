@@ -1,23 +1,23 @@
 version: 1.0.0
 name: advertise-node-extended-resources
 displayName: Advertise Node Extended Resources
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Kubernetes Nodes, in addition to standard compute resources like CPU and memory, may offer extended resources such as FPGAs and GPUs, both of which can be defined per custom design. These extended resources are advertised in the `status` object of a Node. This policy, functional only starting in Kyverno 1.9, adds the extended resource `example.com/dongle` with a value/capacity of `2` to Kubernetes Nodes.
 digest: a4f146af9ca5295e91272c035f80832de759e537b7c3fe3b675afa62ce7f71ba
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/advertise-node-extended-resources
+homeURL: https://github.com/kyverno/policies/tree/master/other/advertise-node-extended-resources
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/advertise-node-extended-resources/advertise-node-extended-resources.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/advertise-node-extended-resources/advertise-node-extended-resources.yaml
 readme: |-
     # Advertise Node Extended Resources
-    Kubernetes Nodes, in addition to standard compute resources like CPU and memory, may offer extended resources such as FPGAs and GPUs, both of which can be defined per custom design. These extended resources are advertised in the `status` object of a Node. This policy, functional only starting in Kyverno 1.9, adds the extended resource `example.com/dongle` with a value/capacity of `2` to Kubernetes Nodes.
+    	Kubernetes Nodes, in addition to standard compute resources like CPU and memory, may offer extended resources such as FPGAs and GPUs, both of which can be defined per custom design. These extended resources are advertised in the `status` object of a Node. This policy, functional only starting in Kyverno 1.9, adds the extended resource `example.com/dongle` with a value/capacity of `2` to Kubernetes Nodes.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/advertise-node-extended-resources/advertise-node-extended-resources.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/advertise-node-extended-resources/advertise-node-extended-resources.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

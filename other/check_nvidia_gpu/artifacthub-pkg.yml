@@ -1,23 +1,23 @@
 version: 1.0.0
 name: check-nvidia-gpus
 displayName: Check NVIDIA GPUs
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Containers which request use of an NVIDIA GPU often need to be authored to consume them via a CUDA environment variable called NVIDIA_VISIBLE_DEVICES. This policy checks the containers which request a GPU to ensure they have been authored with this environment variable.
 digest: 4b1def04d9ffd3e476a7d3371874e578847bd755e7d7135f94c78ed3bccfaa10
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/check_nvidia_gpu
+homeURL: https://github.com/kyverno/policies/tree/master/other/check_nvidia_gpu
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/check_nvidia_gpu/check-nvidia-gpu.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/check_nvidia_gpu/check-nvidia-gpu.yaml
 readme: |-
     # Check NVIDIA GPUs
-    Containers which request use of an NVIDIA GPU often need to be authored to consume them via a CUDA environment variable called NVIDIA_VISIBLE_DEVICES. This policy checks the containers which request a GPU to ensure they have been authored with this environment variable.
+    	Containers which request use of an NVIDIA GPU often need to be authored to consume them via a CUDA environment variable called NVIDIA_VISIBLE_DEVICES. This policy checks the containers which request a GPU to ensure they have been authored with this environment variable.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/check_nvidia_gpu/check_nvidia_gpu.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/check_nvidia_gpu/check_nvidia_gpu.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

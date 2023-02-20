@@ -1,23 +1,23 @@
 version: 1.0.0
 name: disallow-empty-ingress-host
 displayName: Disallow empty Ingress host
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:29Z"
 description: An ingress resource needs to define an actual host name in order to be valid. This policy ensures that there is a hostname for each rule defined.
 digest: d7d9d2a0b77ffa647968689d18687e77b3ba4e291e281743e0bd8c2bc1411017
-homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/disallow-empty-ingress-host
+homeURL: https://github.com/kyverno/policies/tree/master/best-practices/disallow-empty-ingress-host
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/best-practices/disallow-empty-ingress-host/disallow_empty_ingress_host.yaml
+      url: https://github.com/kyverno/policies/blob/master/best-practices/disallow-empty-ingress-host/disallow_empty_ingress_host.yaml
 readme: |-
     # Disallow empty Ingress host
-    An ingress resource needs to define an actual host name in order to be valid. This policy ensures that there is a hostname for each rule defined.
+    	An ingress resource needs to define an actual host name in order to be valid. This policy ensures that there is a hostname for each rule defined.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/disallow-empty-ingress-host/disallow-empty-ingress-host.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/best-practices/disallow-empty-ingress-host/disallow-empty-ingress-host.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

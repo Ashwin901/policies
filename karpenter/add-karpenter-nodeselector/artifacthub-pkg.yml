@@ -1,23 +1,23 @@
 version: 1.0.0
 name: add-karpenter-nodeselector
 displayName: Add Karpenter nodeSelector
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Selecting the correct Node(s) provisioned by Karpenter is a way to specify the appropriate resource landing zone for a workload. This policy injects a nodeSelector map into the Pod based on the Namespace type where it is deployed.
 digest: 0257955f52dad00c9d2df2d79da56ac3544b6dfb64f0ff0976b96721f03756a7
-homeURL: https://github.com/Ashwin901/policies/tree/master/karpenter/add-karpenter-nodeselector
+homeURL: https://github.com/kyverno/policies/tree/master/karpenter/add-karpenter-nodeselector
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/karpenter/add-karpenter-nodeselector/add-karpenter-nodeselector.yaml
+      url: https://github.com/kyverno/policies/blob/master/karpenter/add-karpenter-nodeselector/add-karpenter-nodeselector.yaml
 readme: |-
     # Add Karpenter nodeSelector
-    Selecting the correct Node(s) provisioned by Karpenter is a way to specify the appropriate resource landing zone for a workload. This policy injects a nodeSelector map into the Pod based on the Namespace type where it is deployed.
+    	Selecting the correct Node(s) provisioned by Karpenter is a way to specify the appropriate resource landing zone for a workload. This policy injects a nodeSelector map into the Pod based on the Namespace type where it is deployed.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/karpenter/add-karpenter-nodeselector/add-karpenter-nodeselector.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/karpenter/add-karpenter-nodeselector/add-karpenter-nodeselector.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

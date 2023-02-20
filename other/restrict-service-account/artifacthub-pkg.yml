@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-service-account
 displayName: Restrict Service Account
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: 'Users may be able to specify any ServiceAccount which exists in their Namespace without restrictions. Confining Pods to a list of authorized ServiceAccounts can be useful to ensure applications in those Pods do not have more privileges than they should. This policy verifies that in the `staging` Namespace the ServiceAccount being specified is matched based on the image and name of the container. For example: ''sa-name: ["registry/image-name"]'''
 digest: a6bea2b97ca96c3a8ad23cfbde34f80ee94cc916137706aa12db3c7e3d0f4391
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-service-account
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict-service-account
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict-service-account/restrict_service_account.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict-service-account/restrict_service_account.yaml
 readme: |-
     # Restrict Service Account
-    Users may be able to specify any ServiceAccount which exists in their Namespace without restrictions. Confining Pods to a list of authorized ServiceAccounts can be useful to ensure applications in those Pods do not have more privileges than they should. This policy verifies that in the `staging` Namespace the ServiceAccount being specified is matched based on the image and name of the container. For example: 'sa-name: ["registry/image-name"]'
+    	Users may be able to specify any ServiceAccount which exists in their Namespace without restrictions. Confining Pods to a list of authorized ServiceAccounts can be useful to ensure applications in those Pods do not have more privileges than they should. This policy verifies that in the `staging` Namespace the ServiceAccount being specified is matched based on the image and name of the container. For example: 'sa-name: ["registry/image-name"]'
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict-service-account/restrict-service-account.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict-service-account/restrict-service-account.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: add-ttl-jobs
 displayName: Add TTL to Jobs
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Jobs which are user created can often pile up and consume excess space in the cluster. In Kubernetes 1.23, the TTL-after-finished controller is stable and will automatically clean up these Jobs if the ttlSecondsAfterFinished is specified. This policy adds the ttlSecondsAfterFinished field to an Job that does not have an ownerReference set if not already specified.
 digest: 0e0a3285cf8acea34949bc6afbf2872ea11d52b278232d51d79c57a431f4f358
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/add-ttl-jobs
+homeURL: https://github.com/kyverno/policies/tree/master/other/add-ttl-jobs
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/add-ttl-jobs/add-ttl-jobs.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/add-ttl-jobs/add-ttl-jobs.yaml
 readme: |-
     # Add TTL to Jobs
-    Jobs which are user created can often pile up and consume excess space in the cluster. In Kubernetes 1.23, the TTL-after-finished controller is stable and will automatically clean up these Jobs if the ttlSecondsAfterFinished is specified. This policy adds the ttlSecondsAfterFinished field to an Job that does not have an ownerReference set if not already specified.
+    	Jobs which are user created can often pile up and consume excess space in the cluster. In Kubernetes 1.23, the TTL-after-finished controller is stable and will automatically clean up these Jobs if the ttlSecondsAfterFinished is specified. This policy adds the ttlSecondsAfterFinished field to an Job that does not have an ownerReference set if not already specified.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add-ttl-jobs/add-ttl-jobs.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/add-ttl-jobs/add-ttl-jobs.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-binding-system-groups
 displayName: Restrict Binding System Groups
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Certain system groups exist in Kubernetes which grant permissions that are used for certain system-level functions yet typically never appropriate for other users. This policy prevents creating bindings to some of these groups including system:anonymous, system:unauthenticated, and system:masters.
 digest: 7f62a5ce38d4b4806325899fe1bc7e9e2dbe1c9cc7d6dd8373c06f14dbedc1d4
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_binding_system_groups
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict_binding_system_groups
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict_binding_system_groups/restrict-binding-system-groups.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict_binding_system_groups/restrict-binding-system-groups.yaml
 readme: |-
     # Restrict Binding System Groups
-    Certain system groups exist in Kubernetes which grant permissions that are used for certain system-level functions yet typically never appropriate for other users. This policy prevents creating bindings to some of these groups including system:anonymous, system:unauthenticated, and system:masters.
+    	Certain system groups exist in Kubernetes which grant permissions that are used for certain system-level functions yet typically never appropriate for other users. This policy prevents creating bindings to some of these groups including system:anonymous, system:unauthenticated, and system:masters.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict_binding_system_groups/restrict_binding_system_groups.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict_binding_system_groups/restrict_binding_system_groups.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-requests-limits
 displayName: Require Limits and Requests
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: As application workloads share cluster resources, it is important to limit resources requested and consumed by each Pod. It is recommended to require resource requests and limits per Pod, especially for memory and CPU. If a Namespace level request or limit is specified, defaults will automatically be applied to each Pod based on the LimitRange configuration. This policy validates that all containers have something specified for memory and CPU requests and memory limits.
 digest: 3a31266a8584b7bc6e4e66c70392632c55c21e8200454e257aaac4efbfba8055
-homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/require_pod_requests_limits
+homeURL: https://github.com/kyverno/policies/tree/master/best-practices/require_pod_requests_limits
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/best-practices/require_pod_requests_limits/require_pod_requests_limits.yaml
+      url: https://github.com/kyverno/policies/blob/master/best-practices/require_pod_requests_limits/require_pod_requests_limits.yaml
 readme: |-
     # Require Limits and Requests
-    As application workloads share cluster resources, it is important to limit resources requested and consumed by each Pod. It is recommended to require resource requests and limits per Pod, especially for memory and CPU. If a Namespace level request or limit is specified, defaults will automatically be applied to each Pod based on the LimitRange configuration. This policy validates that all containers have something specified for memory and CPU requests and memory limits.
+    	As application workloads share cluster resources, it is important to limit resources requested and consumed by each Pod. It is recommended to require resource requests and limits per Pod, especially for memory and CPU. If a Namespace level request or limit is specified, defaults will automatically be applied to each Pod based on the LimitRange configuration. This policy validates that all containers have something specified for memory and CPU requests and memory limits.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/require_pod_requests_limits/require_pod_requests_limits.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/best-practices/require_pod_requests_limits/require_pod_requests_limits.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

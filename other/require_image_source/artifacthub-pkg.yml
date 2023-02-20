@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-image-source
 displayName: Require Image Source
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Images can be built from a variety of source control locations and the name does not necessarily indicate this mapping. Ensuring that known good repositories are the source of images helps ensure supply chain security. This policy checks the container images and ensures that they specify the source in either a label `org.opencontainers.image.source` or a newer annotation in the manifest of the same name.
 digest: 4e1f1b926d65bd7f1a9658b75a027e1aeaf9f5662b7346b3407fa2641359268c
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/require_image_source
+homeURL: https://github.com/kyverno/policies/tree/master/other/require_image_source
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/require_image_source/require-image-source.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/require_image_source/require-image-source.yaml
 readme: |-
     # Require Image Source
-    Images can be built from a variety of source control locations and the name does not necessarily indicate this mapping. Ensuring that known good repositories are the source of images helps ensure supply chain security. This policy checks the container images and ensures that they specify the source in either a label `org.opencontainers.image.source` or a newer annotation in the manifest of the same name.
+    	Images can be built from a variety of source control locations and the name does not necessarily indicate this mapping. Ensuring that known good repositories are the source of images helps ensure supply chain security. This policy checks the container images and ensures that they specify the source in either a label `org.opencontainers.image.source` or a newer annotation in the manifest of the same name.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require_image_source/require_image_source.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/require_image_source/require_image_source.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

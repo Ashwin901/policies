@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-encryption-aws-loadbalancers
 displayName: Require Encryption with AWS LoadBalancers
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:29Z"
 description: Services of type LoadBalancer when deployed inside AWS have support for transport encryption if it is enabled via an annotation. This policy requires that Services of type LoadBalancer contain the annotation service.beta.kubernetes.io/aws-load-balancer-ssl-cert with some value.
 digest: 64075307518ba16447dd0458fae2f35b47c209f27095c2fce751a8c8e0ab80a3
-homeURL: https://github.com/Ashwin901/policies/tree/master/aws/require_encryption_aws_loadbalancers
+homeURL: https://github.com/kyverno/policies/tree/master/aws/require_encryption_aws_loadbalancers
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/aws/require_encryption_aws_loadbalancers/require-encryption-aws-loadbalancers.yaml
+      url: https://github.com/kyverno/policies/blob/master/aws/require_encryption_aws_loadbalancers/require-encryption-aws-loadbalancers.yaml
 readme: |-
     # Require Encryption with AWS LoadBalancers
-    Services of type LoadBalancer when deployed inside AWS have support for transport encryption if it is enabled via an annotation. This policy requires that Services of type LoadBalancer contain the annotation service.beta.kubernetes.io/aws-load-balancer-ssl-cert with some value.
+    	Services of type LoadBalancer when deployed inside AWS have support for transport encryption if it is enabled via an annotation. This policy requires that Services of type LoadBalancer contain the annotation service.beta.kubernetes.io/aws-load-balancer-ssl-cert with some value.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/aws/require_encryption_aws_loadbalancers/require_encryption_aws_loadbalancers.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/aws/require_encryption_aws_loadbalancers/require_encryption_aws_loadbalancers.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

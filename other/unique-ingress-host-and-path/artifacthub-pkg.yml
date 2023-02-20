@@ -1,23 +1,23 @@
 version: 1.0.0
 name: unique-ingress-host-and-path
 displayName: Unique Ingress Host and Path
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Similar to the ability to check the uniqueness of hosts and paths independently, it is possible to check for uniqueness of them both together across a cluster. This policy ensures that no Ingress can be created or updated unless it is globally unique with respect to host plus path combination.
 digest: a042f747bf8e8c374824406c2fc9c57b40c79cf4c31f04c77a273d6b79529fde
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/unique-ingress-host-and-path
+homeURL: https://github.com/kyverno/policies/tree/master/other/unique-ingress-host-and-path
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/unique-ingress-host-and-path/unique-ingress-host-and-path.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/unique-ingress-host-and-path/unique-ingress-host-and-path.yaml
 readme: |-
     # Unique Ingress Host and Path
-    Similar to the ability to check the uniqueness of hosts and paths independently, it is possible to check for uniqueness of them both together across a cluster. This policy ensures that no Ingress can be created or updated unless it is globally unique with respect to host plus path combination.
+    	Similar to the ability to check the uniqueness of hosts and paths independently, it is possible to check for uniqueness of them both together across a cluster. This policy ensures that no Ingress can be created or updated unless it is globally unique with respect to host plus path combination.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/unique-ingress-host-and-path/unique-ingress-host-and-path.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/unique-ingress-host-and-path/unique-ingress-host-and-path.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

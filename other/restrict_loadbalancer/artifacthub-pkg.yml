@@ -1,23 +1,23 @@
 version: 1.0.0
 name: no-loadbalancer-service
 displayName: Disallow Service Type LoadBalancer
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Especially in cloud provider environments, a Service having type LoadBalancer will cause the provider to respond by creating a load balancer somewhere in the customer account. This adds cost and complexity to a deployment. Without restricting this ability, users may easily overrun established budgets and security practices set by the organization. This policy restricts use of the Service type LoadBalancer.
 digest: bd247afcd2f05e06de6adeb5677df1ba30a3ceb69efc3306041b882ffdfc8bfe
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_loadbalancer
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict_loadbalancer
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict_loadbalancer/restrict_loadbalancer.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict_loadbalancer/restrict_loadbalancer.yaml
 readme: |-
     # Disallow Service Type LoadBalancer
-    Especially in cloud provider environments, a Service having type LoadBalancer will cause the provider to respond by creating a load balancer somewhere in the customer account. This adds cost and complexity to a deployment. Without restricting this ability, users may easily overrun established budgets and security practices set by the organization. This policy restricts use of the Service type LoadBalancer.
+    	Especially in cloud provider environments, a Service having type LoadBalancer will cause the provider to respond by creating a load balancer somewhere in the customer account. This adds cost and complexity to a deployment. Without restricting this ability, users may easily overrun established budgets and security practices set by the organization. This policy restricts use of the Service type LoadBalancer.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict_loadbalancer/restrict_loadbalancer.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict_loadbalancer/restrict_loadbalancer.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

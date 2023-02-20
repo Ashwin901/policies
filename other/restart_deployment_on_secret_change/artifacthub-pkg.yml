@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restart-deployment-on-secret-change
 displayName: Restart Deployment On Secret Change
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: If Secrets are mounted in ways which do not naturally allow updates to be live refreshed it may be necessary to modify a Deployment. This policy watches a Secret and if it changes will write an annotation to one or more target Deployments thus triggering a new rollout and thereby refreshing the referred Secret. It may be necessary to grant additional privileges to the Kyverno ServiceAccount, via one of the existing ClusterRoleBindings or a new one, so it can modify Deployments.
 digest: 3b1ab3aa399f1497897f059bb1066bfd252ad70df85775efbd03aeddeac76f7e
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restart_deployment_on_secret_change
+homeURL: https://github.com/kyverno/policies/tree/master/other/restart_deployment_on_secret_change
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restart_deployment_on_secret_change/restart_deployment_on_secret_change.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restart_deployment_on_secret_change/restart_deployment_on_secret_change.yaml
 readme: |-
     # Restart Deployment On Secret Change
-    If Secrets are mounted in ways which do not naturally allow updates to be live refreshed it may be necessary to modify a Deployment. This policy watches a Secret and if it changes will write an annotation to one or more target Deployments thus triggering a new rollout and thereby refreshing the referred Secret. It may be necessary to grant additional privileges to the Kyverno ServiceAccount, via one of the existing ClusterRoleBindings or a new one, so it can modify Deployments.
+    	If Secrets are mounted in ways which do not naturally allow updates to be live refreshed it may be necessary to modify a Deployment. This policy watches a Secret and if it changes will write an annotation to one or more target Deployments thus triggering a new rollout and thereby refreshing the referred Secret. It may be necessary to grant additional privileges to the Kyverno ServiceAccount, via one of the existing ClusterRoleBindings or a new one, so it can modify Deployments.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restart_deployment_on_secret_change/restart_deployment_on_secret_change.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restart_deployment_on_secret_change/restart_deployment_on_secret_change.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

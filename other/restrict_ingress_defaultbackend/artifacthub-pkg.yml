@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-ingress-defaultbackend
 displayName: Restrict Ingress defaultBackend
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: An Ingress with no rules sends all traffic to a single default backend. The defaultBackend is conventionally a configuration option of the Ingress controller and is not specified in your Ingress resources. If none of the hosts or paths match the HTTP request in the Ingress objects, the traffic is routed to your default backend. In a multi-tenant environment, you want users to use explicit hosts, they should not be able to overwrite the global default backend service. This policy prohibits the use of the defaultBackend field.
 digest: 0abe9775519cbdcfdc13199a58983e6aceebd60f80af32313494bf5355c9efa8
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict_ingress_defaultbackend
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict_ingress_defaultbackend
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict_ingress_defaultbackend/restrict_ingress_defaultbackend.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict_ingress_defaultbackend/restrict_ingress_defaultbackend.yaml
 readme: |-
     # Restrict Ingress defaultBackend
-    An Ingress with no rules sends all traffic to a single default backend. The defaultBackend is conventionally a configuration option of the Ingress controller and is not specified in your Ingress resources. If none of the hosts or paths match the HTTP request in the Ingress objects, the traffic is routed to your default backend. In a multi-tenant environment, you want users to use explicit hosts, they should not be able to overwrite the global default backend service. This policy prohibits the use of the defaultBackend field.
+    	An Ingress with no rules sends all traffic to a single default backend. The defaultBackend is conventionally a configuration option of the Ingress controller and is not specified in your Ingress resources. If none of the hosts or paths match the HTTP request in the Ingress objects, the traffic is routed to your default backend. In a multi-tenant environment, you want users to use explicit hosts, they should not be able to overwrite the global default backend service. This policy prohibits the use of the defaultBackend field.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict_ingress_defaultbackend/restrict_ingress_defaultbackend.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict_ingress_defaultbackend/restrict_ingress_defaultbackend.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

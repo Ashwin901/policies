@@ -1,23 +1,23 @@
 version: 1.0.0
 name: block-tekton-task-runs
 displayName: Block Tekton TaskRun
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Restrict creation of TaskRun resources to the Tekton pipelines controller.
 digest: 0610b314982361f72afd7586466a6738c3eafcba26f7a8804a1cef1ffd0fdf13
-homeURL: https://github.com/Ashwin901/policies/tree/master/tekton/block-tekton-task-runs
+homeURL: https://github.com/kyverno/policies/tree/master/tekton/block-tekton-task-runs
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/tekton/block-tekton-task-runs/block-tekton-task-runs.yaml
+      url: https://github.com/kyverno/policies/blob/master/tekton/block-tekton-task-runs/block-tekton-task-runs.yaml
 readme: |-
     # Block Tekton TaskRun
-    Restrict creation of TaskRun resources to the Tekton pipelines controller.
+    	Restrict creation of TaskRun resources to the Tekton pipelines controller.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/tekton/block-tekton-task-runs/block-tekton-task-runs.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/tekton/block-tekton-task-runs/block-tekton-task-runs.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

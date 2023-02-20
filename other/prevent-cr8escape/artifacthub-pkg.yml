@@ -1,23 +1,23 @@
 version: 1.0.0
 name: prevent-cr8escape
 displayName: Prevent cr8escape (CVE-2022-0811)
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: A vulnerability "cr8escape" (CVE-2022-0811) in CRI-O the container runtime engine underpinning Kubernetes allows attackers to escape from a Kubernetes container and gain root access to the host. The recommended remediation is to disallow sysctl settings with + or = in their value.
 digest: 88b14e17b9d1304d8f564af59dd30e90dcc88cdf5b83329a05d7ec29e560beef
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/prevent-cr8escape
+homeURL: https://github.com/kyverno/policies/tree/master/other/prevent-cr8escape
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/prevent-cr8escape/prevent-cr8escape.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/prevent-cr8escape/prevent-cr8escape.yaml
 readme: |-
     # Prevent cr8escape (CVE-2022-0811)
-    A vulnerability "cr8escape" (CVE-2022-0811) in CRI-O the container runtime engine underpinning Kubernetes allows attackers to escape from a Kubernetes container and gain root access to the host. The recommended remediation is to disallow sysctl settings with + or = in their value.
+    	A vulnerability "cr8escape" (CVE-2022-0811) in CRI-O the container runtime engine underpinning Kubernetes allows attackers to escape from a Kubernetes container and gain root access to the host. The recommended remediation is to disallow sysctl settings with + or = in their value.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/prevent-cr8escape/prevent-cr8escape.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/prevent-cr8escape/prevent-cr8escape.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

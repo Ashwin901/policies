@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-linkerd-server
 displayName: Require Linkerd Server
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: In Linkerd 2.11, a Server resource selects ports on a set of Pods in the same Namespace and is used to deny traffic which then must be authorized later. Ensuring that Linkerd policy is enforced on Pods in the mesh is important to maintaining a secure environment. This policy, requiring Linkerd 2.11+, has two rules designed to check Deployments (exposing ports) and Services to ensure a corresponding Server resource exists first.
 digest: b11021e49d2688e0e5a0fd25030d841a9aa5779a6e2a1c677709d1a3cf0b0035
-homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/require-linkerd-server
+homeURL: https://github.com/kyverno/policies/tree/master/linkerd/require-linkerd-server
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/linkerd/require-linkerd-server/require-linkerd-server.yaml
+      url: https://github.com/kyverno/policies/blob/master/linkerd/require-linkerd-server/require-linkerd-server.yaml
 readme: |-
     # Require Linkerd Server
-    In Linkerd 2.11, a Server resource selects ports on a set of Pods in the same Namespace and is used to deny traffic which then must be authorized later. Ensuring that Linkerd policy is enforced on Pods in the mesh is important to maintaining a secure environment. This policy, requiring Linkerd 2.11+, has two rules designed to check Deployments (exposing ports) and Services to ensure a corresponding Server resource exists first.
+    	In Linkerd 2.11, a Server resource selects ports on a set of Pods in the same Namespace and is used to deny traffic which then must be authorized later. Ensuring that Linkerd policy is enforced on Pods in the mesh is important to maintaining a secure environment. This policy, requiring Linkerd 2.11+, has two rules designed to check Deployments (exposing ports) and Services to ensure a corresponding Server resource exists first.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/linkerd/require-linkerd-server/require-linkerd-server.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/linkerd/require-linkerd-server/require-linkerd-server.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

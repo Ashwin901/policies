@@ -1,23 +1,23 @@
 version: 1.0.0
 name: disallow-helm-tiller
 displayName: Disallow Helm Tiller
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Tiller, found in Helm v2, has known security challenges. It requires administrative privileges and acts as a shared resource accessible to any authenticated user. Tiller can lead to privilege escalation as restricted users can impact other users. It is recommend to use Helm v3+ which does not contain Tiller for these reasons. This policy validates that there is not an image containing the name `tiller`.
 digest: fcbc022adcf92146376ba44d8b8ce6fee4912c546f0c8eb98b128c70d35011e0
-homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/disallow_helm_tiller
+homeURL: https://github.com/kyverno/policies/tree/master/best-practices/disallow_helm_tiller
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/best-practices/disallow_helm_tiller/disallow_helm_tiller.yaml
+      url: https://github.com/kyverno/policies/blob/master/best-practices/disallow_helm_tiller/disallow_helm_tiller.yaml
 readme: |-
     # Disallow Helm Tiller
-    Tiller, found in Helm v2, has known security challenges. It requires administrative privileges and acts as a shared resource accessible to any authenticated user. Tiller can lead to privilege escalation as restricted users can impact other users. It is recommend to use Helm v3+ which does not contain Tiller for these reasons. This policy validates that there is not an image containing the name `tiller`.
+    	Tiller, found in Helm v2, has known security challenges. It requires administrative privileges and acts as a shared resource accessible to any authenticated user. Tiller can lead to privilege escalation as restricted users can impact other users. It is recommend to use Helm v3+ which does not contain Tiller for these reasons. This policy validates that there is not an image containing the name `tiller`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/disallow_helm_tiller/disallow_helm_tiller.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/best-practices/disallow_helm_tiller/disallow_helm_tiller.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

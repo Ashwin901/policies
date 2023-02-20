@@ -1,23 +1,23 @@
 version: 1.0.0
 name: add-pod-proxies
 displayName: Add Pod Proxies
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: In restricted environments, Pods may not be allowed to egress directly to all destinations and some overrides to specific addresses may need to go through a corporate proxy. This policy adds proxy information to Pods in the form of environment variables. It will add the `env` array if not present. If any Pods have any of these env vars, they will be overwritten with the value(s) in this policy.
 digest: d944fef6196ffe3fc5e864b6292261b75dcf4c3c0b1630122a3bb3d0cadde09d
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/add-pod-proxies
+homeURL: https://github.com/kyverno/policies/tree/master/other/add-pod-proxies
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/add-pod-proxies/add-pod-proxies.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/add-pod-proxies/add-pod-proxies.yaml
 readme: |-
     # Add Pod Proxies
-    In restricted environments, Pods may not be allowed to egress directly to all destinations and some overrides to specific addresses may need to go through a corporate proxy. This policy adds proxy information to Pods in the form of environment variables. It will add the `env` array if not present. If any Pods have any of these env vars, they will be overwritten with the value(s) in this policy.
+    	In restricted environments, Pods may not be allowed to egress directly to all destinations and some overrides to specific addresses may need to go through a corporate proxy. This policy adds proxy information to Pods in the form of environment variables. It will add the `env` array if not present. If any Pods have any of these env vars, they will be overwritten with the value(s) in this policy.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add-pod-proxies/add-pod-proxies.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/add-pod-proxies/add-pod-proxies.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

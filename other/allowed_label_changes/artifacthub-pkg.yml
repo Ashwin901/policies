@@ -1,23 +1,23 @@
 version: 1.0.0
 name: allowed-label-changes
 displayName: Allowed Label Changes
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: In some cases, operations teams need a type of limited access to change resources during troubleshooting or outage mitigation. This policy demonstrates how to prevent modification to labels except one with the key `breakglass`. Changing, adding, or deleting any other labels is denied.
 digest: 8a896b83dc7fe30cc6bf598bf8d9e18d9b05d60824aa65058beb6e9dada0fd16
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/allowed_label_changes
+homeURL: https://github.com/kyverno/policies/tree/master/other/allowed_label_changes
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/allowed_label_changes/allowed-label-changes.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/allowed_label_changes/allowed-label-changes.yaml
 readme: |-
     # Allowed Label Changes
-    In some cases, operations teams need a type of limited access to change resources during troubleshooting or outage mitigation. This policy demonstrates how to prevent modification to labels except one with the key `breakglass`. Changing, adding, or deleting any other labels is denied.
+    	In some cases, operations teams need a type of limited access to change resources during troubleshooting or outage mitigation. This policy demonstrates how to prevent modification to labels except one with the key `breakglass`. Changing, adding, or deleting any other labels is denied.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/allowed_label_changes/allowed_label_changes.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/allowed_label_changes/allowed_label_changes.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

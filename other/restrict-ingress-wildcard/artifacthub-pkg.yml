@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-ingress-wildcard
 displayName: Restrict Ingress Host with Wildcards
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Ingress hosts optionally accept a wildcard as an alternative to precise matching. In some cases, this may be too permissive as it would direct unintended traffic to the given Ingress resource. This policy enforces that any Ingress host does not contain a wildcard character.
 digest: 9c3552c4984a21d3ae1f39e71962e174cd468950e20cfff985dfef391b0ed590
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-ingress-wildcard
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict-ingress-wildcard
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict-ingress-wildcard/restrict-ingress-wildcard.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict-ingress-wildcard/restrict-ingress-wildcard.yaml
 readme: |-
     # Restrict Ingress Host with Wildcards
-    Ingress hosts optionally accept a wildcard as an alternative to precise matching. In some cases, this may be too permissive as it would direct unintended traffic to the given Ingress resource. This policy enforces that any Ingress host does not contain a wildcard character.
+    	Ingress hosts optionally accept a wildcard as an alternative to precise matching. In some cases, this may be too permissive as it would direct unintended traffic to the given Ingress resource. This policy enforces that any Ingress host does not contain a wildcard character.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict-ingress-wildcard/restrict-ingress-wildcard.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict-ingress-wildcard/restrict-ingress-wildcard.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

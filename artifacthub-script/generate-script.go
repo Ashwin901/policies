@@ -106,7 +106,6 @@ func main() {
 
 			for _, policy := range policies {
 				if policy.Type().IsDir() {
-					fmt.Println(policy.Name())
 					policyName := strings.ReplaceAll(policy.Name(), ".yaml", "")
 					constraintTemplateContent, err := os.ReadFile(filepath.Join(policiesPath, entry.Name(), policy.Name(), policyName+".yaml"))
 
@@ -153,6 +152,8 @@ func addArtifactHubMetadata(sourceDirectory, destinationPath, ahBasePath, ahPoli
 
 	templateHash := getConstraintTemplateHash(constraintTemplate)
 	artifactHubMetadata := getMetadataIfExist(filepath.Join(destinationPath, "artifacthub-pkg.yml"))
+
+	fmt.Println("Generating artifact hub manifests for: ", ahPolicyPath)
 
 	if artifactHubMetadata == nil {
 		artifactHubMetadata = &ArtifactHubMetadata{

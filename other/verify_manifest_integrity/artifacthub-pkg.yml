@@ -1,23 +1,23 @@
 version: 1.0.0
 name: verify-manifest-integrity
 displayName: Verify Manifest Integrity
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Verifying the integrity of resources is important to ensure no tampering has occurred, and in some cases this may need to be extended to certain YAML manifests deployed to Kubernetes. Starting in Kyverno 1.8, these manifests may be signed with Sigstore and the signature(s) validated to prevent this tampering while still allowing some exceptions on a per-field basis. This policy verifies Deployments are signed with the expected key but ignores the `spec.replicas` field allowing other teams to change just this value.
 digest: 0438e78446ac599fe3bc5e35ba692afe9d49a6cfb1919a9b473571ad7a79bd17
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/verify_manifest_integrity
+homeURL: https://github.com/kyverno/policies/tree/master/other/verify_manifest_integrity
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/verify_manifest_integrity/verify-manifest-integrity.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/verify_manifest_integrity/verify-manifest-integrity.yaml
 readme: |-
     # Verify Manifest Integrity
-    Verifying the integrity of resources is important to ensure no tampering has occurred, and in some cases this may need to be extended to certain YAML manifests deployed to Kubernetes. Starting in Kyverno 1.8, these manifests may be signed with Sigstore and the signature(s) validated to prevent this tampering while still allowing some exceptions on a per-field basis. This policy verifies Deployments are signed with the expected key but ignores the `spec.replicas` field allowing other teams to change just this value.
+    	Verifying the integrity of resources is important to ensure no tampering has occurred, and in some cases this may need to be extended to certain YAML manifests deployed to Kubernetes. Starting in Kyverno 1.8, these manifests may be signed with Sigstore and the signature(s) validated to prevent this tampering while still allowing some exceptions on a per-field basis. This policy verifies Deployments are signed with the expected key but ignores the `spec.replicas` field allowing other teams to change just this value.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/verify_manifest_integrity/verify_manifest_integrity.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/verify_manifest_integrity/verify_manifest_integrity.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: add-certificates-volume
 displayName: Add Certificates as a Volume
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: In some cases you would need to trust custom CA certificates for all the containers of a Pod. It makes sense to be in a ConfigMap so that you can automount them by only setting an annotation. This policy adds a volume to all containers in a Pod containing the certificate if the annotation called `inject-certs` with value `enabled` is found.
 digest: 25af1770fca98deaa177f3cdd06d4e3382f5ad7d64764f48725e28ed7a44f77e
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_certificates_volume
+homeURL: https://github.com/kyverno/policies/tree/master/other/add_certificates_volume
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/add_certificates_volume/add_certificates_volume.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/add_certificates_volume/add_certificates_volume.yaml
 readme: |-
     # Add Certificates as a Volume
-    In some cases you would need to trust custom CA certificates for all the containers of a Pod. It makes sense to be in a ConfigMap so that you can automount them by only setting an annotation. This policy adds a volume to all containers in a Pod containing the certificate if the annotation called `inject-certs` with value `enabled` is found.
+    	In some cases you would need to trust custom CA certificates for all the containers of a Pod. It makes sense to be in a ConfigMap so that you can automount them by only setting an annotation. This policy adds a volume to all containers in a Pod containing the certificate if the annotation called `inject-certs` with value `enabled` is found.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_certificates_volume/add_certificates_volume.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/add_certificates_volume/add_certificates_volume.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

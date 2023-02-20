@@ -1,23 +1,23 @@
 version: 1.0.0
 name: cert-manager-limit-dnsnames
 displayName: Limit dnsNames
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Some applications will not accept certificates containing more than a single name. This policy ensures that each certificate request contains only one DNS name entry.
 digest: dcf01ab974dccb1da6c1fef5ec71a58fd6dcd9cddc84f5f725f8d4475f81145f
-homeURL: https://github.com/Ashwin901/policies/tree/master/cert-manager/limit-dnsnames
+homeURL: https://github.com/kyverno/policies/tree/master/cert-manager/limit-dnsnames
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/cert-manager/limit-dnsnames/limit-dnsnames.yaml
+      url: https://github.com/kyverno/policies/blob/master/cert-manager/limit-dnsnames/limit-dnsnames.yaml
 readme: |-
     # Limit dnsNames
-    Some applications will not accept certificates containing more than a single name. This policy ensures that each certificate request contains only one DNS name entry.
+    	Some applications will not accept certificates containing more than a single name. This policy ensures that each certificate request contains only one DNS name entry.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/cert-manager/limit-dnsnames/limit-dnsnames.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/cert-manager/limit-dnsnames/limit-dnsnames.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

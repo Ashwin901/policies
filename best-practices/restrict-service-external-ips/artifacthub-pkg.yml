@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-external-ips
 displayName: Restrict External IPs
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: 'Service externalIPs can be used for a MITM attack (CVE-2020-8554). Restrict externalIPs or limit to a known set of addresses. See: https://github.com/kyverno/kyverno/issues/1367. This policy validates that the `externalIPs` field is not set on a Service.'
 digest: 70a5bfedf0837715e30be91346b65e27b92fe44b3fe4f4ba0925538b76102ddd
-homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/restrict-service-external-ips
+homeURL: https://github.com/kyverno/policies/tree/master/best-practices/restrict-service-external-ips
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/best-practices/restrict-service-external-ips/restrict-service-external-ips.yaml
+      url: https://github.com/kyverno/policies/blob/master/best-practices/restrict-service-external-ips/restrict-service-external-ips.yaml
 readme: |-
     # Restrict External IPs
-    Service externalIPs can be used for a MITM attack (CVE-2020-8554). Restrict externalIPs or limit to a known set of addresses. See: https://github.com/kyverno/kyverno/issues/1367. This policy validates that the `externalIPs` field is not set on a Service.
+    	Service externalIPs can be used for a MITM attack (CVE-2020-8554). Restrict externalIPs or limit to a known set of addresses. See: https://github.com/kyverno/kyverno/issues/1367. This policy validates that the `externalIPs` field is not set on a Service.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/restrict-service-external-ips/restrict-service-external-ips.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/best-practices/restrict-service-external-ips/restrict-service-external-ips.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

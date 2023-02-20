@@ -1,23 +1,23 @@
 version: 1.0.0
 name: add-volume
 displayName: Add Volume to Deployment
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Some Kubernetes applications like HashiCorp Vault must perform some modifications to resources in order to invoke their specific functionality. Often times, that functionality is controlled by the presence of a label or specific annotation. This policy, based on HashiCorp Vault, adds a volume and volumeMount to a Deployment if there is an annotation called "vault.k8s.corp.net/inject=enabled" present.
 digest: 5c3f956994082fa53d0965f55c1b57b2af88943474dd56f97645f050763f8d39
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/add_volume_deployment
+homeURL: https://github.com/kyverno/policies/tree/master/other/add_volume_deployment
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/add_volume_deployment/add_volume_deployment.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/add_volume_deployment/add_volume_deployment.yaml
 readme: |-
     # Add Volume to Deployment
-    Some Kubernetes applications like HashiCorp Vault must perform some modifications to resources in order to invoke their specific functionality. Often times, that functionality is controlled by the presence of a label or specific annotation. This policy, based on HashiCorp Vault, adds a volume and volumeMount to a Deployment if there is an annotation called "vault.k8s.corp.net/inject=enabled" present.
+    	Some Kubernetes applications like HashiCorp Vault must perform some modifications to resources in order to invoke their specific functionality. Often times, that functionality is controlled by the presence of a label or specific annotation. This policy, based on HashiCorp Vault, adds a volume and volumeMount to a Deployment if there is an annotation called "vault.k8s.corp.net/inject=enabled" present.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/add_volume_deployment/add_volume_deployment.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/add_volume_deployment/add_volume_deployment.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

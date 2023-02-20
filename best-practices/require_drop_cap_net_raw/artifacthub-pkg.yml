@@ -1,23 +1,23 @@
 version: 1.0.0
 name: drop-cap-net-raw
 displayName: Drop CAP_NET_RAW
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Capabilities permit privileged actions without giving full root access. The CAP_NET_RAW capability, enabled by default, allows processes in a container to forge packets and bind to any interface potentially leading to MitM attacks. This policy ensures that all containers explicitly drop the CAP_NET_RAW ability. Note that this policy also illustrates how to cover drop entries in any case although this may not strictly conform to the Pod Security Standards.
 digest: d1ee0b8554bde07195608625099eb74057ca435be3522b8a1e564d5b39eedd65
-homeURL: https://github.com/Ashwin901/policies/tree/master/best-practices/require_drop_cap_net_raw
+homeURL: https://github.com/kyverno/policies/tree/master/best-practices/require_drop_cap_net_raw
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/best-practices/require_drop_cap_net_raw/require_drop_cap_net_raw.yaml
+      url: https://github.com/kyverno/policies/blob/master/best-practices/require_drop_cap_net_raw/require_drop_cap_net_raw.yaml
 readme: |-
     # Drop CAP_NET_RAW
-    Capabilities permit privileged actions without giving full root access. The CAP_NET_RAW capability, enabled by default, allows processes in a container to forge packets and bind to any interface potentially leading to MitM attacks. This policy ensures that all containers explicitly drop the CAP_NET_RAW ability. Note that this policy also illustrates how to cover drop entries in any case although this may not strictly conform to the Pod Security Standards.
+    	Capabilities permit privileged actions without giving full root access. The CAP_NET_RAW capability, enabled by default, allows processes in a container to forge packets and bind to any interface potentially leading to MitM attacks. This policy ensures that all containers explicitly drop the CAP_NET_RAW ability. Note that this policy also illustrates how to cover drop entries in any case although this may not strictly conform to the Pod Security Standards.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/best-practices/require_drop_cap_net_raw/require_drop_cap_net_raw.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/best-practices/require_drop_cap_net_raw/require_drop_cap_net_raw.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

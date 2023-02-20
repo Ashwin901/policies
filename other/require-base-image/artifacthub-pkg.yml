@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-base-image
 displayName: Check Image Base
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: 'Container images can be built from a variety of sources, including other preexisting images. Ensuring images that are allowed to run are built from known, trusted images where their provenance is guaranteed can be an important step in ensuring overall cluster security. This policy ensures that any container image specifies some base image in its metadata from four possible sources: Docker BuildKit, OCI annotations (in manifest or config), or Buildpacks. Note that the ability to detect the presence of a base image is not implicit and requires the author to specify it using metadata or build directives of some sort (ex., Dockerfile FROM statements do not automatically expose this information).'
 digest: 34853578cb7ef08309d11a59a5666380b628d73588d1ce231ac9d30d58ac757d
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/require-base-image
+homeURL: https://github.com/kyverno/policies/tree/master/other/require-base-image
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/require-base-image/require-base-image.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/require-base-image/require-base-image.yaml
 readme: |-
     # Check Image Base
-    Container images can be built from a variety of sources, including other preexisting images. Ensuring images that are allowed to run are built from known, trusted images where their provenance is guaranteed can be an important step in ensuring overall cluster security. This policy ensures that any container image specifies some base image in its metadata from four possible sources: Docker BuildKit, OCI annotations (in manifest or config), or Buildpacks. Note that the ability to detect the presence of a base image is not implicit and requires the author to specify it using metadata or build directives of some sort (ex., Dockerfile FROM statements do not automatically expose this information).
+    	Container images can be built from a variety of sources, including other preexisting images. Ensuring images that are allowed to run are built from known, trusted images where their provenance is guaranteed can be an important step in ensuring overall cluster security. This policy ensures that any container image specifies some base image in its metadata from four possible sources: Docker BuildKit, OCI annotations (in manifest or config), or Buildpacks. Note that the ability to detect the presence of a base image is not implicit and requires the author to specify it using metadata or build directives of some sort (ex., Dockerfile FROM statements do not automatically expose this information).
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/require-base-image/require-base-image.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/require-base-image/require-base-image.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

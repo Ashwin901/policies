@@ -1,23 +1,23 @@
 version: 1.0.0
 name: protect-node-taints
 displayName: Protect Node Taints
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: 'Node taints are often used as a control in multi-tenant use cases. If users can alter them, they may be able to affect scheduling of Pods which may impact other workloads. This sample prohibits altering of node taints unless by a user holding the `cluster-admin` ClusterRole. Use of this policy requires removal of the Node resource filter in the Kyverno ConfigMap ([Node,*,*]). Due to Kubernetes CVE-2021-25735, this policy requires, at minimum, one of the following versions of Kubernetes: v1.18.18, v1.19.10, v1.20.6, or v1.21.0.'
 digest: 344a8cc7fab825e66b2025b17a834155da5002530c0ad94a164e38299e705256
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/protect_node_taints
+homeURL: https://github.com/kyverno/policies/tree/master/other/protect_node_taints
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/protect_node_taints/protect-node-taints.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/protect_node_taints/protect-node-taints.yaml
 readme: |-
     # Protect Node Taints
-    Node taints are often used as a control in multi-tenant use cases. If users can alter them, they may be able to affect scheduling of Pods which may impact other workloads. This sample prohibits altering of node taints unless by a user holding the `cluster-admin` ClusterRole. Use of this policy requires removal of the Node resource filter in the Kyverno ConfigMap ([Node,*,*]). Due to Kubernetes CVE-2021-25735, this policy requires, at minimum, one of the following versions of Kubernetes: v1.18.18, v1.19.10, v1.20.6, or v1.21.0.
+    	Node taints are often used as a control in multi-tenant use cases. If users can alter them, they may be able to affect scheduling of Pods which may impact other workloads. This sample prohibits altering of node taints unless by a user holding the `cluster-admin` ClusterRole. Use of this policy requires removal of the Node resource filter in the Kyverno ConfigMap ([Node,*,*]). Due to Kubernetes CVE-2021-25735, this policy requires, at minimum, one of the following versions of Kubernetes: v1.18.18, v1.19.10, v1.20.6, or v1.21.0.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/protect_node_taints/protect_node_taints.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/protect_node_taints/protect_node_taints.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

@@ -1,23 +1,23 @@
 version: 1.0.0
 name: enforce-sidecar-injection-namespace
 displayName: Enforce Istio Sidecar Injection
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: In order for Istio to inject sidecars to workloads deployed into Namespaces, the label `istio-injection` must be set to `enabled`. This policy ensures that all new Namespaces set `istio-inject` to `enabled`.
 digest: e34e66bf6ef698a24793878198e927e2bdcd1c890c6f3e515667694c0325a10d
-homeURL: https://github.com/Ashwin901/policies/tree/master/istio/enforce-sidecar-injection-namespace
+homeURL: https://github.com/kyverno/policies/tree/master/istio/enforce-sidecar-injection-namespace
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/istio/enforce-sidecar-injection-namespace/enforce-sidecar-injection-namespace.yaml
+      url: https://github.com/kyverno/policies/blob/master/istio/enforce-sidecar-injection-namespace/enforce-sidecar-injection-namespace.yaml
 readme: |-
     # Enforce Istio Sidecar Injection
-    In order for Istio to inject sidecars to workloads deployed into Namespaces, the label `istio-injection` must be set to `enabled`. This policy ensures that all new Namespaces set `istio-inject` to `enabled`.
+    	In order for Istio to inject sidecars to workloads deployed into Namespaces, the label `istio-injection` must be set to `enabled`. This policy ensures that all new Namespaces set `istio-inject` to `enabled`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/istio/enforce-sidecar-injection-namespace/enforce-sidecar-injection-namespace.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/istio/enforce-sidecar-injection-namespace/enforce-sidecar-injection-namespace.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

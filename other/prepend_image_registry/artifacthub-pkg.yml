@@ -1,23 +1,23 @@
 version: 1.0.0
 name: prepend-registry
 displayName: Prepend Image Registry
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Pulling images from outside registries may be undesirable due to untrustworthiness or simply because the traffic results in an excess of bandwidth usage. Instead of blocking them, they can be mutated to divert to an internal registry which may already contain them or function as a pull-through proxy. This policy prepends all images in both containers and initContainers to come from `registry.io`.
 digest: 692f3dec41cca227722b2fdf69ce6a0ee4d53fe720281e7df5b223be265346d2
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/prepend_image_registry
+homeURL: https://github.com/kyverno/policies/tree/master/other/prepend_image_registry
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/prepend_image_registry/prepend_image_registry.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/prepend_image_registry/prepend_image_registry.yaml
 readme: |-
     # Prepend Image Registry
-    Pulling images from outside registries may be undesirable due to untrustworthiness or simply because the traffic results in an excess of bandwidth usage. Instead of blocking them, they can be mutated to divert to an internal registry which may already contain them or function as a pull-through proxy. This policy prepends all images in both containers and initContainers to come from `registry.io`.
+    	Pulling images from outside registries may be undesirable due to untrustworthiness or simply because the traffic results in an excess of bandwidth usage. Instead of blocking them, they can be mutated to divert to an internal registry which may already contain them or function as a pull-through proxy. This policy prepends all images in both containers and initContainers to come from `registry.io`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/prepend_image_registry/prepend_image_registry.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/prepend_image_registry/prepend_image_registry.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

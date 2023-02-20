@@ -1,23 +1,23 @@
 version: 1.0.0
 name: restrict-escalation-verbs-roles
 displayName: Restrict Escalation Verbs in Roles
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: The verbs `impersonate`, `bind`, and `escalate` may all potentially lead to privilege escalation and should be tightly controlled. This policy prevents use of these verbs in Role or ClusterRole resources.
 digest: 7ea39ef43c0f0219fcb4ee20f29ed421a22805ca8d7fa1f99042f9efd46268ea
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/restrict-escalation-verbs-roles
+homeURL: https://github.com/kyverno/policies/tree/master/other/restrict-escalation-verbs-roles
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/restrict-escalation-verbs-roles/restrict-escalation-verbs-roles.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/restrict-escalation-verbs-roles/restrict-escalation-verbs-roles.yaml
 readme: |-
     # Restrict Escalation Verbs in Roles
-    The verbs `impersonate`, `bind`, and `escalate` may all potentially lead to privilege escalation and should be tightly controlled. This policy prevents use of these verbs in Role or ClusterRole resources.
+    	The verbs `impersonate`, `bind`, and `escalate` may all potentially lead to privilege escalation and should be tightly controlled. This policy prevents use of these verbs in Role or ClusterRole resources.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/restrict-escalation-verbs-roles/restrict-escalation-verbs-roles.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/restrict-escalation-verbs-roles/restrict-escalation-verbs-roles.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

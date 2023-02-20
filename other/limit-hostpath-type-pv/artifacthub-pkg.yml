@@ -1,23 +1,23 @@
 version: 1.0.0
 name: limit-hostpath-type-pv
 displayName: Limit hostPath PersistentVolumes to Specific Directories
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: hostPath persistentvolumes consume the underlying node's file system. If hostPath volumes are not to be universally disabled, they should be restricted to only certain host paths so as not to allow access to sensitive information. This policy ensures the only directory that can be mounted as a hostPath volume is /data.
 digest: 4f1234f8bb1a6ed63b118f13ff3baa8962e37f7787b4cb774b6b22105b23cc74
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/limit-hostpath-type-pv
+homeURL: https://github.com/kyverno/policies/tree/master/other/limit-hostpath-type-pv
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/limit-hostpath-type-pv/limit_hostpath_type_pv.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/limit-hostpath-type-pv/limit_hostpath_type_pv.yaml
 readme: |-
     # Limit hostPath PersistentVolumes to Specific Directories
-    hostPath persistentvolumes consume the underlying node's file system. If hostPath volumes are not to be universally disabled, they should be restricted to only certain host paths so as not to allow access to sensitive information. This policy ensures the only directory that can be mounted as a hostPath volume is /data.
+    	hostPath persistentvolumes consume the underlying node's file system. If hostPath volumes are not to be universally disabled, they should be restricted to only certain host paths so as not to allow access to sensitive information. This policy ensures the only directory that can be mounted as a hostPath volume is /data.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/limit-hostpath-type-pv/limit-hostpath-type-pv.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/limit-hostpath-type-pv/limit-hostpath-type-pv.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

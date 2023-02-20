@@ -1,23 +1,23 @@
 version: 1.0.0
 name: appproject-clusterresourceblacklist
 displayName: Enforce AppProject with clusterResourceBlacklist
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:29Z"
 description: An AppProject may optionally specify clusterResourceBlacklist which is a blacklisted group of cluster resources. This is often a good practice to ensure AppProjects do not allow more access than needed. This policy is a combination of two rules which enforce that all AppProjects specify clusterResourceBlacklist and that their group and kind have wildcards as values.
 digest: e44cd07e26e1a8a209fb59079005bb8372442a68702416ba70afc4a7f4ad066e
-homeURL: https://github.com/Ashwin901/policies/tree/master/argo/appproject-clusterresourceblacklist
+homeURL: https://github.com/kyverno/policies/tree/master/argo/appproject-clusterresourceblacklist
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/argo/appproject-clusterresourceblacklist/appproject-clusterresourceblacklist.yaml
+      url: https://github.com/kyverno/policies/blob/master/argo/appproject-clusterresourceblacklist/appproject-clusterresourceblacklist.yaml
 readme: |-
     # Enforce AppProject with clusterResourceBlacklist
-    An AppProject may optionally specify clusterResourceBlacklist which is a blacklisted group of cluster resources. This is often a good practice to ensure AppProjects do not allow more access than needed. This policy is a combination of two rules which enforce that all AppProjects specify clusterResourceBlacklist and that their group and kind have wildcards as values.
+    	An AppProject may optionally specify clusterResourceBlacklist which is a blacklisted group of cluster resources. This is often a good practice to ensure AppProjects do not allow more access than needed. This policy is a combination of two rules which enforce that all AppProjects specify clusterResourceBlacklist and that their group and kind have wildcards as values.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/argo/appproject-clusterresourceblacklist/appproject-clusterresourceblacklist.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/argo/appproject-clusterresourceblacklist/appproject-clusterresourceblacklist.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

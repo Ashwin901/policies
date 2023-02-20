@@ -1,23 +1,23 @@
 version: 1.0.0
 name: update-image-tag
 displayName: Update Image Tag
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: For use cases like sidecar injection, it is often the case where existing Deployments need the sidecar image updated without destroying the whole Deployment or Pods. This policy updates the image tag on containers named vault-agent for existing Deployments which have the annotation vault.hashicorp.com/agent-inject="true". It may be necessary to grant additional privileges to the Kyverno ServiceAccount, via one of the existing ClusterRoleBindings or a new one, so it can modify Deployments.
 digest: 1f3b8aa38893cb9e950545747e1c5891ae761e9d0865696ff2631e87b3011fe6
-homeURL: https://github.com/Ashwin901/policies/tree/master/other/update_image_tag
+homeURL: https://github.com/kyverno/policies/tree/master/other/update_image_tag
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/other/update_image_tag/update_image_tag.yaml
+      url: https://github.com/kyverno/policies/blob/master/other/update_image_tag/update_image_tag.yaml
 readme: |-
     # Update Image Tag
-    For use cases like sidecar injection, it is often the case where existing Deployments need the sidecar image updated without destroying the whole Deployment or Pods. This policy updates the image tag on containers named vault-agent for existing Deployments which have the annotation vault.hashicorp.com/agent-inject="true". It may be necessary to grant additional privileges to the Kyverno ServiceAccount, via one of the existing ClusterRoleBindings or a new one, so it can modify Deployments.
+    	For use cases like sidecar injection, it is often the case where existing Deployments need the sidecar image updated without destroying the whole Deployment or Pods. This policy updates the image tag on containers named vault-agent for existing Deployments which have the annotation vault.hashicorp.com/agent-inject="true". It may be necessary to grant additional privileges to the Kyverno ServiceAccount, via one of the existing ClusterRoleBindings or a new one, so it can modify Deployments.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/other/update_image_tag/update_image_tag.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/other/update_image_tag/update_image_tag.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

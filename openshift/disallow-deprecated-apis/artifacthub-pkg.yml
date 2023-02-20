@@ -1,21 +1,21 @@
 version: 1.0.0
 name: disallow-deprecated-apis
 displayName: Disallow deprecated APIs
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: 'OpenShift APIs are sometimes deprecated and removed after a few releases. As a best practice, older API versions should be replaced with newer versions. This policy validates for APIs that are deprecated or scheduled for removal. Note that checking for some of these resources may require modifying the Kyverno ConfigMap to remove filters.      '
 digest: 1695b4085611529512a29dab7bee470df7c782ae4da315783f8e2746a1d28f06
-homeURL: https://github.com/Ashwin901/policies/tree/master/openshift/disallow-deprecated-apis
+homeURL: https://github.com/kyverno/policies/tree/master/openshift/disallow-deprecated-apis
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/openshift/disallow-deprecated-apis/disallow-deprecated-apis.yaml
-readme: "# Disallow deprecated APIs\nOpenShift APIs are sometimes deprecated and removed after a few releases. As a best practice, older API versions should be replaced with newer versions. This policy validates for APIs that are deprecated or scheduled for removal. Note that checking for some of these resources may require modifying the Kyverno ConfigMap to remove filters.      "
+      url: https://github.com/kyverno/policies/blob/master/openshift/disallow-deprecated-apis/disallow-deprecated-apis.yaml
+readme: "# Disallow deprecated APIs\n\tOpenShift APIs are sometimes deprecated and removed after a few releases. As a best practice, older API versions should be replaced with newer versions. This policy validates for APIs that are deprecated or scheduled for removal. Note that checking for some of these resources may require modifying the Kyverno ConfigMap to remove filters.      "
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/openshift/disallow-deprecated-apis/disallow-deprecated-apis.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/openshift/disallow-deprecated-apis/disallow-deprecated-apis.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno

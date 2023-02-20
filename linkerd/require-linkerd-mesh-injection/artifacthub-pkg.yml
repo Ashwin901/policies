@@ -1,23 +1,23 @@
 version: 1.0.0
 name: require-linkerd-mesh-injection
 displayName: Require Linkerd Mesh Injection
-createdAt: "2023-02-19T19:27:48Z"
+createdAt: "2023-02-20T10:33:30Z"
 description: Sidecar proxy injection in Linkerd may be handled at the Namespace level by setting the annotation `linkerd.io/inject` to `enabled`. This policy enforces that all Namespaces contain the annotation `linkerd.io/inject` set to `enabled`.
 digest: 310457d9fc27980937f13a47bf7b33524b665ad1f610f51bbcc761b3918f8cd9
-homeURL: https://github.com/Ashwin901/policies/tree/master/linkerd/require-linkerd-mesh-injection
+homeURL: https://github.com/kyverno/policies/tree/master/linkerd/require-linkerd-mesh-injection
 keywords:
     - kyverno
     - policy
 links:
     - name: Source
-      url: https://github.com/Ashwin901/policies/blob/master/linkerd/require-linkerd-mesh-injection/require-linkerd-mesh-injection.yaml
+      url: https://github.com/kyverno/policies/blob/master/linkerd/require-linkerd-mesh-injection/require-linkerd-mesh-injection.yaml
 readme: |-
     # Require Linkerd Mesh Injection
-    Sidecar proxy injection in Linkerd may be handled at the Namespace level by setting the annotation `linkerd.io/inject` to `enabled`. This policy enforces that all Namespaces contain the annotation `linkerd.io/inject` set to `enabled`.
+    	Sidecar proxy injection in Linkerd may be handled at the Namespace level by setting the annotation `linkerd.io/inject` to `enabled`. This policy enforces that all Namespaces contain the annotation `linkerd.io/inject` set to `enabled`.
 install: |-
     ### Usage
     ```shell
-    kubectl apply -f https://raw.githubusercontent.com/Ashwin901/policies/master/linkerd/require-linkerd-mesh-injection/require-linkerd-mesh-injection.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/master/linkerd/require-linkerd-mesh-injection/require-linkerd-mesh-injection.yaml
     ```
 provider:
-    name: Ashwin901
+    name: kyverno
